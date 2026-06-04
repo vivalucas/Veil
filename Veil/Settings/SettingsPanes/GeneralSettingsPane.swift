@@ -40,7 +40,15 @@ struct GeneralSettingsPane: View {
 
     // MARK: App Options
 
+    @ViewBuilder
     private var appOptions: some View {
+        IcePicker("App Appearance", selection: $settings.appAppearance) {
+            ForEach(AppAppearancePreference.allCases) { appearance in
+                Text(appearance.localized).tag(appearance)
+            }
+        }
+        .annotation("Choose whether app windows follow the system appearance or use a fixed light or dark appearance.")
+
         LaunchAtLogin.Toggle {
             Text("Launch at Login")
         }

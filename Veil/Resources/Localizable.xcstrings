@@ -617,6 +617,23 @@
         }
       }
     },
+    "App Appearance" : {
+      "comment" : "Label for the app window appearance preference picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリの外観"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用外观"
+          }
+        }
+      }
+    },
     "Apply" : {
       "comment" : "A button that applies the current value of a slider to a setting.",
       "localizations" : {
@@ -1344,6 +1361,23 @@
         }
       }
     },
+    "Choose whether app windows follow the system appearance or use a fixed light or dark appearance." : {
+      "comment" : "Annotation for the app window appearance preference picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリのウィンドウをシステム外観に合わせるか、ライトまたはダーク外観に固定するかを選択します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择应用窗口是跟随系统外观，还是固定使用浅色或深色外观。"
+          }
+        }
+      }
+    },
     "Clear" : {
       "comment" : "A glass style that is clear.",
       "localizations" : {
@@ -1595,6 +1629,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "自定义图标使用动态外观"
+          }
+        }
+      }
+    },
+    "Dark" : {
+      "comment" : "Menu item for forcing the app windows to use a dark appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダーク"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色"
           }
         }
       }
@@ -2415,6 +2466,23 @@
         }
       }
     },
+    "Follow System" : {
+      "comment" : "Menu item for making the app windows follow the system appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "システムに合わせる"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跟随系统"
+          }
+        }
+      }
+    },
     "General" : {
       "comment" : "Localized string key for each case in the enum.",
       "localizations" : {
@@ -3199,6 +3267,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "浅色外观"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "comment" : "Menu item for forcing the app windows to use a light appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライト"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浅色"
           }
         }
       }

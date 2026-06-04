@@ -78,4 +78,12 @@ final class AppPermissions: ObservableObject {
             permission.stopCheck()
         }
     }
+
+    /// Re-checks all permission states immediately.
+    func refreshAll() {
+        for permission in allPermissions {
+            permission.refresh()
+        }
+        updatePermissionsState()
+    }
 }

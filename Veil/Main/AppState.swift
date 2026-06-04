@@ -282,7 +282,7 @@ final class AppState: ObservableObject {
     }
 
     /// Relaunches the current app instance silently.
-    func restartSelf() {
+    func restartSelf(activates: Bool = false) {
         guard !isRestarting else { return }
         isRestarting = true
 
@@ -290,7 +290,7 @@ final class AppState: ObservableObject {
         imageCache.saveToDisk()
 
         let config = NSWorkspace.OpenConfiguration()
-        config.activates = false
+        config.activates = activates
         config.addsToRecentItems = false
         config.createsNewApplicationInstance = true
         config.promptsUserIfNeeded = false

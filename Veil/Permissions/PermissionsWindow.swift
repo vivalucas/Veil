@@ -14,6 +14,7 @@ struct PermissionsWindow: Scene {
     var body: some Scene {
         IceWindow(id: .permissions) {
             PermissionsView()
+                .preferredColorScheme(appState.settings.general.appAppearance.preferredColorScheme)
                 .onWindowChange { window in
                     guard let window else {
                         return

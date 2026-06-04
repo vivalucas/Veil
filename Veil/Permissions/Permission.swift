@@ -78,13 +78,18 @@ class Permission: ObservableObject, Identifiable {
                 guard let self else {
                     return
                 }
-                let granted = check()
-                hasPermission = granted
-                if granted {
-                    timerCancellable?.cancel()
-                    timerCancellable = nil
-                }
+                refresh()
             }
+    }
+
+    /// Re-checks the permission immediately.
+    func refresh() {
+        let granted = check()
+        hasPermission = granted
+        if granted {
+            timerCancellable?.cancel()
+            timerCancellable = nil
+        }
     }
 
     /// Performs the request and opens the System Settings app to the appropriate pane.

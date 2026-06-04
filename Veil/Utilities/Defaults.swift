@@ -146,6 +146,7 @@ extension Defaults {
         static let showIceIcon = true
         static let iceIcon = ControlItemImageSet.defaultIceIcon
         static let customIceIconIsTemplate = false
+        static let appAppearance: AppAppearancePreference = .system
         static let useIceBar = false
         static let useIceBarOnlyOnNotchedDisplay = false
         static let iceBarLocation: IceBarLocation = .dynamic
@@ -207,6 +208,7 @@ extension Defaults {
         case showIceIcon = "ShowIceIcon"
         case iceIcon = "IceIcon"
         case customIceIconIsTemplate = "CustomIceIconIsTemplate"
+        case appAppearance = "AppAppearance"
         case useIceBar = "UseIceBar"
         case useIceBarOnlyOnNotchedDisplay = "UseIceBarOnlyOnNotchedDisplay"
         case iceBarLocation = "IceBarLocation"

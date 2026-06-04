@@ -101,6 +101,7 @@ final class LayoutBarPaddingView: NSView {
             container.canSetArrangedViews = true
             return false
         }
+        let sourceContainer = draggingSource.oldContainerInfo?.container
 
         if case let .item(draggingItem) = draggingSource.kind,
            draggingItem.tag == .visibleControlItem,
@@ -125,7 +126,6 @@ final class LayoutBarPaddingView: NSView {
         }
 
         if draggingSource.isNewItemsBadge {
-            let sourceContainer = draggingSource.oldContainerInfo?.container
             container.appState?.itemManager.updateNewItemsPlacement(
                 section: container.section,
                 arrangedViews: arrangedViews
@@ -153,27 +153,29 @@ final class LayoutBarPaddingView: NSView {
                         return
                     }
                     if let destination = await self.liveFallbackDestinationForDraggedItem() {
-                        self.move(item: item, to: destination)
+                        self.move(item: item, to: destination, sourceContainer: sourceContainer)
                     } else {
                         Self.diagLog.error("No target item for layout bar drag")
                         self.container.canSetArrangedViews = true
+                        sourceContainer?.canSetArrangedViews = true
                     }
                 }
             } else if case let .item(item) = draggingSource.kind {
                 if let targetItem = nearestItem(toRightOf: index) {
                     willMove = true
-                    move(item: item, to: .leftOfItem(targetItem))
+                    move(item: item, to: .leftOfItem(targetItem), sourceContainer: sourceContainer)
                 } else if let targetItem = nearestItem(toLeftOf: index) {
                     willMove = true
-                    move(item: item, to: .rightOfItem(targetItem))
+                    move(item: item, to: .rightOfItem(targetItem), sourceContainer: sourceContainer)
                 } else if !arrangedViews.isEmpty {
                     willMove = true
                     Task {
                         if let destination = await self.liveFallbackDestinationForDraggedItem() {
-                            self.move(item: item, to: destination)
+                            self.move(item: item, to: destination, sourceContainer: sourceContainer)
                         } else {
                             Self.diagLog.error("No target item for layout bar drag")
                             self.container.canSetArrangedViews = true
+                            sourceContainer?.canSetArrangedViews = true
                         }
                     }
                 }
@@ -184,17 +186,26 @@ final class LayoutBarPaddingView: NSView {
         // When a move IS initiated, the move() Task re-enables after stabilization.
         if !willMove {
             container.canSetArrangedViews = true
+            sourceContainer?.canSetArrangedViews = true
         }
 
         return true
     }
 
-    private func move(item: MenuBarItem, to destination: MenuBarItemManager.MoveDestination) {
+    private func move(
+        item: MenuBarItem,
+        to destination: MenuBarItemManager.MoveDestination,
+        sourceContainer: LayoutBarContainer?
+    ) {
         guard let appState = container.appState else {
+            sourceContainer?.canSetArrangedViews = true
             return
         }
         Task {
-            guard !isStabilizing else { return }
+            guard !isStabilizing else {
+                sourceContainer?.canSetArrangedViews = true
+                return
+            }
             isStabilizing = true
             await MainActor.run { self.showOverlay(true) }
             // Increased delay to allow macOS to settle after operations like Reset Layout.
@@ -246,6 +257,12 @@ final class LayoutBarPaddingView: NSView {
                 // Re-enable view updates. The didSet will automatically refresh
                 // from the current cache with the updated badge anchor.
                 self.container.canSetArrangedViews = true
+                if sourceContainer !== self.container {
+                    sourceContainer?.canSetArrangedViews = true
+                    sourceContainer?.setArrangedViews(
+                        items: appState.itemManager.itemCache.managedItems(for: sourceContainer?.section ?? self.container.section)
+                    )
+                }
             }
         }
     }

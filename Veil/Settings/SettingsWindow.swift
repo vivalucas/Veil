@@ -17,6 +17,7 @@ struct SettingsWindow: Scene {
         IceWindow(id: .settings) {
             SettingsView(appState: appState, navigationState: appState.navigationState)
                 .frame(minWidth: 850, minHeight: 600)
+                .preferredColorScheme(appState.settings.general.appAppearance.preferredColorScheme)
         }
         .windowResizability(.contentSize)
         .defaultSize(width: 950, height: 650)

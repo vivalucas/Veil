@@ -42,7 +42,10 @@ struct PermissionsView: View {
         .frame(width: 520)
         .fixedSize()
         .onAppear {
-            // First launch detection handled elsewhere
+            manager.refreshAll()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
+            manager.refreshAll()
         }
     }
 
@@ -77,6 +80,9 @@ struct PermissionsView: View {
     private var footerView: some View {
         HStack {
             quitButton
+            if case .missing = manager.permissionsState {
+                restartButton
+            }
             continueButton
         }
         .controlSize(.large)
@@ -87,6 +93,15 @@ struct PermissionsView: View {
             NSApp.terminate(nil)
         } label: {
             Text("Quit")
+                .frame(maxWidth: .infinity)
+        }
+    }
+
+    private var restartButton: some View {
+        Button {
+            appState.restartSelf(activates: true)
+        } label: {
+            Text("Restart")
                 .frame(maxWidth: .infinity)
         }
     }
@@ -142,9 +157,8 @@ struct PermissionsView: View {
                 Button {
                     permission.performRequest()
                     Task {
-                        await permission.waitForPermission()
-                        appState.activate(withPolicy: .regular)
-                        appState.openWindow(.permissions)
+                        try? await Task.sleep(for: .seconds(1))
+                        manager.refreshAll()
                     }
                 } label: {
                     if permission.hasPermission {

@@ -9,6 +9,34 @@
 import Combine
 import SwiftUI
 
+// MARK: - AppAppearancePreference
+
+enum AppAppearancePreference: Int, CaseIterable, Identifiable {
+    case system
+    case light
+    case dark
+
+    var id: Int {
+        rawValue
+    }
+
+    var localized: LocalizedStringKey {
+        switch self {
+        case .system: "Follow System"
+        case .light: "Light"
+        case .dark: "Dark"
+        }
+    }
+
+    var preferredColorScheme: ColorScheme? {
+        switch self {
+        case .system: nil
+        case .light: .light
+        case .dark: .dark
+        }
+    }
+}
+
 // MARK: - GeneralSettings
 
 /// Model for the app's General settings.
@@ -29,6 +57,9 @@ final class GeneralSettings: ObservableObject {
     /// A Boolean value that indicates whether custom Veil icons
     /// should be rendered as template images.
     @Published var customIceIconIsTemplate = Defaults.DefaultValue.customIceIconIsTemplate
+
+    /// The preferred appearance for the app's windows.
+    @Published var appAppearance = Defaults.DefaultValue.appAppearance
 
     // MARK: - Deprecated (Per-Display Migration)
 
@@ -106,6 +137,11 @@ final class GeneralSettings: ObservableObject {
     private func loadInitialState() {
         Defaults.ifPresent(key: .showIceIcon, assign: &showIceIcon)
         Defaults.ifPresent(key: .customIceIconIsTemplate, assign: &customIceIconIsTemplate)
+        Defaults.ifPresent(key: .appAppearance) { rawValue in
+            if let appearance = AppAppearancePreference(rawValue: rawValue) {
+                appAppearance = appearance
+            }
+        }
         Defaults.ifPresent(key: .useIceBar, assign: &useIceBar)
         Defaults.ifPresent(key: .useIceBarOnlyOnNotchedDisplay, assign: &useIceBarOnlyOnNotchedDisplay)
         Defaults.ifPresent(key: .showOnClick, assign: &showOnClick)
@@ -165,6 +201,7 @@ final class GeneralSettings: ObservableObject {
             .store(in: &c)
 
         $customIceIconIsTemplate.persistToDefaults(key: .customIceIconIsTemplate, in: &c)
+        $appAppearance.persistToDefaults(key: .appAppearance, transform: \.rawValue, in: &c)
         $useIceBar.persistToDefaults(key: .useIceBar, in: &c)
         $useIceBarOnlyOnNotchedDisplay.persistToDefaults(key: .useIceBarOnlyOnNotchedDisplay, in: &c)
         $iceBarLocation.persistToDefaults(key: .iceBarLocation, transform: \.rawValue, in: &c)

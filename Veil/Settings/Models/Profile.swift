@@ -24,7 +24,7 @@ struct ProfileMetadata: Codable, Identifiable, Hashable {
 
 // MARK: - GeneralSettingsSnapshot
 
-/// A codable snapshot of all General settings properties.
+/// A codable snapshot of profile-relevant General settings properties.
 struct GeneralSettingsSnapshot: Codable {
     var showIceIcon: Bool
     var iceIcon: ControlItemImageSet
