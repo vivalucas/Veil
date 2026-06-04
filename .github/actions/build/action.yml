@@ -1,0 +1,51 @@
+name: Build
+description: Build the app for distribution without Apple Developer ID signing
+
+inputs:
+  project-name:
+    description: Xcode project file name
+    required: false
+    default: Veil.xcodeproj
+  scheme-name:
+    description: Xcode scheme name
+    required: false
+    default: Veil
+  deployment-target:
+    description: Minimum macOS deployment target
+    required: false
+    default: "26.0"
+
+runs:
+  using: composite
+  steps:
+    - name: Build app
+      shell: bash
+      run: |
+        set -euo pipefail
+
+        xcodebuild build \
+          -project "${{ inputs.project-name }}" \
+          -scheme "${{ inputs.scheme-name }}" \
+          -destination platform=macOS \
+          -configuration Release \
+          -derivedDataPath build/DerivedData \
+          MACOSX_DEPLOYMENT_TARGET=${{ inputs.deployment-target }} \
+          CODE_SIGN_STYLE=Manual \
+          CODE_SIGN_IDENTITY="-" \
+          CODE_SIGNING_ALLOWED=YES
+
+        rm -rf build/Export
+        mkdir -p build/Export
+
+        app_path=$(find build/DerivedData/Build/Products/Release -maxdepth 1 -name "*.app" -print -quit)
+        if [[ -z "$app_path" ]]; then
+          echo "No .app bundle was produced."
+          exit 1
+        fi
+
+        cp -R "$app_path" build/Export/
+
+        exported_app="build/Export/$(basename "$app_path")"
+        # Ad-hoc distribution cannot use hardened runtime library validation with Sparkle.
+        codesign --force --deep --sign - "$exported_app"
+        codesign --verify --deep --strict --verbose=2 "$exported_app"

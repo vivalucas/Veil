@@ -1,0 +1,97 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "*.*.*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to publish (for example, 1.2.3)
+        required: true
+        type: string
+
+jobs:
+  release:
+    runs-on: macos-26
+    permissions:
+      contents: write
+    env:
+      APP_NAME: "Veil.app"
+      DMG_NAME: Veil-${{ inputs.tag || github.ref_name }}.dmg
+      APPCAST_NAME: "appcast.xml"
+      RELEASE_NOTES_NAME: "Veil.md"
+      SPARKLE_VERSION: "2.9.2"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'workflow_dispatch' && format('refs/tags/{0}', inputs.tag) || github.ref }}
+
+      - name: Validate tag name format
+        id: validate
+        env:
+          TAG_NAME: ${{ inputs.tag || github.ref_name }}
+        run: |
+          if [[ ! "$TAG_NAME" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9._]+)?$ ]]; then
+            echo "Invalid tag name format. Must be in the form 1.2.3"
+            exit 1
+          fi
+      - run: sudo xcode-select -s /Applications/Xcode_26.5.app/Contents/Developer
+
+      - name: Build
+        uses: ./.github/actions/build
+
+      - name: Package DMG
+        uses: ./.github/actions/export-and-package
+        with:
+          app-name: ${{ env.APP_NAME }}
+          dmg-name: ${{ env.DMG_NAME }}
+
+      - name: Generate Sparkle appcast
+        env:
+          TAG_NAME: ${{ inputs.tag || github.ref_name }}
+          SPARKLE_PRIVATE_KEY: ${{ secrets.SPARKLE_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${SPARKLE_PRIVATE_KEY:-}" ]]; then
+            echo "Missing SPARKLE_PRIVATE_KEY secret. Generate it with Sparkle's generate_keys tool and save the exported private key as this repository secret."
+            exit 1
+          fi
+
+          sparkle_dir="$RUNNER_TEMP/sparkle"
+          updates_dir="$RUNNER_TEMP/updates"
+          mkdir -p "$sparkle_dir" "$updates_dir"
+
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 --retry-all-errors \
+            "https://github.com/sparkle-project/Sparkle/releases/download/${SPARKLE_VERSION}/Sparkle-for-Swift-Package-Manager.zip" \
+            -o "$RUNNER_TEMP/Sparkle.zip"
+          ditto -x -k "$RUNNER_TEMP/Sparkle.zip" "$sparkle_dir"
+
+          cp "build/${DMG_NAME}" "$updates_dir/${DMG_NAME}"
+          printf '# Veil %s\n\nSee the GitHub release page for the full changelog.\n' "$TAG_NAME" > "$updates_dir/${RELEASE_NOTES_NAME}"
+
+          echo "$SPARKLE_PRIVATE_KEY" | "$sparkle_dir/bin/generate_appcast" \
+            --ed-key-file - \
+            --download-url-prefix "https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG_NAME}/" \
+            --link "https://github.com/${GITHUB_REPOSITORY}/releases/tag/${TAG_NAME}" \
+            -o "$updates_dir/${APPCAST_NAME}" \
+            "$updates_dir"
+
+          cp "$updates_dir/${APPCAST_NAME}" "build/${APPCAST_NAME}"
+          cp "$updates_dir/${RELEASE_NOTES_NAME}" "build/${RELEASE_NOTES_NAME}"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          files: |
+            build/${{ env.DMG_NAME }}
+            build/${{ env.APPCAST_NAME }}
+            build/${{ env.RELEASE_NOTES_NAME }}
+          generate_release_notes: false
+          draft: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

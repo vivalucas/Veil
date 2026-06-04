@@ -1,0 +1,32 @@
+name: Build DMG
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-dmg:
+    runs-on: macos-26
+    env:
+      APP_NAME: "Veil.app"
+      DMG_NAME: "Veil-dev.dmg"
+    steps:
+      - uses: actions/checkout@v6
+
+      # Issues with other Xcode versions, so we need to specify the version explicitly
+      - run: sudo xcode-select -s /Applications/Xcode_26.5.app/Contents/Developer
+
+      - name: Build
+        uses: ./.github/actions/build
+
+      - name: Package DMG
+        uses: ./.github/actions/export-and-package
+        with:
+          app-name: ${{ env.APP_NAME }}
+          dmg-name: ${{ env.DMG_NAME }}
+
+      - name: Upload DMG
+        uses: actions/upload-artifact@v7
+        with:
+          name: Veil-dmg
+          path: build/${{ env.DMG_NAME }}
+          retention-days: 3

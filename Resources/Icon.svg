@@ -1,0 +1,191 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <!-- 玻璃底板：极低透明度白，让背景透出来 -->
+    <linearGradient id="glassBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.07"/>
+    </linearGradient>
+
+    <!-- 玻璃高光层：左上到右下渐隐 -->
+    <linearGradient id="glassSheen" x1="0%" y1="0%" x2="55%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.60"/>
+      <stop offset="40%"  stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.00"/>
+    </linearGradient>
+
+    <!-- 玻璃边框：上白下渐隐 -->
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.90"/>
+      <stop offset="55%"  stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <!-- 内部辉光：中心微亮 -->
+    <radialGradient id="innerGlow" cx="38%" cy="28%" r="52%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.00"/>
+    </radialGradient>
+
+    <!-- 纱层1：外层宽幅，浅蓝，低透明度（羽化用） -->
+    <linearGradient id="veilGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#4a9af0" stop-opacity="0.20"/>
+      <stop offset="50%"  stop-color="#1a6fd4" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#2060c8" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <!-- 纱层2：主体深蓝，高透明度，主色 -->
+    <linearGradient id="veilGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#70b8f8" stop-opacity="0.38"/>
+      <stop offset="45%"  stop-color="#1450cc" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#3a88e8" stop-opacity="0.22"/>
+    </linearGradient>
+
+    <!-- 纱层3：高光边，明亮蓝 -->
+    <linearGradient id="veilGrad3" x1="25%" y1="0%" x2="75%" y2="100%">
+      <stop offset="0%"   stop-color="#90ccfc" stop-opacity="0.45"/>
+      <stop offset="55%"  stop-color="#1858c4" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#4898ec" stop-opacity="0.12"/>
+    </linearGradient>
+
+    <!-- 纱折叠阴影：深蓝 -->
+    <linearGradient id="veilShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0a3a8c" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0a3a8c" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- 裁剪路径：圆角矩形 -->
+    <clipPath id="iconClip">
+      <rect x="136" y="136" width="752" height="752" rx="168" ry="168"/>
+    </clipPath>
+
+    <!-- 外层纱：强模糊，羽化边缘 -->
+    <filter id="veilBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+
+    <!-- 内层纱：轻模糊，保留轮廓 -->
+    <filter id="softBlur" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="3.5"/>
+    </filter>
+
+    <!-- 边框发光 -->
+    <filter id="borderGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- ① 玻璃底板 -->
+  <rect x="136" y="136" width="752" height="752" rx="168" ry="168"
+        fill="url(#glassBase)"/>
+
+  <!-- ② 内部辉光 -->
+  <rect x="136" y="136" width="752" height="752" rx="168" ry="168"
+        fill="url(#innerGlow)" clip-path="url(#iconClip)"/>
+
+  <!-- ③ 纱层1：最外层，宽幅，强模糊，S 形走向 -->
+  <g clip-path="url(#iconClip)" filter="url(#veilBlur)">
+    <path d="
+      M 170 240
+      C 295 200, 490 268, 578 408
+      C 660 540, 686 678, 790 724
+      C 840 748, 875 758, 896 790
+      L 896 720
+      C 862 688, 828 668, 770 624
+      C 662 548, 628 408, 546 272
+      C 460 132, 292 178, 188 222
+      Z"
+      fill="url(#veilGrad1)"/>
+  </g>
+
+  <!-- ④ 纱层2：主体深蓝，中等模糊 -->
+  <g clip-path="url(#iconClip)" filter="url(#softBlur)">
+    <path d="
+      M 200 262
+      C 318 224, 468 294, 548 422
+      C 622 542, 648 676, 768 736
+      L 812 736
+      C 690 668, 660 532, 586 408
+      C 508 280, 352 200, 234 242
+      Z"
+      fill="url(#veilGrad2)"/>
+  </g>
+
+  <!-- ⑤ 纱层3：高光边缘，轻模糊 -->
+  <g clip-path="url(#iconClip)" filter="url(#softBlur)">
+    <path d="
+      M 222 276
+      C 332 244, 462 308, 536 432
+      C 602 548, 624 672, 740 734
+      L 768 736
+      C 648 674, 622 548, 556 432
+      C 480 308, 344 240, 236 272
+      Z"
+      fill="url(#veilGrad3)"/>
+  </g>
+
+  <!-- ⑥ 上方折叠阴影 -->
+  <g clip-path="url(#iconClip)" filter="url(#softBlur)">
+    <path d="
+      M 196 248
+      C 256 218, 380 230, 462 292
+      C 408 256, 294 222, 218 252
+      Z"
+      fill="#5aa0e8" fill-opacity="0.50"/>
+  </g>
+
+  <!-- ⑦ 下方折叠加深 -->
+  <g clip-path="url(#iconClip)" filter="url(#softBlur)">
+    <path d="
+      M 618 662
+      C 668 684, 736 710, 800 734
+      C 752 716, 682 692, 636 668
+      Z"
+      fill="#2050c8" fill-opacity="0.55"/>
+  </g>
+
+  <!-- ⑧ 纱体内侧阴影线（折叠感） -->
+  <g clip-path="url(#iconClip)" filter="url(#softBlur)">
+    <path d="
+      M 240 300
+      C 340 268, 446 322, 510 430
+      C 574 538, 598 652, 706 720"
+      fill="none" stroke="#0840a0" stroke-width="28" stroke-opacity="0.18"
+      stroke-linecap="round"/>
+  </g>
+
+  <!-- ⑨ 纱体亮边高光线 -->
+  <g clip-path="url(#iconClip)">
+    <path d="
+      M 218 276
+      C 302 248, 418 282, 490 374"
+      fill="none" stroke="#b8dcff"
+      stroke-width="3.5" stroke-opacity="0.85"
+      stroke-linecap="round"/>
+  </g>
+
+  <!-- ⑩ 玻璃高光覆盖层（盖在纱上） -->
+  <rect x="136" y="136" width="752" height="752" rx="168" ry="168"
+        fill="url(#glassSheen)"/>
+
+  <!-- ⑪ 玻璃外边框 -->
+  <rect x="136" y="136" width="752" height="752" rx="168" ry="168"
+        fill="none" stroke="url(#glassBorder)" stroke-width="3"
+        filter="url(#borderGlow)"/>
+
+  <!-- ⑫ 玻璃内边框（厚度感） -->
+  <rect x="142" y="142" width="740" height="740" rx="165" ry="165"
+        fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.28"/>
+
+  <!-- ⑬ 左上角椭圆高光 -->
+  <ellipse cx="292" cy="252" rx="90" ry="33"
+           fill="#ffffff" fill-opacity="0.18"
+           transform="rotate(-22, 292, 252)"/>
+
+</svg>

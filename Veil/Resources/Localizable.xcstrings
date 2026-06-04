@@ -1,0 +1,6371 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "(no script selected)" : {
+      "comment" : "A placeholder displayed in the \"Path\" column of a hook row when no script is selected.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "（スクリプト未選択）"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "（未选择脚本）"
+          }
+        }
+      }
+    },
+    "%@ %@ Section" : {
+      "comment" : "A menu item title that toggles the visibility of a section in the menu bar. The argument is the name of the section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@ セクション"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@ 区域"
+          }
+        }
+      }
+    },
+    "%@ Bar" : {
+      "comment" : "The title of the window displayed in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 工具栏"
+          }
+        }
+      }
+    },
+    "%@ can work in a limited mode without this permission." : {
+      "comment" : "A callout box that explains that the app can work in a limited mode without a particular permission.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ はこの権限なしでも制限モードで動作できます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 可以在没有此权限的情况下以受限模式运行。"
+          }
+        }
+      }
+    },
+    "%@ cannot arrange menu bar items in automatically hidden menu bars." : {
+      "comment" : "A view that shows a message when the menu bar layout can't be arranged in automatically hidden menu bars.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ は自動的に非表示になるメニューバーではメニューバー項目を整理できません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 无法在自动隐藏菜单栏中排列项目。"
+          }
+        }
+      }
+    },
+    "%@ cannot edit the appearance of automatically hidden menu bars." : {
+      "comment" : "A view that appears when the user tries to edit the appearance of a menu bar that the system has hidden automatically.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ は自動的に非表示になるメニューバーの外観を編集できません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 无法修改自动隐藏菜单栏的外观。"
+          }
+        }
+      }
+    },
+    "%@ icon" : {
+      "comment" : "The text that will be displayed in the \"Location\" picker view for the Ice Bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ アイコン"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 图标"
+          }
+        }
+      }
+    },
+    "%@ is currently running. Running multiple menu bar managers at the same time can cause display issues and unexpected behavior. Consider quitting %@ before using %@." : {
+      "comment" : "A warning alert that appears when a conflicting menu bar manager is detected.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ is currently running. Running multiple menu bar managers at the same time can cause display issues and unexpected behavior. Consider quitting %2$@ before using %3$@."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ は現在実行中です。複数のメニューバーマネージャーを同時に実行すると、表示の問題や予期しない動作が発生する可能性があります。%3$@ を使用する前に %2$@ を終了することをおすすめします。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ 正在运行。同时运行多个菜单栏管理器可能会导致显示问题和意外行为。建议在使用 %3$@ 前退出 %2$@。"
+          }
+        }
+      }
+    },
+    "%@ is unresponsive. Until it is restarted, it cannot be moved. Movement of other menu bar items may also be affected until this is resolved." : {
+      "comment" : "The informative text of the alert displayed when a menu bar item is unresponsive.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ は応答していません。再起動するまで移動できません。この問題が解決するまで、他のメニューバー項目の移動にも影響が出る場合があります。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 无响应。在重启之前，无法移动该菜单项。在此问题解决之前，其他菜单栏项目的移动也可能受到影响。"
+          }
+        }
+      }
+    },
+    "%@ needs this to:" : {
+      "comment" : "A section within a permission box that lists the reasons why a particular permission is needed. The argument is the name of the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ がこれを必要とする理由："
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 需要此权限来："
+          }
+        }
+      }
+    },
+    "%@ needs your permission to manage the menu bar." : {
+      "comment" : "A paragraph explaining the app's purpose and its commitment to user privacy.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ がメニューバーを管理するには、権限が必要です。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 需要您的授权以管理菜单栏。"
+          }
+        }
+      }
+    },
+    "%@ Settings…" : {
+      "comment" : "The title of the menu item that opens the settings window.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 設定…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 设置…"
+          }
+        }
+      }
+    },
+    "%lf seconds" : {
+      "comment" : "A localized string key that represents a duration in seconds. The argument is a number of seconds.",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lf second"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lf seconds"
+                }
+              }
+            }
+          }
+        },
+        "ja" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lf 秒"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lf 秒"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld fps" : {
+      "comment" : "A label showing the current frame rate of the icon refresh timer. The argument is the current frame rate, rounded to the nearest whole number.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld fps"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld fps"
+          }
+        }
+      }
+    },
+    "%lld seconds" : {
+      "comment" : "Text that describes the rehide interval, in seconds. The argument is the number of seconds.",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld second"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld seconds"
+                }
+              }
+            }
+          }
+        },
+        "ja" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld 秒"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld 秒"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "A new update is available" : {
+      "comment" : "Title of a notification when a new update is available.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいアップデートがあります"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您有新的更新可用"
+          }
+        }
+      }
+    },
+    "About" : {
+      "comment" : "The \"About\" navigation identifier.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このアプリについて"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
+          }
+        }
+      }
+    },
+    "Absolutely no personal information is collected or stored." : {
+      "comment" : "A description of how user data is handled by the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "個人情報は一切収集・保存されません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绝不收集或存储任何个人信息。"
+          }
+        }
+      }
+    },
+    "Accessibility" : {
+      "comment" : "Title of the accessibility permission.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクセシビリティ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "辅助功能"
+          }
+        }
+      }
+    },
+    "Adaptive" : {
+      "comment" : "Text for the adaptive background option in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動調整"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自适应"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "comment" : "A button that adds an app to the whitelist.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "追加"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加"
+          }
+        }
+      }
+    },
+    "Add a Quit %@ item to the bottom of the secondary context menu." : {
+      "comment" : "A description of a menu item that quits the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セカンダリコンテキストメニューの一番下に「%@を終了」項目を追加します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在二级右键菜单底部添加退出 %@ 选项。"
+          }
+        }
+      }
+    },
+    "Add Application Manually" : {
+      "comment" : "A heading for the section where users can add apps manually.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手動でアプリケーションを追加"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手动添加应用程序"
+          }
+        }
+      }
+    },
+    "Advanced" : {
+      "comment" : "The \"Advanced\" section in the \"Settings\" interface.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "詳細"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高级"
+          }
+        }
+      }
+    },
+    "Allow" : {
+      "comment" : "Button title for allowing the app to control Veil settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "許可"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许"
+          }
+        }
+      }
+    },
+    "Allow \"%@\" to control %@ settings?" : {
+      "comment" : "Title of the NSAlert confirmation dialog for first-time authorization.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Allow \"%1$@\" to control %2$@ settings?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「%1$@」が「%2$@」の設定を制御することを許可しますか？"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许“%1$@”控制 %2$@ 设置吗？"
+          }
+        }
+      }
+    },
+    "Allow external applications to read and modify %@ settings via veil:// URLs." : {
+      "comment" : "A toggle that enables or disables the ability for external applications to read and modify \\(Constants.displayName) settings via veil:// URLs.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "外部のアプリが Veil::// URLを通じて %@の設定を読み書きできるようにします。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许外部应用程序通过 veil:// URL 读取并修改 %@ 设置。"
+          }
+        }
+      }
+    },
+    "Always show hidden items" : {
+      "comment" : "A toggle that allows users to configure whether hidden menu bar items should always be visible in the native menu bar on a particular display.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非表示項目を常に表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "始终显示隐藏项目"
+          }
+        }
+      }
+    },
+    "Always show hidden menu bar items in the menu bar on this display." : {
+      "comment" : "A toggle that allows users to choose whether to always show hidden menu bar items on a specific display.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このディスプレイのメニューバーに非表示のメニューバー項目を常に表示します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "始终在显示器的菜单栏中显示隐藏的项目。"
+          }
+        }
+      }
+    },
+    "Always show the %@ Bar at the mouse pointer's location when it is shown using a hotkey." : {
+      "comment" : "A toggle that lets users decide whether the location of the \\(Constants.displayName) Bar should be fixed at the mouse pointer's location when it is shown using a hotkey.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホットキーで表示する際は、%@ バーを常にマウスポインターの位置に表示します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用热键时，始终将 %@ 栏显示在鼠标指针的位置。"
+          }
+        }
+      }
+    },
+    "Always-Hidden" : {
+      "comment" : "Localized string key for the \"Always-Hidden\" menu bar section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常に非表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "永久隐藏"
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "comment" : "The localized string key for the \"Appearance\" section in the \"Settings\" interface.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "外観"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "外观"
+          }
+        }
+      }
+    },
+    "Apply" : {
+      "comment" : "A button that applies the current value of a slider to a setting.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "適用"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用"
+          }
+        }
+      }
+    },
+    "Apply a Veil menu bar profile when this Focus activates." : {
+      "comment" : "Description of the \"Set Menu Bar Profile\" focus filter intent, including the category name.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "集中モード有効時に、指定した Veil メニューバープロファイルを適用します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用专注模式时切换到指定的 Veil 菜单栏配置。"
+          }
+        }
+      }
+    },
+    "Apply briefly relaunches apps with menu bar items so they pick up the new spacing. Setting takes effect when this display is the active menu bar display." : {
+      "comment" : "Tooltip for the spacing row in the display settings pane.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「適用」をクリックすると、メニューバー項目を含むアプリが一時的に再起動され、新しい間隔が反映されます。この設定はアクティブなメニューバーディスプレイでのみ有効です。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用设置后将短暂重启带有菜单栏图标的 App，以使其采用新的间距。此设置仅在此显示器作为当前活跃的菜单栏显示器时生效。"
+          }
+        }
+      }
+    },
+    "Apply different settings based on the current system appearance." : {
+      "comment" : "Label for a toggle that allows the user to choose whether to use different appearance settings based on the current system appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在のシステム外観に基づいて異なる設定を適用します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "根据目前的系统外观以应用不同的设置。"
+          }
+        }
+      }
+    },
+    "Apply the spacing for this display" : {
+      "comment" : "A button that applies the spacing for a display.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このディスプレイに間隔を適用"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用此显示器间距"
+          }
+        }
+      }
+    },
+    "apps %lld" : {
+      "comment" : "Shows the number of whitelisted apps",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld app"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld apps"
+                }
+              }
+            }
+          }
+        },
+        "ja" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld 個のアプリ"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld 个应用"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Apps that request settings access will appear here after you approve them." : {
+      "comment" : "A description of the whitelisted apps section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定へのアクセスをリクエストしたアプリは、承認後にここに表示されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已获批准访问设置的应用将显示在此处。"
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete the profile \"%@\"? This cannot be undone." : {
+      "comment" : "A message displayed when a user attempts to delete a profile. The argument is the name of the profile that is about to be deleted.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「%@」を削除しますか？この操作は元に戻せません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确定要删除配置 \"%@\" 吗？此操作无法撤销。"
+          }
+        }
+      }
+    },
+    "Arrange menu bar items." : {
+      "comment" : "A detail about the \"Accessibility\" permission, describing the app's ability to rearrange menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目を整理します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "排列菜单栏项目。"
+          }
+        }
+      }
+    },
+    "Arrow" : {
+      "comment" : "Localized string key for each case in the `Name` enum.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "矢印"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "方向箭头"
+          }
+        }
+      }
+    },
+    "Assign a profile to each display." : {
+      "comment" : "Description text in the auto-switch section of the profile settings pane.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各ディスプレイにプロファイルを割り当てます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为每个显示器设置对应的配置。"
+          }
+        }
+      }
+    },
+    "Auto-Switch" : {
+      "comment" : "Section header for the \"Auto-Switch\" settings in the profile settings pane.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動切り替え"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动切换"
+          }
+        }
+      }
+    },
+    "Automatically check for updates" : {
+      "comment" : "A toggle that lets the user enable or disable automatic checking for updates.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動的にアップデートを確認"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动检查更新"
+          }
+        }
+      }
+    },
+    "Automatically download and install updates" : {
+      "comment" : "A toggle label that allows the user to enable or disable automatic update checking.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動的にアップデートをダウンロードしてインストール"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动下载并安装更新"
+          }
+        }
+      }
+    },
+    "Automatically download updates" : {
+      "comment" : "A toggle that lets the user enable or disable automatic downloading of updates.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動的にアップデートをダウンロード"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动下载更新"
+          }
+        }
+      }
+    },
+    "Automatically rehide" : {
+      "comment" : "A toggle that enables or disables automatic rehiding of the hidden menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動的に非表示に戻す"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动重新隐藏"
+          }
+        }
+      }
+    },
+    "Automation" : {
+      "comment" : "The \"Automation\" tab in the settings interface.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オートメーション"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动化"
+          }
+        }
+      }
+    },
+    "Back" : {
+      "comment" : "A button that navigates back to the previous settings section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "戻る"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回"
+          }
+        }
+      }
+    },
+    "Background" : {
+      "comment" : "Section in the menu bar appearance editor for changing the background of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景"
+          }
+        }
+      }
+    },
+    "Background - Dark Appearance" : {
+      "comment" : "Title of a section in the menu bar appearance editor for the dark appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景 - ダークモード"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景 - 深色外观"
+          }
+        }
+      }
+    },
+    "Background - Light Appearance" : {
+      "comment" : "Title of a section in the menu bar appearance editor for the light appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景 - ライトモード"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景 - 浅色外观"
+          }
+        }
+      }
+    },
+    "BETA" : {
+      "comment" : "The text displayed in the badge.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ベータ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "测试版"
+          }
+        }
+      }
+    },
+    "Border" : {
+      "comment" : "A toggle that lets the user enable or disable the border around the view.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボーダー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "边框"
+          }
+        }
+      }
+    },
+    "Border Color" : {
+      "comment" : "A label for selecting the border color of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボーダーカラー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "边框颜色"
+          }
+        }
+      }
+    },
+    "Border Width" : {
+      "comment" : "Label for a picker that allows the user to select the border width of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボーダー幅"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "边框宽度"
+          }
+        }
+      }
+    },
+    "Bundle Identifier (e.g., iordv.Droppy)" : {
+      "comment" : "A label for a text field where the user can enter a bundle identifier.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バンドルID（例：iordv.Droppy）"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bundle ID（如：iordv.Droppy）"
+          }
+        }
+      }
+    },
+    "Can modify settings" : {
+      "comment" : "A description of the permission that allows an app to modify Veil settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を変更できます"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许修改设置"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "comment" : "The button to cancel the reset action.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
+    },
+    "Cannot move %@ icon." : {
+      "comment" : "Alert shown when trying to drag the \\(Constants.displayName) icon out of the visible section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ アイコンを移動できません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法移动 %@ 图标。"
+          }
+        }
+      }
+    },
+    "Change the menu bar's appearance." : {
+      "comment" : "Detail about the \"Screen Recording\" permission, describing how to change the menu bar's appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの外観を変更します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更改菜单栏的外观。"
+          }
+        }
+      }
+    },
+    "Check Automatically" : {
+      "comment" : "A button that enables automatic update checking.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動的に確認"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动检查"
+          }
+        }
+      }
+    },
+    "Check for Updates" : {
+      "comment" : "A button or accessibility label that checks for app updates.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートを確認"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检查更新"
+          }
+        }
+      }
+    },
+    "Check for Updates…" : {
+      "comment" : "A menu item that checks for app updates.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートを確認…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检查更新…"
+          }
+        }
+      }
+    },
+    "Check permissions" : {
+      "comment" : "A button label that, when tapped, opens the app's settings to allow the app to access screen recording permissions.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "権限を確認"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检查权限"
+          }
+        }
+      }
+    },
+    "Check System Settings > Menu Bar and enable %@" : {
+      "comment" : "A message displayed when Veil is disabled in System Settings and how to solve it.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "システム設定 > メニューバー を確認して %@ を有効にしてください"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在 系统设置 > 菜单栏 中启用 %@"
+          }
+        }
+      }
+    },
+    "Checking for updates is not supported in debug mode." : {
+      "comment" : "Alert message displayed in debug mode when checking for app updates.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デバッグモードではアップデートの確認はサポートされていません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调试模式下不支持检查更新。"
+          }
+        }
+      }
+    },
+    "Chevron" : {
+      "comment" : "Localized string key representation of the \"Chevron\" case in the `SectionDividerStyle` enum.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "シェブロン"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V 形箭头"
+          }
+        }
+      }
+    },
+    "Chevron (Down)" : {
+      "comment" : "Localized string key representation of the \"Chevron (Down)\" case in the `SectionDividerStyle` enum.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "シェブロン（下向き）"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V 形箭头（向下）"
+          }
+        }
+      }
+    },
+    "Choose a custom icon to show in the menu bar." : {
+      "comment" : "Label for a button that allows the user to import a custom icon for the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーに表示するカスタムアイコンを選択します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择要在菜单栏中显示的自定义图标。"
+          }
+        }
+      }
+    },
+    "Choose image…" : {
+      "comment" : "A button to import a custom icon for the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画像を選択…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择图片…"
+          }
+        }
+      }
+    },
+    "Choose Script…" : {
+      "comment" : "A button that lets the user choose a script.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スクリプトを選択…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择脚本…"
+          }
+        }
+      }
+    },
+    "Clear" : {
+      "comment" : "A glass style that is clear.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリア"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清除"
+          }
+        }
+      }
+    },
+    "Clear hook" : {
+      "comment" : "A button that removes a hook.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フックをクリア"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清除钩子"
+          }
+        }
+      }
+    },
+    "Click an empty area of the menu bar to show hidden menu bar items." : {
+      "comment" : "Toggle that allows the user to enable or disable the feature of showing hidden menu bar items by clicking on an empty area of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの空いている領域をクリックすると、非表示のメニューバー項目が表示されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击菜单栏的空白区域，即可显示被隐藏的菜单栏项目。"
+          }
+        }
+      }
+    },
+    "Click Item" : {
+      "comment" : "A button label that appears when the item is currently being displayed.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目をクリック"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击项目"
+          }
+        }
+      }
+    },
+    "Columns" : {
+      "comment" : "A label displayed above a stepper that lets the user select the number of columns in the grid layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "列"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "列"
+          }
+        }
+      }
+    },
+    "Confirm" : {
+      "comment" : "A label displayed as a button in the edit actions hint.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "確認"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确认"
+          }
+        }
+      }
+    },
+    "Conflicting Menu Bar Manager Detected" : {
+      "comment" : "Title of an alert that appears when a conflicting menu bar manager is detected.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "競合するメニューバーマネージャーが検出されました"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检测到有冲突的菜单栏管理器"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "comment" : "Label for the \"Continue\" button in the Permissions view.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続ける"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "继续"
+          }
+        }
+      }
+    },
+    "Continue Anyway" : {
+      "comment" : "Title of a button in an alert displayed when a conflicting menu bar management app is detected, allowing the user to continue using Veil.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このまま続ける"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仍要继续"
+          }
+        }
+      }
+    },
+    "Continue in Limited Mode" : {
+      "comment" : "Label for the button that allows the user to continue using the app in limited mode, where some features may be restricted.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "制限モードで続ける"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在受限模式下继续"
+          }
+        }
+      }
+    },
+    "Copy" : {
+      "comment" : "Suffix to be appended to a profile name to indicate that it is a copy of another profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コピー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拷贝"
+          }
+        }
+      }
+    },
+    "Copy version info" : {
+      "comment" : "A button that copies the version information to the clipboard.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン情報をコピー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复制版本信息"
+          }
+        }
+      }
+    },
+    "Created: %@" : {
+      "comment" : "A sublabel within the profile list showing when a profile was created.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作成日時：%@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "创建日期：%@"
+          }
+        }
+      }
+    },
+    "Custom" : {
+      "comment" : "Placeholder name for a custom control item image set.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタム"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义"
+          }
+        }
+      }
+    },
+    "Custom icon uses dynamic appearance" : {
+      "comment" : "A toggle that lets the user choose whether the custom ice icon should use a dynamic appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムアイコンにダイナミック外観を使用"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义图标使用动态外观"
+          }
+        }
+      }
+    },
+    "Dark Appearance" : {
+      "comment" : "Title of the system appearance when the user has a dark appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダーク外観"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色模式"
+          }
+        }
+      }
+    },
+    "default" : {
+      "comment" : "Label for the default item spacing offset.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デフォルト"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "comment" : "A button that triggers a confirmation sheet for deleting a profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
+          }
+        }
+      }
+    },
+    "Delete Profile?" : {
+      "comment" : "An alert title that asks the user to confirm deleting a profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイルを削除しますか？"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除配置？"
+          }
+        }
+      }
+    },
+    "Deny" : {
+      "comment" : "Button title for denying access to the settings URI.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拒否"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拒绝"
+          }
+        }
+      }
+    },
+    "Development" : {
+      "comment" : "A label for the \"Development\" segment in the update channel picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開発版"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开发版"
+          }
+        }
+      }
+    },
+    "Diagnostics" : {
+      "comment" : "Section title in the advanced settings pane for diagnostics settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "診断"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "诊断"
+          }
+        }
+      }
+    },
+    "Discard" : {
+      "comment" : "A button label that dismisses an edit prompt.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "破棄"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "丢弃"
+          }
+        }
+      }
+    },
+    "Disconnected" : {
+      "comment" : "A label displayed next to a display that is not connected.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未接続"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已断开"
+          }
+        }
+      }
+    },
+    "Display images of individual menu bar items." : {
+      "comment" : "Descriptive detail for the \"Screen Recording\" permission, describing the app's ability to display images of individual menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "個々のメニューバー項目の画像を表示します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示单个菜单栏项目的图像。"
+          }
+        }
+      }
+    },
+    "Display the icon as a monochrome image that dynamically adjusts to match the menu bar's appearance. This setting removes all color from the icon, but ensures consistent rendering with both light and dark backgrounds." : {
+      "comment" : "A description of a setting that controls whether a custom ice icon uses a dynamic or static appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイコンをメニューバーの外観に合わせてダイナミックに調整されるモノクロ画像として表示します。この設定はアイコンからすべての色を除去しますが、ライト・ダーク両方の背景で一貫した表示を保証します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将图标显示为单色图像，并动态调整以匹配菜单栏的外观。此设置会移除图标的所有颜色，但可确保在浅色和深色背景下呈现一致的效果。"
+          }
+        }
+      }
+    },
+    "Displays" : {
+      "comment" : "The localized string key for the \"Displays\" section in the \"Settings\" interface.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ディスプレイ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示器"
+          }
+        }
+      }
+    },
+    "Don't Check" : {
+      "comment" : "A button that disables automatic update checking.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "確認しない"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无需检查"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "comment" : "A button that dismisses the current view.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
+          }
+        }
+      }
+    },
+    "Door" : {
+      "comment" : "Name of the \"Door\" control item image.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ドア"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "门"
+          }
+        }
+      }
+    },
+    "Dot" : {
+      "comment" : "Description of a control item with a dot shape.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ドット"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圆点"
+          }
+        }
+      }
+    },
+    "Double-click %@ icon to open always-hidden section" : {
+      "comment" : "A toggle that lets the user enable or disable the option of using double-clicking the app icon to open the always-hidden section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ アイコンをダブルクリックして常に非表示セクションを開く"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "双击 %@ 图标以打开始终隐藏区域。"
+          }
+        }
+      }
+    },
+    "Double-click an empty area of the menu bar to show always-hidden menu bar items." : {
+      "comment" : "Toggle that allows users to enable or disable the feature of showing always-hidden menu bar items by double-clicking an empty area of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの空いている領域をダブルクリックすると、常に非表示のメニューバー項目が表示されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "双击菜单栏的空白区域，即可显示永久隐藏的菜单栏项目。"
+          }
+        }
+      }
+    },
+    "Double-click for always-hidden" : {
+      "comment" : "A toggle that allows users to enable always-hidden menu bar items by double-clicking an empty area of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常に非表示の項目はダブルクリックで表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "双击显示始终隐藏的项目"
+          }
+        }
+      }
+    },
+    "Drag to arrange your menu bar items into different sections." : {
+      "comment" : "A description of how to rearrange menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ドラッグしてメニューバー項目を異なるセクションに整理します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拖动菜单栏项目将其整理到不同的区域。"
+          }
+        }
+      }
+    },
+    "Due to a bug in a previous version of the app, the data for %@'s menu bar sections was corrupted and had to be reset." : {
+      "comment" : "Text in an alert that informs the user that the preferred positions of some menu bar controls have been reset because they were corrupted.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "以前のバージョンのアプリのバグにより、%@ のメニューバーセクションのデータが破損し、リセットされました。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由于早期版本的漏洞，%@ 菜单栏部分数据已损坏，必须重置。"
+          }
+        }
+      }
+    },
+    "Duplicate" : {
+      "comment" : "A button to duplicate a saved profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "複製"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复制"
+          }
+        }
+      }
+    },
+    "Dynamic" : {
+      "comment" : "Localized string key representation of the Ice Bar location option \"Dynamic\".",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダイナミック"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动态"
+          }
+        }
+      }
+    },
+    "Edit Menu Bar Appearance…" : {
+      "comment" : "Title of a menu item in the secondary context menu that allows the user to edit the appearance of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの外観を編集…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑菜单栏外观…"
+          }
+        }
+      }
+    },
+    "Edit Menu Bar Layout…" : {
+      "comment" : "Label for a menu item that opens the menu bar layout settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーのレイアウトを編集…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑菜单栏布局…"
+          }
+        }
+      }
+    },
+    "Edit Name" : {
+      "comment" : "A button label that translates to \"Edit Name\".",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前を編集"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑名称"
+          }
+        }
+      }
+    },
+    "Effect" : {
+      "comment" : "A label that describes the style of the glass background.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エフェクト"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "效果"
+          }
+        }
+      }
+    },
+    "Ellipsis" : {
+      "comment" : "Description of an ellipsis icon.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "省略記号"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "省略号"
+          }
+        }
+      }
+    },
+    "Enable diagnostic logging" : {
+      "comment" : "A toggle that enables or disables diagnostic logging.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "診断ログを有効にする"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用诊断日志"
+          }
+        }
+      }
+    },
+    "Enable menu bar item overflow" : {
+      "comment" : "A toggle that enables or disables the overflow of menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目のオーバーフローを有効にする"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开启菜单栏项目溢出"
+          }
+        }
+      }
+    },
+    "Enable secondary context menu" : {
+      "comment" : "A toggle that enables or disables the secondary context menu.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セカンダリコンテキストメニューを有効にする"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用二级菜单"
+          }
+        }
+      }
+    },
+    "Enable secondary context menu quit" : {
+      "comment" : "A toggle to enable or disable the secondary context menu quit.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セカンダリコンテキストメニューの終了を有効にする"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用二级上下文菜单退出"
+          }
+        }
+      }
+    },
+    "Enable Settings URI Scheme" : {
+      "comment" : "A toggle that enables or disables the ability for external apps to read and modify Veil settings via veil:// URLs.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定URIスキームを有効にする"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用控制 URI Scheme"
+          }
+        }
+      }
+    },
+    "Enable the %@ Bar" : {
+      "comment" : "A label describing an action that enables or disables the main application bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バーを有効にする"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用 %@ 工具栏"
+          }
+        }
+      }
+    },
+    "Enable the always-hidden section" : {
+      "comment" : "A toggle that enables or disables the always-hidden section in the advanced settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常に非表示セクションを有効にする"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用始终隐藏区域"
+          }
+        }
+      }
+    },
+    "Enabled" : {
+      "comment" : "A checkbox that enables or disables a hook.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "有効"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已启用"
+          }
+        }
+      }
+    },
+    "Environment variables passed to scripts" : {
+      "comment" : "A label describing the environment variables that can be passed to scripts.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スクリプトに渡される環境変数"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "传递给脚本的环境变量"
+          }
+        }
+      }
+    },
+    "Error" : {
+      "comment" : "An alert title.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误"
+          }
+        }
+      }
+    },
+    "ERROR" : {
+      "comment" : "A label that appears when a hotkey is not set.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误"
+          }
+        }
+      }
+    },
+    "Example: a bash pre-hook could `defaults write com.bjango.istatmenus5 ActiveProfile -string \"$VEIL_PROFILE_NAME\"` to keep iStat Menus in sync with Veil." : {
+      "comment" : "A description of how to use environment variables in a pre-hook.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "例: bash の事前フックで `defaults write com.bjango.istatmenus5 ActiveProfile -string \"$VEIL_PROFILE_NAME\"` を実行すると、iStat Menus を Veil と同期できます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "示例：bash 前置钩子可以运行 `defaults write com.bjango.istatmenus5 ActiveProfile -string \"$VEIL_PROFILE_NAME\"`，让 iStat Menus 与 Veil 保持同步。"
+          }
+        }
+      }
+    },
+    "Export" : {
+      "comment" : "A menu item that exports a profile to a file.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エクスポート"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导出"
+          }
+        }
+      }
+    },
+    "Export Profile(s)" : {
+      "comment" : "A button label that exports one or more profiles.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイルをエクスポート"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导出配置"
+          }
+        }
+      }
+    },
+    "Failed to encode profiles for export." : {
+      "comment" : "A message displayed when the user fails to export all profiles.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エクスポート用にプロファイルをエンコードできませんでした。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法编码导出配置文件。"
+          }
+        }
+      }
+    },
+    "Failed to update configuration on %lld profile(s)." : {
+      "comment" : "A message that indicates that the configuration update failed for some profiles.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld プロファイルの設定を更新できませんでした。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新 %lld 个配置文件失败。"
+          }
+        }
+      }
+    },
+    "File does not exist." : {
+      "comment" : "Error message when the file specified in the hook does not exist.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルが存在しません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文件不存在。"
+          }
+        }
+      }
+    },
+    "Focus" : {
+      "comment" : "Localized string key for the \"Focus\" case in the `RehideStrategy` enum.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォーカス"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "焦点"
+          }
+        }
+      }
+    },
+    "Forward" : {
+      "comment" : "A button that navigates to the next settings pane.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進む"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前进"
+          }
+        }
+      }
+    },
+    "Full" : {
+      "comment" : "Localized string key for the menu bar shape kind that takes up the full menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フル"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全幅"
+          }
+        }
+      }
+    },
+    "General" : {
+      "comment" : "Localized string key for each case in the enum.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通用"
+          }
+        }
+      }
+    },
+    "Get real-time information about the menu bar." : {
+      "comment" : "A detail about the \"Accessibility\" permission, explaining that the app needs permission to get real-time information about the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーに関するリアルタイム情報を取得します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取有关菜单栏的实时信息。"
+          }
+        }
+      }
+    },
+    "Glass" : {
+      "comment" : "Localized string key for the glass-material background.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ガラス"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "玻璃"
+          }
+        }
+      }
+    },
+    "Glass Style" : {
+      "comment" : "Label for the glass style picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ガラススタイル"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "玻璃样式"
+          }
+        }
+      }
+    },
+    "Global Hooks" : {
+      "comment" : "A heading for the global hooks section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "グローバルフック"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全局钩子"
+          }
+        }
+      }
+    },
+    "Go to Advanced Settings" : {
+      "comment" : "A link that takes the user to the advanced settings screen.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "詳細設定へ移動"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前往高级设置"
+          }
+        }
+      }
+    },
+    "Gradient" : {
+      "comment" : "Localized string key representation of the `MenuBarTintKind.gradient` case.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "グラデーション"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "渐变"
+          }
+        }
+      }
+    },
+    "Grant Permission" : {
+      "comment" : "A button label that requests permission from the user.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "権限を許可"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授权"
+          }
+        }
+      }
+    },
+    "Grid" : {
+      "comment" : "Label for the grid layout mode.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "グリッド"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网格"
+          }
+        }
+      }
+    },
+    "Hidden" : {
+      "comment" : "Localized string key for the \"Hidden\" menu bar section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐藏"
+          }
+        }
+      }
+    },
+    "Hide Always-Hidden Section" : {
+      "comment" : "Title for a menu bar item that hides an always-hidden section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常に非表示セクションを隠す"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐藏始终隐藏区域"
+          }
+        }
+      }
+    },
+    "Hide app menus when showing menu bar items" : {
+      "comment" : "A toggle that lets the user decide whether to hide the app menus when displaying menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目を表示するときはアプリメニューを隠す"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示菜单栏项目时隐藏应用菜单"
+          }
+        }
+      }
+    },
+    "Hide Hidden Section" : {
+      "comment" : "Title of a menu item that toggles the visibility of a hidden section in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非表示セクションを隠す"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐藏已隐藏的区域"
+          }
+        }
+      }
+    },
+    "Hold to Preview" : {
+      "comment" : "A button that, when held, allows users to preview changes in a menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "長押しでプレビュー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按住预览"
+          }
+        }
+      }
+    },
+    "Hooks" : {
+      "comment" : "A heading for the hooks section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フック"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "钩子"
+          }
+        }
+      }
+    },
+    "Horizontal" : {
+      "comment" : "Localized string key for the horizontal layout mode.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "水平"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "横向"
+          }
+        }
+      }
+    },
+    "Hotkey is reserved by macOS" : {
+      "comment" : "An alert title that informs the user that a hotkey they are trying to set is reserved by macOS.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このホットキーは macOS が予約しています"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此热键被 macOS 占用"
+          }
+        }
+      }
+    },
+    "Hotkeys" : {
+      "comment" : "The title of the \"Hotkeys\" section in the \"Settings\" interface.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホットキー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "热键"
+          }
+        }
+      }
+    },
+    "Hover over an empty area of the menu bar to show hidden menu bar items." : {
+      "comment" : "Text displayed in a toggle that allows the user to enable or disable the feature of showing hidden menu bar items by hovering over an empty area of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの空いている領域にカーソルを合わせると、非表示のメニューバー項目が表示されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将鼠标悬停在菜单栏的空白区域，即可显示隐藏的菜单栏项目。"
+          }
+        }
+      }
+    },
+    "How It Works" : {
+      "comment" : "A heading for the instructions on how the app works.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仕組み"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "工作原理"
+          }
+        }
+      }
+    },
+    "How often animated menu bar icons are refreshed in panels. Higher values are smoother but use more CPU." : {
+      "comment" : "Description of the icon refresh rate setting in the advanced settings pane.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パネル内でアニメーションするメニューバーアイコンの更新頻度です。値が大きいほど滑らかになりますが、CPUの使用量が増えます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "面板中动画菜单栏图标的刷新频率。数值越大越流畅，但会增加CPU占用。"
+          }
+        }
+      }
+    },
+    "Ice Cube" : {
+      "comment" : "Localized string key for the Ice Cube control item image.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ice Cube"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ice Cube"
+          }
+        }
+      }
+    },
+    "Icon positions cannot be restored." : {
+      "comment" : "A footnote explaining that icon positions cannot be restored when importing settings from Ice.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイコンの位置は復元できません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法还原图标位置。"
+          }
+        }
+      }
+    },
+    "Icon refresh rate" : {
+      "comment" : "A label displayed above a slider that controls how often animated menu bar icons are refreshed in panels. Higher values are smoother but use more CPU.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイコン更新レート"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图标刷新率"
+          }
+        }
+      }
+    },
+    "If effects are not visible, disable \"Show menu bar background\" in System Settings %@ Menu Bar" : {
+      "comment" : "A tooltip that describes the effect of disabling the \"Show menu bar background\" setting in System Settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エフェクトが見えない場合、システム設定の %@ >「メニューバーの背景を表示」を無効にしてください"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "若效果未显示，请在“系统设置 %@ 菜单栏”中禁用“显示菜单栏背景”"
+          }
+        }
+      }
+    },
+    "If granted, this app will be able to:\n\n• Read current settings and configurations\n• Turn features and options on or off\n• Adjust timing values (delays, intervals, timers)\n• Change how %@ Bar behaves\n• Customize settings for each display\n\nThis permission stays active until removed in %@'s Automation settings." : {
+      "comment" : "Text of the main body of the alert.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "If granted, this app will be able to:\n\n• Read current settings and configurations\n• Turn features and options on or off\n• Adjust timing values (delays, intervals, timers)\n• Change how %1$@ Bar behaves\n• Customize settings for each display\n\nThis permission stays active until removed in %2$@'s Automation settings."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "許可された場合、このアプリは次のようなことができます:\n\n・現在の設定と構成を確認する\n・機能やオプションを有効/無能にする\n・%1$@ の動作を変更する\n・ディスプレイごとに設定をカスタマイズする\n\nこの権限は、%2$@ のオートメーション設定で削除されるまで有効です。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果授予权限，此应用将能够：\n\n• 读取当前设置和配置\n• 开启或关闭功能和选项\n• 调整时间值（延迟、间隔、计时器）\n• 更改 %1$@ Bar 的行为方式\n• 自定义每个显示器的设置\n\n此权限将保持有效，直到在 %2$@ 的“自动化”设置中将其移除。"
+          }
+        }
+      }
+    },
+    "If not whitelisted, you'll see a confirmation dialog showing the app name and what it wants to do." : {
+      "comment" : "A step in the process of using Veil.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホワイトリストに登録されていない場合は、アプリ名と操作内容を確認するダイアログが表示されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未在白名单中的应用将触发确认对话框，显示应用名称及其请求的权限。"
+          }
+        }
+      }
+    },
+    "If you approve, the app is permanently whitelisted and can modify settings anytime without asking again." : {
+      "comment" : "A step in the process of whitelisting an app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "承認すると、アプリは永久にホワイトリストに登録され、再度尋ねることなくいつでも設定を変更できます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一旦批准，该应用将被加入白名单，之后可在不再次提示的情况下修改设置。"
+          }
+        }
+      }
+    },
+    "Import failed. You can configure settings manually." : {
+      "comment" : "A message displayed when the user attempts to import their Ice settings but fails. It instructs the user to configure settings manually.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インポートに失敗しました。設定は手動で行うことができます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导入失败。您可以手动设置。"
+          }
+        }
+      }
+    },
+    "Import Profile(s)" : {
+      "comment" : "A button label that imports one or more profiles.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイルをインポート"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导入配置"
+          }
+        }
+      }
+    },
+    "Import Settings" : {
+      "comment" : "A heading displayed above the import settings section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定をインポート"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导入设置"
+          }
+        }
+      }
+    },
+    "Imported" : {
+      "comment" : "A button that is disabled and shows \"Imported\" when the user has successfully imported their settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インポート済み"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已导入"
+          }
+        }
+      }
+    },
+    "Items are arranged in a grid with multiple columns." : {
+      "comment" : "A description of the grid layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイテムは複数の列を持つグリッド状に並びます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项目排列在多列的网格中。"
+          }
+        }
+      }
+    },
+    "Items are arranged in a single horizontal row." : {
+      "comment" : "A description of the horizontal layout of the ice bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイテムは1列に横に並びます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项目按单一的水平排列。"
+          }
+        }
+      }
+    },
+    "Items are stacked vertically in a single column." : {
+      "comment" : "A description of the vertical layout of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイテムは1列に縦に並びます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项目在单列中垂直堆叠。"
+          }
+        }
+      }
+    },
+    "Items can also be arranged by ⌘ Command + dragging them in the menu bar." : {
+      "comment" : "A description of how to rearrange menu bar items using keyboard shortcuts.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーで ⌘ Command + ドラッグすることでも項目を整理できます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "也可以通过按住 ⌘ Command 键并在菜单栏中拖动来排列项目。"
+          }
+        }
+      }
+    },
+    "Keep search" : {
+      "comment" : "A toggle to keep a search query open.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "検索を保持"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保留搜索"
+          }
+        }
+      }
+    },
+    "Last checked: %@" : {
+      "comment" : "A text label displaying the date and time of the last update check. The text is monospaced and has a secondary foreground color. If there is no previous check, the text is hidden.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最終確認: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上次检查： %@"
+          }
+        }
+      }
+    },
+    "Launch at Login" : {
+      "comment" : "A toggle that allows the user to decide whether the app should launch automatically when the device boots.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログイン時に起動"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登录时启动"
+          }
+        }
+      }
+    },
+    "Layout" : {
+      "comment" : "The localized string key for the \"Layout\" option in the \"Settings\" interface.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "レイアウト"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "布局"
+          }
+        }
+      }
+    },
+    "Layout reset. Items were moved to the Hidden section." : {
+      "comment" : "A message displayed after successfully resetting the menu bar layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "レイアウトをリセットしました。項目は非表示セクションに移動されました。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "布局重置。 项目已移至已隐藏区域。"
+          }
+        }
+      }
+    },
+    "Leading End Cap" : {
+      "comment" : "A label for the leading end cap picker in the menu bar shape picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "先頭エンドキャップ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左侧端头样式"
+          }
+        }
+      }
+    },
+    "Left aligned" : {
+      "comment" : "Text displayed in a button to align the Veil Bar to the left edge of the display.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左揃え"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左对齐"
+          }
+        }
+      }
+    },
+    "left click" : {
+      "comment" : "The accessibility action name for a left click on an ice bar item.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左クリック"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "单击鼠标左键"
+          }
+        }
+      }
+    },
+    "Left margin" : {
+      "comment" : "Label for a slider that adjusts the left margin in the menu bar shape picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左マージン"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左边距"
+          }
+        }
+      }
+    },
+    "Light Appearance" : {
+      "comment" : "Title for the light appearance in the interface.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライト外観"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浅色外观"
+          }
+        }
+      }
+    },
+    "Loading menu bar items…" : {
+      "comment" : "A message displayed while waiting for menu bar items to load.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目を読み込んでいます…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加载菜单栏项目中…"
+          }
+        }
+      }
+    },
+    "Location" : {
+      "comment" : "Label for a picker that lets the user choose the location of the hidden menu bar in the screen.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "場所"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "位置"
+          }
+        }
+      }
+    },
+    "macOS prohibits \"%@\" from being moved." : {
+      "comment" : "The text that appears below the main message text in the alert displayed when a menu bar item is not movable.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS により \"%@\" は移動できません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS 禁止移动“%@”。"
+          }
+        }
+      }
+    },
+    "Make more room in the menu bar by hiding the current app menus if needed. macOS requires %@ to make itself visible in the Dock while this setting is in effect." : {
+      "comment" : "A description of the \"Hide app menus when showing menu bar items\" toggle.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "必要に応じて現在のアプリメニューを隠すことで、メニューバーのスペースを確保します。この設定が有効な間、macOS は %@ を Dock に表示する必要があります。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果需要，可以通过隐藏当前应用程序菜单来为菜单栏腾出更多空间。启用此设置后，macOS 会要求 %@ 在 Dock 栏中显示自身。"
+          }
+        }
+      }
+    },
+    "max" : {
+      "comment" : "Text displayed in a setting that allows the user to select the maximum item spacing.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最大"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最大"
+          }
+        }
+      }
+    },
+    "Maximum number of items per row in the grid layout." : {
+      "comment" : "Label for the maximum number of items per row in the grid layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "グリッドレイアウトにおける1行あたりの最大アイテム数。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网格布局中每行的最大条目数。"
+          }
+        }
+      }
+    },
+    "Menu Bar Appearance" : {
+      "comment" : "The title of the view.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの外観"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏外观"
+          }
+        }
+      }
+    },
+    "Menu bar item is not movable." : {
+      "comment" : "Message text in an alert that appears when a menu bar item is not movable.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このメニューバー項目は移動できません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏项目不可移动。"
+          }
+        }
+      }
+    },
+    "Menu bar item spacing" : {
+      "comment" : "A label displayed above the control that adjusts the spacing of menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目の間隔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏项目间距"
+          }
+        }
+      }
+    },
+    "Menu Bar Items" : {
+      "comment" : "Section title in the hotkeys settings pane for menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏项目"
+          }
+        }
+      }
+    },
+    "Menu bar items are rehidden after a fixed amount of time." : {
+      "comment" : "A description of how the rehide strategy works when set to \"timed\".",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目は一定時間後に再び非表示になります。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏项目会在一段时间后重新隐藏。"
+          }
+        }
+      }
+    },
+    "Menu bar items are rehidden using a smart algorithm." : {
+      "comment" : "A description of how the smart rehide strategy works.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目はスマートアルゴリズムを使って再び非表示になります。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用智能算法自动隐藏菜单栏项目。"
+          }
+        }
+      }
+    },
+    "Menu bar items are rehidden when the focused app changes." : {
+      "comment" : "A description of the rehide strategy when it's set to \"focused app\".",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォーカスされているアプリが変わると、メニューバー項目は再び非表示になります。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当焦点应用切换时，菜单栏项目将被自动隐藏。"
+          }
+        }
+      }
+    },
+    "Menu bar layout requires screen recording permissions." : {
+      "comment" : "A message displayed when the user does not have the necessary permissions to change the menu bar layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーのレイアウトには画面収録の権限が必要です。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏布局需要屏幕录制权限。"
+          }
+        }
+      }
+    },
+    "Menu Bar Overlay" : {
+      "comment" : "Title of the menu bar overlay panel.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーオーバーレイ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏叠加"
+          }
+        }
+      }
+    },
+    "Menu Bar Profile" : {
+      "comment" : "Display name for the entity type representing a Veil profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバープロフィール"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏配置"
+          }
+        }
+      }
+    },
+    "Menu Bar Sections" : {
+      "comment" : "Section header for advanced settings related to menu bar sections.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーセクション"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏区域"
+          }
+        }
+      }
+    },
+    "Menu Bar Shape" : {
+      "comment" : "Section header for the \"Menu Bar Shape\" section in the menu bar appearance editor.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの形状"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏形状"
+          }
+        }
+      }
+    },
+    "Modified: %@" : {
+      "comment" : "A sublabel within the profile list showing when a profile was last modified.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変更日時：%@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "修改日期：%@"
+          }
+        }
+      }
+    },
+    "Mouse pointer" : {
+      "comment" : "Localized string key for the \"Mouse pointer\" option in the Ice Bar location picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マウスポインター"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鼠标指针"
+          }
+        }
+      }
+    },
+    "Move menu bar items from the visible section into the hidden section when they don't fit beside the notch on a notched display. Disable to keep the saved profile layout exactly as authored even when items would otherwise be pushed under the notch." : {
+      "comment" : "A tooltip that describes the effect of enabling or disabling the overflow.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ノッチ付きディスプレイでノッチの横に収まらないメニューバーアイテムを、表示セクションから非表示セクションに移動します。ノッチの下に隠れてしまう場合でも、保存されたプロファイルのレイアウトをそのまま維持するには無効にしてください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当菜单栏图标在带刘海的显示屏上无法容纳于刘海两侧时，将其从可见部分移动到隐藏部分。禁用此项将严格保持预设的配置文件布局，即使图标可能会被挤压到刘海下方。"
+          }
+        }
+      }
+    },
+    "Move the New Items badge to choose where newly detected items will appear." : {
+      "comment" : "A description of how to use the New Items badge.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「新着アイテム」バッジを移動して、新しく検出された項目の表示位置を選択できます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拖动“新菜单栏项”标记，设置新检测到的菜单栏项显示位置。"
+          }
+        }
+      }
+    },
+    "Never" : {
+      "comment" : "Text displayed in the \"Last update check\" section of the about settings pane, indicating that the last update check date is unknown.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "なし"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "永不"
+          }
+        }
+      }
+    },
+    "New Items" : {
+      "comment" : "Title of a badge that displays the number of new items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新着アイテム"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新菜单栏项"
+          }
+        }
+      }
+    },
+    "New profile name" : {
+      "comment" : "A text field for entering a new profile name.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいプロファイル名"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新建配置名称"
+          }
+        }
+      }
+    },
+    "No items in this section" : {
+      "comment" : "A message displayed when a section of the Ice Bar has no items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このセクションに項目はありません"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此区域没有项目"
+          }
+        }
+      }
+    },
+    "No profile selected" : {
+      "comment" : "Subtitle of the display representation of the VeilFocusFilter intent when no profile is selected.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイル未選択"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未选择配置"
+          }
+        }
+      }
+    },
+    "No profiles saved yet. Create one in the Profiles tab to attach per-profile hooks." : {
+      "comment" : "A message displayed when there are no profiles saved yet.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存済みのプロファイルはまだありません。プロファイル別フックを追加するには、先に「プロファイル」タブで作成してください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还没有保存的配置。请先在“配置管理”标签页创建一个配置，再为它添加专属钩子。"
+          }
+        }
+      }
+    },
+    "No profiles saved. Save your current configuration to create one." : {
+      "comment" : "A message displayed when there are no profiles saved.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイルは保存されていません。現在の設定を保存して作成してください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还没有保存的配置。保存当前配置以创建配置。"
+          }
+        }
+      }
+    },
+    "No shape kind selected" : {
+      "comment" : "A message displayed when the user hasn't selected a shape kind for the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "形状が選択されていません"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未选择形状"
+          }
+        }
+      }
+    },
+    "No whitelisted apps" : {
+      "comment" : "A message displayed when there are no whitelisted apps.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホワイトリストに登録されたアプリはありません"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有白名单应用"
+          }
+        }
+      }
+    },
+    "none" : {
+      "comment" : "Label for the item spacing offset when it is set to 0.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "なし"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无"
+          }
+        }
+      }
+    },
+    "None" : {
+      "comment" : "Title for the menu bar shape kind option that does not use a custom shape.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "なし"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无"
+          }
+        }
+      }
+    },
+    "Not available because the %@ Bar is enabled for this display." : {
+      "comment" : "A message explaining that the \"Always show hidden items\" toggle is not available when the \"Use \\(Constants.displayName) Bar\" toggle is enabled.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このディスプレイで %@ バーが有効なため、使用できません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由于此显示器已启用 %@ 栏，因此该功能不可用。"
+          }
+        }
+      }
+    },
+    "Not enough room to show \"%@\"" : {
+      "comment" : "Title of an alert that appears when there is not enough room to show a menu bar item.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%@\" を表示するスペースが不足しています"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "空间不足，无法显示“%@”"
+          }
+        }
+      }
+    },
+    "Not executable. Run \"chmod +x\" on the file." : {
+      "comment" : "Warning message displayed in the UI when the script path is invalid.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "実行できません。ファイルに \"chmod +x\" を実行してください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不可执行。请对该文件运行 \"chmod +x\"。"
+          }
+        }
+      }
+    },
+    "Notch" : {
+      "comment" : "A label describing a display with a notch.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ノッチ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刘海"
+          }
+        }
+      }
+    },
+    "Notch margin" : {
+      "comment" : "Label for the notch margin slider.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ノッチ余白"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刘海边距"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "comment" : "A label for the icon refresh rate when it is set to 0.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オフ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "comment" : "A button that dismisses an alert.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
+        }
+      }
+    },
+    "One or more section dividers are hidden by macOS" : {
+      "comment" : "A message displayed when macOS hides one or more section dividers in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1つ以上のセクション区切りが macOS によって非表示にされています"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS已隐藏了一个或多个区域分隔符"
+          }
+        }
+      }
+    },
+    "Opacity" : {
+      "comment" : "A label for the opacity of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "透明度"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不透明度"
+          }
+        }
+      }
+    },
+    "Open %@ Settings" : {
+      "comment" : "A button that opens the settings app to grant screen recording permissions for the \\(Constants.displayName) Bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 設定を開く"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开 %@ 设置"
+          }
+        }
+      }
+    },
+    "Open Focus Settings" : {
+      "comment" : "A button that opens the Focus settings app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "集中モード設定を開く"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开专注模式"
+          }
+        }
+      }
+    },
+    "Other" : {
+      "comment" : "Section title for advanced settings related to other functionality.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "その他"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "其他"
+          }
+        }
+      }
+    },
+    "Per-Profile Hooks" : {
+      "comment" : "A heading for the hooks that apply only to a specific profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイル別フック"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按配置的钩子"
+          }
+        }
+      }
+    },
+    "Permission Granted" : {
+      "comment" : "A label indicating that a user has granted a permission.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "権限が許可されました"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已授权"
+          }
+        }
+      }
+    },
+    "Permissions" : {
+      "comment" : "The title of the permissions view.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "権限"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "权限"
+          }
+        }
+      }
+    },
+    "Post-apply" : {
+      "comment" : "Label for the \"Post-apply\" hook.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "適用後"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用后"
+          }
+        }
+      }
+    },
+    "Pre-apply" : {
+      "comment" : "Label for the pre-apply hook.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "適用前"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用前"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "comment" : "Title of the parameter in the \"Set Menu Bar Profile\" focus filter.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロフィール"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "配置"
+          }
+        }
+      }
+    },
+    "Profile name" : {
+      "comment" : "A text field label for entering a profile name.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイル名"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "配置名称"
+          }
+        }
+      }
+    },
+    "Profile: %@" : {
+      "comment" : "A subtitle for the \"Set Menu Bar Profile\" focus filter.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイル：%@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "配置：%@"
+          }
+        }
+      }
+    },
+    "Profiles" : {
+      "comment" : "The title of the \"Profiles\" section in the \"Settings\" interface.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイル"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "配置管理"
+          }
+        }
+      }
+    },
+    "Quit" : {
+      "comment" : "A button label that quits the application.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "終了"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "退出"
+          }
+        }
+      }
+    },
+    "Quit %@" : {
+      "comment" : "A button that quits the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ を終了"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "退出 %@"
+          }
+        }
+      }
+    },
+    "Restart" : {
+      "comment" : "An accessibility label for a menu item that restarts the application.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再起動"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重启"
+          }
+        }
+      }
+    },
+    "Record Hotkey" : {
+      "comment" : "A label for the button that starts recording a hotkey.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホットキーを記録"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "记录热键"
+          }
+        }
+      }
+    },
+    "Regular" : {
+      "comment" : "A description of a glass style.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "標準"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常规"
+          }
+        }
+      }
+    },
+    "Remove %@ from whitelist" : {
+      "comment" : "A label for a button that removes an app from the whitelist. The argument is the name of the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホワイトリストから %@ を削除する"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从白名单中移除 %@"
+          }
+        }
+      }
+    },
+    "Remove from whitelist" : {
+      "comment" : "A label for a button that removes an app from the whitelist.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホワイトリストから削除"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从白名单中移除"
+          }
+        }
+      }
+    },
+    "Rename" : {
+      "comment" : "A menu item that lets the user rename a profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前を変更"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重命名"
+          }
+        }
+      }
+    },
+    "Report a Bug" : {
+      "comment" : "A button that opens a web page where users can report bugs.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バグを報告"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "反馈 Bug"
+          }
+        }
+      }
+    },
+    "Reset" : {
+      "comment" : "The destructive button to confirm resetting settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リセット"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置"
+          }
+        }
+      }
+    },
+    "Reset %@" : {
+      "comment" : "A button that resets all settings to defaults",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ をリセット"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置 %@"
+          }
+        }
+      }
+    },
+    "Reset all settings" : {
+      "comment" : "A button that resets all settings to defaults.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての設定をリセット"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置所有设置"
+          }
+        }
+      }
+    },
+    "Reset all settings to their default values. This action cannot be undone." : {
+      "comment" : "A description of what resetting all settings does.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての設定をデフォルト値にリセットします。この操作は元に戻せません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将所有设置重置为默认值，此操作无法撤销。"
+          }
+        }
+      }
+    },
+    "Reset all settings?" : {
+      "comment" : "An alert title that asks the user to confirm resetting all settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての設定をリセットしますか？"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确定重置所有设置？"
+          }
+        }
+      }
+    },
+    "Reset completed with %lld item(s) that could not be moved. Check the menu bar and try again if needed." : {
+      "comment" : "A message describing the result of a menu bar layout reset, including the number of items that could not be moved.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リセットが完了しましたが、%lld 個の項目を移動できませんでした。必要に応じてメニューバーを確認し、再試行してください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置完成，但仍有 %lld 个项目无法移动。如有必要，请检查菜单栏并重试。"
+          }
+        }
+      }
+    },
+    "Reset failed: %@" : {
+      "comment" : "A message that is displayed when the menu bar layout reset fails. The argument is a message describing the failure.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リセットに失敗しました: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置失败： %@"
+          }
+        }
+      }
+    },
+    "Reset Layout" : {
+      "comment" : "A button label that resets the menu bar layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "レイアウトをリセット"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置布局"
+          }
+        }
+      }
+    },
+    "Reset Menu Bar Appearance" : {
+      "comment" : "The title of an alert that appears when the user chooses to reset the appearance of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの外観をリセット"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置菜单栏外观"
+          }
+        }
+      }
+    },
+    "Reset menu bar layout" : {
+      "comment" : "A label for a button that resets the menu bar layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーのレイアウトをリセット"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置菜单栏布局"
+          }
+        }
+      }
+    },
+    "Reset menu bar layout?" : {
+      "comment" : "An alert title that asks the user to confirm resetting the menu bar layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーのレイアウトをリセットしますか？"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是否重置菜单栏布局？"
+          }
+        }
+      }
+    },
+    "Reset to the default spacing" : {
+      "comment" : "A button that resets the menu bar item spacing to its default value.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デフォルトの間隔にリセット"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置为默认间距"
+          }
+        }
+      }
+    },
+    "Resets dividers and moves every movable item except the %@ icon to hidden — just like a fresh install." : {
+      "comment" : "A description of what resetting the menu bar layout does.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "区切りをリセットし、%@ アイコンを除くすべての移動可能な項目を非表示に移動します — 新規インストール直後の状態になります。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置分隔线，并将除 %@ 图标之外的所有可移动项目移至隐藏状态，跟原版本菜单栏一样。"
+          }
+        }
+      }
+    },
+    "Restart %@" : {
+      "comment" : "A button that restarts the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ を再起動"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重启 %@"
+          }
+        }
+      }
+    },
+    "Restores divider defaults and moves every movable item except the %@ icon to Hidden. Use this if the layout looks broken or items won’t load." : {
+      "comment" : "A message displayed in an alert when the user confirms resetting the menu bar layout.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "区切りを初期状態に戻し、%@ アイコンを除くすべての移動可能な項目を非表示にします。レイアウトの崩れや読み込みの不具合が発生した際に実行してください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复分隔线默认设置，并将除 %@ 图标外的所有可移动元素隐藏。如果布局显示异常或元素无法加载，请使用此选项。"
+          }
+        }
+      }
+    },
+    "Right aligned" : {
+      "comment" : "Localized string key for the right-aligned Veil Bar location.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右揃え"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右对齐"
+          }
+        }
+      }
+    },
+    "right click" : {
+      "comment" : "A named accessibility action for a right click on an ice bar item.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右クリック"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右键单击"
+          }
+        }
+      }
+    },
+    "Right margin" : {
+      "comment" : "Label for a slider that adjusts the right margin in the menu bar shape picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右マージン"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右边距"
+          }
+        }
+      }
+    },
+    "Right-click in an empty area of the menu bar to display a minimal version of %@'s menu. Disable this setting if you encounter conflicts with other apps." : {
+      "comment" : "A description of a feature that lets users access a simplified version of the menu bar when right-clicking in an empty area.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの空いている領域を右クリックすると、%@ のシンプルなメニューが表示されます。他のアプリと競合する場合はこの設定を無効にしてください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在菜单栏空白处单击鼠标右键，即可显示 %@ 的精简版菜单。如果与其他应用程序发生冲突，请禁用此设置。"
+          }
+        }
+      }
+    },
+    "Round Cap" : {
+      "comment" : "A description of a round-shaped menu bar end cap.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ラウンドキャップ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圆头"
+          }
+        }
+      }
+    },
+    "Run a shell or AppleScript file before or after a profile switch. Hooks fire on every apply path: manual button, hotkey, display auto-switch, and Focus Filter." : {
+      "comment" : "A description of the purpose of the hooks.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイル切り替えの前後に shell または AppleScript ファイルを実行します。手動ボタン、ホットキー、ディスプレイ自動切り替え、集中モードフィルタのどの適用経路でもフックが実行されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在切换配置前后运行 shell 或 AppleScript 文件。无论通过手动按钮、热键、显示器自动切换还是专注模式过滤器应用配置，钩子都会触发。"
+          }
+        }
+      }
+    },
+    "s" : {
+      "comment" : "Seconds unit suffix for timeout field",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "秒"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "秒"
+          }
+        }
+      }
+    },
+    "Save Current" : {
+      "comment" : "A button that saves the current profile when pressed.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在の設定を保存"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存当前配置"
+          }
+        }
+      }
+    },
+    "Screen Recording" : {
+      "comment" : "Title of the screen recording permission.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面収録"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏幕录制"
+          }
+        }
+      }
+    },
+    "Screen recording permissions are required to display tooltips." : {
+      "comment" : "A message displayed in the \"Permissions\" section of the advanced settings pane, explaining that screen recording permissions are needed to show tooltips.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ツールチップを表示するには、画面収録の権限が必要です。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要屏幕录制权限才能显示提示。"
+          }
+        }
+      }
+    },
+    "Screen recording permissions are required to search menu bar items." : {
+      "comment" : "A message displayed when screen recording permissions are not granted.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの項目を検索するには、画面収録の権限が必要です。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要屏幕录制权限才能搜索菜单栏项目。"
+          }
+        }
+      }
+    },
+    "Scroll or swipe in the menu bar to show hidden menu bar items." : {
+      "comment" : "Label for a toggle that enables or disables showing hidden menu bar items when scrolling or swiping in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーでスクロールまたはスワイプすると、非表示のメニューバー項目が表示されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在菜单栏中滚动或滑动即可显示隐藏的菜单栏项目。"
+          }
+        }
+      }
+    },
+    "Search menu bar items" : {
+      "comment" : "A description of an action that searches menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目を検索"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索菜单栏项目"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "comment" : "An accessibility label for a menu item that searches menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "検索"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索"
+          }
+        }
+      }
+    },
+    "Search Menu Bar Items" : {
+      "comment" : "Text for a menu item that allows the user to search through the menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目を検索"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索菜单栏项目"
+          }
+        }
+      }
+    },
+    "Search menu bar items…" : {
+      "comment" : "A placeholder text for a search field within a menu bar search panel.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目を検索…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索菜单栏项目…"
+          }
+        }
+      }
+    },
+    "Section divider style" : {
+      "comment" : "Label for a picker that lets the user choose the style of divider to use between menu bar sections.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セクション区切りのスタイル"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "区域分割线样式"
+          }
+        }
+      }
+    },
+    "Set Menu Bar Profile" : {
+      "comment" : "Title and description of the Focus Filter.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバープロファイルを設定"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置菜单栏配置"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "comment" : "An accessibility label for a menu item that opens settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
+        }
+      }
+    },
+    "Settings URI is disabled. External apps cannot read or modify %@ settings." : {
+      "comment" : "A callout box that describes the security implications of disabling the Settings URI scheme.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定URI は無効です。外部アプリは %@ の設定を読み書きできません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置 URI 已禁用。外部应用无法读取或修改 %@ 设置。"
+          }
+        }
+      }
+    },
+    "Shadow" : {
+      "comment" : "A toggle that lets the user enable or disable the shadow effect.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "シャドウ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "阴影"
+          }
+        }
+      }
+    },
+    "Shape Kind" : {
+      "comment" : "Label for the picker that lets the user select the shape kind for the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "形状の種類"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "形状类型"
+          }
+        }
+      }
+    },
+    "Should %@ automatically check for updates? You can always check manually from the %@ menu bar icon or Settings %@ About." : {
+      "comment" : "A description of the checkbox that allows the user to opt in to automatic update checking for the app.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Should %1$@ automatically check for updates? You can always check manually from the %2$@ menu bar icon or Settings %3$@ About."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ が自動的にアップデートを確認するようにしますか？%2$@ のメニューバーアイコン、または設定 %3$@「バージョン情報」からいつでも手動で確認できます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是否允许 %1$@ 自动检查更新？您随时可以通过 %2$@ 菜单栏图标或“设置 %3$@ 关于”手动检查。"
+          }
+        }
+      }
+    },
+    "Show %@ icon" : {
+      "comment" : "A toggle that lets the user decide whether to show the \\(Constants.displayName) icon in the menu bar. The argument is the name of the \\(Constants.displayName) icon.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ アイコンを表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "展示 %@ 图标"
+          }
+        }
+      }
+    },
+    "Show a tooltip when hovering over menu bar items in the actual menu bar." : {
+      "comment" : "Annotation for the setting that controls whether to show tooltips in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーの項目にカーソルを合わせたときにツールチップを表示します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将鼠标悬停在实际菜单栏的项目上时显示提示框。"
+          }
+        }
+      }
+    },
+    "Show all sections when ⌘ Command + dragging menu bar items" : {
+      "comment" : "A toggle that enables or disables showing all menu bar sections when dragging them with ⌘ Command.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⌘ Command + ドラッグ時にすべてのセクションを表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 ⌘ Command + 拖动菜单栏项目时显示所有部分"
+          }
+        }
+      }
+    },
+    "Show Always-Hidden Section" : {
+      "comment" : "Title of a menu item that shows an always-hidden section in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常に非表示セクションを表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示始终隐藏的部分"
+          }
+        }
+      }
+    },
+    "Show at mouse pointer on hotkey" : {
+      "comment" : "A toggle that lets the user decide whether the location of the Ice Bar should be updated to the mouse pointer's location whenever it is shown using a hotkey.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホットキー使用時にマウスポインターの位置に表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用热键时显示在鼠标指针位置"
+          }
+        }
+      }
+    },
+    "Show hidden menu bar items in a separate bar below the menu bar on this display." : {
+      "comment" : "Label for a toggle that allows the user to enable or disable the display bar on a specific display.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このディスプレイのメニューバーの下に、非表示のメニューバー項目を別のバーで表示します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在该显示器的菜单栏下方，以独立菜单栏显示隐藏的项目。"
+          }
+        }
+      }
+    },
+    "Show Hidden Section" : {
+      "comment" : "Title of a menu item that shows a hidden section in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非表示セクションを表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示已隐藏的区域"
+          }
+        }
+      }
+    },
+    "Show Item" : {
+      "comment" : "A button label that shows the user how to display an item.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目を表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示项目"
+          }
+        }
+      }
+    },
+    "Show Log Files in Finder" : {
+      "comment" : "A button that opens the directory containing diagnostic log files.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder でログファイルを表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 Finder 中显示日志文件"
+          }
+        }
+      }
+    },
+    "Show on click" : {
+      "comment" : "A toggle that enables or disables showing hidden menu bar items when the menu bar is clicked.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリックで表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击时显示"
+          }
+        }
+      }
+    },
+    "Show on hover" : {
+      "comment" : "A toggle that enables or disables showing hidden menu bar items when hovering over an empty area of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホバーで表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "悬停时显示"
+          }
+        }
+      }
+    },
+    "Show on hover delay" : {
+      "comment" : "A label displayed above the slider that controls the delay before showing the menu on hover.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホバー表示の遅延"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "悬停后显示"
+          }
+        }
+      }
+    },
+    "Show on scroll" : {
+      "comment" : "A toggle that lets the user enable or disable showing hidden menu bar items when scrolling or swiping in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スクロールで表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "滚动滚轮时显示"
+          }
+        }
+      }
+    },
+    "Show the %@ icon in the menu bar. Click to show hidden items, double-click for always-hidden, and right-click for settings." : {
+      "comment" : "Toggle that lets the user decide whether to show the \\(Constants.displayName) icon in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーに %@ アイコンを表示します。クリックで非表示項目を表示、ダブルクリックで常に非表示の項目を表示、右クリックで設定を開きます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在菜单栏显示 %@ 图标。单击显示隐藏项目，双击显示永久隐藏的项目，右键单击打开设置。"
+          }
+        }
+      }
+    },
+    "Show tooltips in the menu bar" : {
+      "comment" : "A toggle that enables or disables tooltips in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーにツールチップを表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在菜单栏中显示提示框"
+          }
+        }
+      }
+    },
+    "Signed by: %@" : {
+      "comment" : "A team identifier, if available.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "署名者: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由 %@ 签署"
+          }
+        }
+      }
+    },
+    "Smart" : {
+      "comment" : "Localized string key for the \"Smart\" rehide strategy.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スマート"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "智能"
+          }
+        }
+      }
+    },
+    "Solid" : {
+      "comment" : "Localized string key representation of the `.solid` case in `MenuBarTintKind`.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ソリッド"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯色"
+          }
+        }
+      }
+    },
+    "Split" : {
+      "comment" : "Localized string key for a menu bar shape kind that splits the menu bar between its leading and trailing sides.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分割"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分隔"
+          }
+        }
+      }
+    },
+    "Square Cap" : {
+      "comment" : "A label describing a square-capped shape.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スクエアキャップ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "方头"
+          }
+        }
+      }
+    },
+    "Stable" : {
+      "comment" : "A segment in the update channel picker that displays \"Stable\".",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安定版"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "稳定版"
+          }
+        }
+      }
+    },
+    "Strategy" : {
+      "comment" : "Label for the \"Strategy\" picker in the \"Rehide Options\" section of the General Settings pane.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ストラテジー"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "策略"
+          }
+        }
+      }
+    },
+    "Style" : {
+      "comment" : "A label for the menu bar background style.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スタイル"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "样式"
+          }
+        }
+      }
+    },
+    "Successfully imported %lld settings!" : {
+      "comment" : "A success message displayed when the user successfully imports settings from the original app. The argument is the number of settings that were successfully imported.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 件の設定をインポートしました！"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "成功导入 %lld 项设置！"
+          }
+        }
+      }
+    },
+    "Sunglasses" : {
+      "comment" : "Localized string key for the \"Custom\" control item image.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サングラス"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "墨镜"
+          }
+        }
+      }
+    },
+    "Support %@" : {
+      "comment" : "A button that opens a URL to support the app. The system image is a filled circle with a heart.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ をサポート"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "赞助 %@"
+          }
+        }
+      }
+    },
+    "Support %@…" : {
+      "comment" : "A menu item that opens a URL for supporting the app. The system image is a filled circle with a heart.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ をサポート…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "赞助 %@…"
+          }
+        }
+      }
+    },
+    "Supported Settings" : {
+      "comment" : "A label displayed under the list of whitelisted apps.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サポートされている設定"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持的设置"
+          }
+        }
+      }
+    },
+    "The %@ Bar is aligned to the left edge of the display." : {
+      "comment" : "A label that describes the location of the \\(Constants.displayName) Bar on a display.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バーは画面の左端に配置されています。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 栏与显示屏左边缘对齐。"
+          }
+        }
+      }
+    },
+    "The %@ Bar is aligned to the right edge of the display." : {
+      "comment" : "A description of the right-aligned \\(Constants.displayName) Bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バーは画面の右端に配置されています。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 栏与显示屏右边缘对齐。"
+          }
+        }
+      }
+    },
+    "The %@ Bar is centered below the %@ icon." : {
+      "comment" : "A description of the location of the Ice Bar when it is displayed below the Ice icon.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バーは %@ アイコンの真下に中央揃えで表示されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ 栏位于 %2$@ 图标的正下方。"
+          }
+        }
+      }
+    },
+    "The %@ Bar is centered below the mouse pointer." : {
+      "comment" : "A description of the location of the Ice Bar when it is positioned below the mouse pointer.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バーはマウスポインターの真下に中央揃えで表示されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 栏位于鼠标指针正下方居中位置。"
+          }
+        }
+      }
+    },
+    "The %@ Bar requires screen recording permissions." : {
+      "comment" : "A message displayed when the user hasn't granted the app permission to access the screen. Clicking the button opens the app's settings to grant the permission.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バーには画面収録の権限が必要です。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Bar 需要屏幕录制权限。"
+          }
+        }
+      }
+    },
+    "The %@ Bar's location changes based on context." : {
+      "comment" : "A description of how the location of the Ice Bar changes based on context.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バーの位置はコンテキストに応じて変化します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Bar 的位置会根据情景而变化。"
+          }
+        }
+      }
+    },
+    "The %@ icon must always remain in the visible section." : {
+      "comment" : "The message text in an alert that appears when the user tries to drag the \\(Constants.displayName) icon out of the visible section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ アイコンは常に表示セクション内に置く必要があります。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 图标必须始终放置在显示区域内。"
+          }
+        }
+      }
+    },
+    "The amount of time to wait before showing a tooltip over a menu bar item." : {
+      "comment" : "Label for a slider that controls the delay before showing a tooltip over a menu bar item.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目のツールチップを表示するまでの待機時間。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示菜单栏项目提示框前的等待时长。"
+          }
+        }
+      }
+    },
+    "The amount of time to wait before showing on hover." : {
+      "comment" : "Label for the slider that controls the amount of time to wait before showing on hover.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホバー表示するまでの待機時間。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鼠标悬停前等待的时间。"
+          }
+        }
+      }
+    },
+    "These hooks run only when this profile is applied, after the global pre-hook and before the global post-hook." : {
+      "comment" : "A description of the hooks that run only when a profile is applied.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これらのフックは、このプロファイルが適用されたときだけ実行されます。実行順序はグローバル事前フックの後、グローバル事後フックの前です。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这些钩子只会在应用此配置时运行，执行顺序在全局前置钩子之后、全局后置钩子之前。"
+          }
+        }
+      }
+    },
+    "This action cannot be undone." : {
+      "comment" : "A message presented when the user confirms they want to reset the menu bar appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この操作は元に戻せません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此操作无法撤销。"
+          }
+        }
+      }
+    },
+    "This will reset all settings to their default values. This action cannot be undone." : {
+      "comment" : "A message displayed in an alert when the user confirms resetting all settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての設定をデフォルト値にリセットします。この操作は元に戻せません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将所有设置重置为默认值。此操作无法撤销。"
+          }
+        }
+      }
+    },
+    "Timed" : {
+      "comment" : "Localized string key for the \"Timed\" option in the \"Auto-rehide\" settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "時間指定"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "定时"
+          }
+        }
+      }
+    },
+    "Timeout" : {
+      "comment" : "A label displayed next to a text field for the timeout value.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "タイムアウト"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "超时"
+          }
+        }
+      }
+    },
+    "Tint" : {
+      "comment" : "A section for adjusting the tint of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "色調"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "色调"
+          }
+        }
+      }
+    },
+    "Tip: You can also edit these settings by right-clicking in an empty area of the menu bar." : {
+      "comment" : "Tip text that appears in the menu bar appearance editor, encouraging users to edit the settings by right-clicking in an empty area of the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ヒント: メニューバーの空いている領域を右クリックしても、これらの設定を編集できます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示：您也可以通过在菜单栏的空白区域单击鼠标右键来编辑这些设置。"
+          }
+        }
+      }
+    },
+    "To switch profiles with Focus modes, add %@ as a Focus Filter in System Settings %@ Focus %@ [Mode] %@ Focus Filters. When a Focus mode deactivates, the display profile is automatically restored." : {
+      "comment" : "A description of how to use Focus Filters to switch profiles.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "To switch profiles with Focus modes, add %1$@ as a Focus Filter in System Settings %2$@ Focus %3$@ [Mode] %4$@ Focus Filters. When a Focus mode deactivates, the display profile is automatically restored."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォーカスモードでプロファイルを切り替えるには、システム設定 %2$@ フォーカス %3$@ [モード] %4$@ フォーカスフィルタで %1$@ をフォーカスフィルタとして追加してください。フォーカスモードが無効になると、ディスプレイプロファイルは自動的に復元されます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "若要通过专注模式切换配置，请在“系统设置 %2$@ 专注 %3$@ [模式] %4$@ 专注模式过滤器”中将 %1$@ 添加为专注模式过滤器。当专注模式停用时，显示配置将自动恢复。"
+          }
+        }
+      }
+    },
+    "Toggle application menus" : {
+      "comment" : "A label for an action that toggles the visibility of application menus.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリメニューの切り替え"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换应用菜单"
+          }
+        }
+      }
+    },
+    "Toggle the always-hidden section" : {
+      "comment" : "A label describing the action of toggling the always-hidden section in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常に非表示セクションを切り替え"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换始终隐藏的区域"
+          }
+        }
+      }
+    },
+    "Toggle the hidden section" : {
+      "comment" : "A description of an action that toggles the visibility of the hidden menu bar section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非表示セクションを切り替え"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换隐藏区域"
+          }
+        }
+      }
+    },
+    "Tooltip delay" : {
+      "comment" : "A label describing the tooltip delay setting.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ツールチップの遅延"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示框延迟"
+          }
+        }
+      }
+    },
+    "Tooltips" : {
+      "comment" : "Section title for settings related to tooltips.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ツールチップ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示框"
+          }
+        }
+      }
+    },
+    "Trailing End Cap" : {
+      "comment" : "A label for the trailing end cap picker in the menu bar shape picker.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "末尾エンドキャップ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右侧端头样式"
+          }
+        }
+      }
+    },
+    "Type Hotkey" : {
+      "comment" : "A label displayed in the leading segment of the hotkey recorder when it is recording.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホットキーを入力"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入热键"
+          }
+        }
+      }
+    },
+    "Unable to display menu bar items" : {
+      "comment" : "A message displayed when the menu bar items cannot be displayed.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目を表示できません"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法显示菜单栏项目"
+          }
+        }
+      }
+    },
+    "Unable to load menu bar items" : {
+      "comment" : "A message displayed when the app is unable to load the user's menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバー項目を読み込めません"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法加载菜单栏项目"
+          }
+        }
+      }
+    },
+    "Untitled" : {
+      "comment" : "Name of an unnamed profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無題"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无标题"
+          }
+        }
+      }
+    },
+    "Update" : {
+      "comment" : "A button that updates a saved profile with the current configuration.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新"
+          }
+        }
+      }
+    },
+    "Update All" : {
+      "comment" : "A menu option to update a profile with the current state of both its layout and configuration.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一括更新"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部更新"
+          }
+        }
+      }
+    },
+    "Update channel" : {
+      "comment" : "A label displayed above a picker for selecting the update channel.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートチャンネル"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新频道"
+          }
+        }
+      }
+    },
+    "Update Configuration on All Profiles" : {
+      "comment" : "A menu item that allows updating the configuration of all profiles to match the current state of the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてのプロファイルの設定を更新"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新所有配置中的设置"
+          }
+        }
+      }
+    },
+    "Update Configuration Only" : {
+      "comment" : "A menu item that updates only the configuration part of a profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定のみ更新"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅更新当前配置"
+          }
+        }
+      }
+    },
+    "Update Layout Only" : {
+      "comment" : "A menu item that updates only the layout of a profile.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "レイアウトのみを更新"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅更新布局"
+          }
+        }
+      }
+    },
+    "Update this profile with the current state" : {
+      "comment" : "A menu item that updates a profile with the current state of the app.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在の状態でこのプロファイルを更新"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用当前状态更新此配置"
+          }
+        }
+      }
+    },
+    "Use %@ Bar" : {
+      "comment" : "A toggle that lets the user enable or disable the use of the \\(Constants.displayName) Bar. The argument is the name of the \\(Constants.displayName) Bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ バーを使用"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 %@ 栏"
+          }
+        }
+      }
+    },
+    "Use dynamic appearance" : {
+      "comment" : "A toggle that lets the user choose whether to use different appearance settings based on the current system appearance.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダイナミック外観を使用"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用动态外观"
+          }
+        }
+      }
+    },
+    "Use inset shape on screens with notch" : {
+      "comment" : "A toggle that lets the user choose whether to use an inset shape on screens with notches.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ノッチ付きスクリーンではインセット形状を使用"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在带刘海的屏幕上使用内嵌形状"
+          }
+        }
+      }
+    },
+    "Use LCS sorting on notched displays" : {
+      "comment" : "A toggle that lets the user choose whether to use the LCS sorting algorithm for profile sorting on notched displays.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ノッチ付きディスプレイで LCS ソートを使用"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海屏上使用 LCS 排序"
+          }
+        }
+      }
+    },
+    "Use Option-click to open always-hidden section" : {
+      "comment" : "A toggle that lets the user choose whether to use option-click to open the always-hidden section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optionキーを押しながらクリックして、常に非表示セクションを開く"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按住 Option 键点击以打开始终隐藏区域"
+          }
+        }
+      }
+    },
+    "Use the faster LCS (Longest Common Subsequence) algorithm for profile sorting on notched displays instead of the full sort. LCS minimises the number of moves but may be less reliable on notched displays with smaller resolutions." : {
+      "comment" : "A tooltip that explains the purpose of a setting.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ノッチ付きディスプレイでのプロファイル並び替えにおいて、完全ソートの代わりに高速な LCS（最長共通部分列）アルゴリズムを使用します。LCS は移動回数を最小限に抑えますが、解像度の低いノッチ付きディスプレイでは精度が低下する場合があります。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海屏设备上，对配置排序时使用更快的 LCS（最长公共子序列）算法，而不是完整排序。LCS 可减少元素移动次数，但在分辨率较低的刘海屏设备上可能稳定性较差。"
+          }
+        }
+      }
+    },
+    "Version %@ (%@)" : {
+      "comment" : "A label displaying the current version and build number of the app. The first argument is the version string. The second argument is the build string.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン %@ (%@)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本 %1$@ (%2$@)"
+          }
+        }
+      }
+    },
+    "Version %@ (%@) is now available" : {
+      "comment" : "The body text of a notification that alerts the user that a new update is available. The first argument is the version string of the new update. The second argument is the version string of the new update.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン %@ (%@) が利用可能になりました"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本 %1$@ (%2$@) 现已推出"
+          }
+        }
+      }
+    },
+    "Vertical" : {
+      "comment" : "Label for the vertical layout mode.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "垂直"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "竖直"
+          }
+        }
+      }
+    },
+    "Visible" : {
+      "comment" : "Localized string key for the display string of a menu bar section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示"
+          }
+        }
+      }
+    },
+    "Warning: This app is not code-signed." : {
+      "comment" : "Warning message displayed in an alert when the app is not code-signed.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告: このアプリはコード署名されていません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告：此应用未经过代码签名。"
+          }
+        }
+      }
+    },
+    "We found settings from Ice (the original app)." : {
+      "comment" : "A description of the feature that allows users to import settings from the original app, Ice.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ice（元のアプリ）の設定が見つかりました。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们找到了 Ice（原版应用）的设置。"
+          }
+        }
+      }
+    },
+    "When an app sends a veil:// URL to change settings, Veil checks if that app is whitelisted." : {
+      "comment" : "A step in the process of how to use Veil.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリが veil:// URL を使用して設定変更をリクエストすると、Veil はそのアプリがホワイトリストに登録されているかを確認します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当应用发送 veil:// URL 来更改设置时，Veil 会检查该应用是否在白名单中。"
+          }
+        }
+      }
+    },
+    "Whitelisted Applications" : {
+      "comment" : "A heading for the list of whitelisted apps.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホワイトリストに登録されたアプリ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "白名单应用程序"
+          }
+        }
+      }
+    },
+    "Whitelisted apps can read settings, toggle boolean options, set numeric values (timers, delays), change enum settings (rehide strategy, %@ Bar location), and modify per-display configurations. This includes auto-rehide, show on click/hover/scroll/double-click, %@ Bar, hide application menus, enable always-hidden section, show tooltips, and diagnostic logging." : {
+      "comment" : "A description of what whitelisted apps can do.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Whitelisted apps can read settings, toggle boolean options, set numeric values (timers, delays), change enum settings (rehide strategy, %1$@ Bar location), and modify per-display configurations. This includes auto-rehide, show on click/hover/scroll/double-click, %2$@ Bar, hide application menus, enable always-hidden section, show tooltips, and diagnostic logging."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホワイトリストに登録されたアプリは、設定の読み取り、ブール値オプションの切り替え、数値の設定（タイマー、遅延）、列挙型設定（再非表示戦略、%1$@ バーの位置）の変更、およびディスプレイごとの設定の変更が可能です。これには、自動再非表示、クリック/ホバー/スクロール/ダブルクリックで表示、%2$@ バー、アプリケーションメニューの非表示、常時非表示セクションの有効化、ツールチップの表示、および診断ログが含まれます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "白名单应用可以读取设置、切换布尔选项、设置数值（定时器、延迟）、更改枚举设置（重新隐藏策略、%1$@ 栏位置），并修改分显示器配置。这包括自动重新隐藏、通过点击/悬停/滚动/双击显示、%2$@ 栏、隐藏应用程序菜单、启用“始终隐藏”部分、显示工具提示以及诊断日志记录。"
+          }
+        }
+      }
+    },
+    "Would you like to import your existing configuration?" : {
+      "comment" : "A question displayed to the user when they first open the app, asking if they would like to import their existing configuration.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "既存の設定をインポートしますか？"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您想导入现有配置吗？"
+          }
+        }
+      }
+    },
+    "Writes detailed debug logs to a file for troubleshooting. Log files are saved to ~/Library/Logs/Veil/. Disable when not needed to avoid unnecessary disk writes." : {
+      "comment" : "A description of the diagnostic logging feature.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "トラブルシューティング用に詳細なデバッグログをファイルに書き込みます。ログファイルは ~/Library/Logs/Veil/ に保存されます。不要な場合は無効にして、余計なディスク書き込みを避けてください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将详细的调试日志写入文件以便进行故障排除。日志文件保存在 ~/Library/Logs/Veil/ 目录下。如果不需要此功能，请禁用它以避免不必要的磁盘写入。"
+          }
+        }
+      }
+    },
+    "You can remove apps from this list at any time to revoke their access." : {
+      "comment" : "A description of how to remove apps from the whitelist.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このリストからアプリをいつでも削除することで、そのアクセス権を取り消すことができます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您可随时将应用从列表中移除，以取消其访问权限。"
+          }
+        }
+      }
+    },
+    "Clear All" : {
+      "comment" : "A button that removes saved settings for all disconnected displays.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてクリア"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部清除"
+          }
+        }
+      }
+    },
+    "Disconnected display settings" : {
+      "comment" : "A heading for saved settings that belong to displays that are no longer connected.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接続解除済みディスプレイの設定"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已断开显示器设置"
+          }
+        }
+      }
+    },
+    "Remove" : {
+      "comment" : "A button that removes one disconnected display setting.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "移除"
+          }
+        }
+      }
+    },
+    "Remove saved settings for displays that are no longer connected." : {
+      "comment" : "A description of the disconnected display cleanup section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接続されていないディスプレイの保存済み設定を削除します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "移除不再连接的显示器所保存的设置。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

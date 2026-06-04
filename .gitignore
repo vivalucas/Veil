@@ -1,0 +1,19 @@
+.DS_Store  
+xcuserdata/  
+build/  
+!.github/actions/build/  
+!.github/actions/build/** 
+DerivedData/
+*.ipa
+*.dSYM
+.idea/
+.vscode/
+.lefthook.yml
+.codex-home
+Sparkle
+VeilCtl/.build/
+project-log/
+
+# Claude Code
+.claude/
+CLAUDE.md

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>io.github.vivalucas.Veil</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>veil</string>
+			</array>
+		</dict>
+	</array>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>https://github.com/vivalucas/Veil/releases/latest/download/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>c7BbXFbqTu6fpYk/ooGDHqYtwNYHVHO+8D4K68H4mrs=</string>
+	<key>SUScheduledCheckInterval</key>
+	<integer>86400</integer>
+	<key>VeilMenuBarItemSpacingExecutableURI</key>
+	<string>file:///usr/bin/env</string>
+	<key>VeilRepositoryURL</key>
+	<string>https://github.com/vivalucas/Veil</string>
+	<key>VeilSkyLightFrameworkPath</key>
+	<string>/System/Library/PrivateFrameworks/SkyLight.framework/SkyLight</string>
+</dict>
+</plist>

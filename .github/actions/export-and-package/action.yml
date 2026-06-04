@@ -1,0 +1,53 @@
+name: Export Archive and Package DMG
+description: Package a built app into a DMG
+
+inputs:
+  app-name:
+    description: Name of the .app bundle
+    required: false
+    default: Veil.app
+  dmg-name:
+    description: Name of the output DMG file
+    required: false
+    default: Veil.dmg
+
+runs:
+  using: composite
+  steps:
+    - name: Install create-dmg
+      shell: bash
+      run: brew install create-dmg
+
+    - name: Create DMG
+      shell: bash
+      env:
+        APP_NAME: ${{ inputs.app-name }}
+        DMG_NAME: ${{ inputs.dmg-name }}
+      run: |
+        set -euo pipefail
+
+        if [[ ! -d "build/Export/$APP_NAME" ]]; then
+          echo "Missing build/Export/$APP_NAME"
+          exit 1
+        fi
+
+        vol_name="${APP_NAME%.app}"
+        staging="$RUNNER_TEMP/dmg-staging"
+
+        rm -rf "$staging"
+        mkdir -p "$staging"
+
+        cp -R "build/Export/$APP_NAME" "$staging/$APP_NAME"
+        ln -s /Applications "$staging/Applications"
+        rm -f "build/$DMG_NAME"
+
+        create-dmg \
+          --volname "$vol_name" \
+          --background "Resources/background@2x.png" \
+          --window-size 582 300 \
+          --icon-size 100 \
+          --hide-extension "$APP_NAME" \
+          --icon "$APP_NAME" 150 150 \
+          --icon "Applications" 436 150 \
+          "build/$DMG_NAME" \
+          "$staging"
