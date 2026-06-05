@@ -10,37 +10,25 @@ import SwiftUI
 
 /// The navigation identifier type for the "Settings" interface.
 enum SettingsNavigationIdentifier: String, NavigationIdentifier {
-    case general = "General"
-    case displays = "Displays"
+    case general = "Folding"
     case menuBarLayout = "Menu Bar Layout"
-    case hotkeys = "Hotkeys"
-    case profiles = "Profiles"
-    case advanced = "Advanced"
-    case automation = "Automation"
+    case permissions = "Permissions"
     case about = "About"
 
     var localized: LocalizedStringKey {
         switch self {
-        case .general: "General"
-        case .displays: "Displays"
+        case .general: "Folding"
         case .menuBarLayout: "Layout"
-        case .hotkeys: "Hotkeys"
-        case .profiles: "Profiles"
-        case .advanced: "Advanced"
-        case .automation: "Automation"
+        case .permissions: "Permissions"
         case .about: "About"
         }
     }
 
     var iconResource: IconResource {
         switch self {
-        case .general: .systemSymbol("gearshape")
-        case .displays: .systemSymbol("display.2")
+        case .general: .systemSymbol("rectangle.compress.vertical")
         case .menuBarLayout: .systemSymbol("rectangle.topthird.inset.filled")
-        case .hotkeys: .systemSymbol("keyboard")
-        case .profiles: .systemSymbol("person.crop.rectangle.stack")
-        case .advanced: .systemSymbol("gearshape.2")
-        case .automation: .systemSymbol("app.badge.checkmark")
+        case .permissions: .systemSymbol("checkmark.shield")
         case .about: .systemSymbol("cube")
         }
     }

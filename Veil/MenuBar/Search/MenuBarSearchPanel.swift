@@ -522,7 +522,7 @@ private struct MenuBarSearchContentView: View {
 
     private func openPermissionsSettings() {
         closePanel()
-        itemManager.appState?.navigationState.settingsNavigationIdentifier = .advanced
+        itemManager.appState?.navigationState.settingsNavigationIdentifier = .permissions
         itemManager.appState?.activate(withPolicy: .regular)
         itemManager.appState?.openWindow(.settings)
     }

@@ -91,18 +91,10 @@ struct SettingsView: View {
         switch navigationState.settingsNavigationIdentifier {
         case .general:
             GeneralSettingsPane(settings: appState.settings.general)
-        case .displays:
-            DisplaySettingsPane(displaySettings: appState.settings.displaySettings)
         case .menuBarLayout:
             MenuBarLayoutSettingsPane(itemManager: appState.itemManager)
-        case .hotkeys:
-            HotkeysSettingsPane(settings: appState.settings.hotkeys)
-        case .profiles:
-            ProfileSettingsPane(profileManager: appState.profileManager)
-        case .advanced:
-            AdvancedSettingsPane(settings: appState.settings.advanced)
-        case .automation:
-            AutomationSettingsPane()
+        case .permissions:
+            PermissionsSettingsPane()
         case .about:
             AboutSettingsPane()
         }

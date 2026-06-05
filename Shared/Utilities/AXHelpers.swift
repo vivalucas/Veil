@@ -41,6 +41,11 @@ enum AXHelpers {
         queue.sync { try? element.attribute(.enabled) } ?? false
     }
 
+    /// The raw AXEnabled attribute, or nil when the element does not expose it.
+    static func enabledAttribute(_ element: UIElement) -> Bool? {
+        queue.sync { try? element.attribute(.enabled) }
+    }
+
     static func frame(for element: UIElement) -> CGRect? {
         queue.sync { try? element.attribute(.frame) }
     }
@@ -54,6 +59,20 @@ enum AXHelpers {
             var pid: pid_t = 0
             let result = AXUIElementGetPid(element.element, &pid)
             return result == .success ? pid : nil
+        }
+    }
+
+    /// Performs the press action on the given element, returning whether it
+    /// succeeded. Some tray items ignore synthetic mouse clicks.
+    @discardableResult
+    static func press(_ element: UIElement) -> Bool {
+        queue.sync {
+            do {
+                try element.performAction(.press)
+                return true
+            } catch {
+                return false
+            }
         }
     }
 }

@@ -1157,23 +1157,6 @@
         }
       }
     },
-    "Change the menu bar's appearance." : {
-      "comment" : "Detail about the \"Screen Recording\" permission, describing how to change the menu bar's appearance.",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "メニューバーの外観を変更します。"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更改菜单栏的外观。"
-          }
-        }
-      }
-    },
     "Check Automatically" : {
       "comment" : "A button that enables automatic update checking.",
       "localizations" : {
@@ -4767,6 +4750,23 @@
         }
       }
     },
+    "Screen Recording is only needed for menu bar item previews in Layout. Folding still works without it." : {
+      "comment" : "Explanation shown in Settings > Permissions for the optional Screen Recording permission.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面収録は、Layout でメニューバー項目のプレビューを表示する場合にのみ必要です。折りたたみ機能はこの権限がなくても動作します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏幕录制仅用于在布局中预览菜单栏项目。没有此权限时，折叠功能仍可工作。"
+          }
+        }
+      }
+    },
     "Screen recording permissions are required to display tooltips." : {
       "comment" : "A message displayed in the \"Permissions\" section of the advanced settings pane, explaining that screen recording permissions are needed to show tooltips.",
       "localizations" : {
@@ -5024,6 +5024,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "展示 %@ 图标"
+          }
+        }
+      }
+    },
+    "Show icon previews in Layout." : {
+      "comment" : "Detail about the \"Screen Recording\" permission, describing why Layout uses screen recording.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout でアイコンのプレビューを表示します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在布局中显示图标预览。"
           }
         }
       }

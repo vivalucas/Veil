@@ -83,9 +83,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             appState.performSetup(hasPermissions: false)
         }
 
-        // Show permissions window on first launch or if missing required permissions
-        if isFirstLaunch || appState.permissions.permissionsState == .missing {
+        // Show onboarding only when the core Accessibility permission is missing.
+        // Screen Recording is optional and requested later from Layout/Permissions.
+        if appState.permissions.permissionsState == .missing {
             appState.openWindow(.permissions)
+        } else if isFirstLaunch {
+            appState.activate(withPolicy: .regular)
+            appState.openWindow(.settings)
         }
     }
 

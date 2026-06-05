@@ -76,6 +76,10 @@ final class LayoutBarPaddingView: NSView {
 
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         guard !isStabilizing else { return [] }
+        // Keep the drag snapshot stable while the Window Server move and cache
+        // refresh are in flight. Otherwise the visual order can be overwritten
+        // before the drop handler records the badge neighbors.
+        container.canSetArrangedViews = false
         return container.updateArrangedViewsForDrag(with: sender, phase: .entered)
     }
 
@@ -232,8 +236,22 @@ final class LayoutBarPaddingView: NSView {
                 await stabilizePlacement(of: item, to: destination, expectedSection: container.section, appState: appState)
             } catch {
                 Self.diagLog.error("Error moving menu bar item: \(error)")
-                let alert = NSAlert(error: error)
-                alert.runModal()
+                // macOS can report a move failure even after the item settles
+                // into the requested slot. Re-sample before showing a noisy
+                // alert for a move that visibly worked.
+                try? await Task.sleep(for: .milliseconds(250))
+                await appState.itemManager.cacheItemsRegardless(skipRecentMoveCheck: true)
+                if didItemReachIntendedPosition(
+                    item: item,
+                    destination: destination,
+                    expectedSection: container.section,
+                    cache: appState.itemManager.itemCache
+                ) {
+                    Self.diagLog.info("Move verification failed but \(item.logString) reached intended position in \(container.section.logString); suppressing alert")
+                } else {
+                    let alert = NSAlert(error: error)
+                    alert.runModal()
+                }
             }
             watchdogTask.cancel()
             if let appState = container.appState {
@@ -264,6 +282,31 @@ final class LayoutBarPaddingView: NSView {
                     )
                 }
             }
+        }
+    }
+
+    /// Returns true when the dragged item is now in the section and immediate
+    /// neighbor slot requested by the drop operation.
+    private func didItemReachIntendedPosition(
+        item: MenuBarItem,
+        destination: MenuBarItemManager.MoveDestination,
+        expectedSection: MenuBarSection.Name,
+        cache: MenuBarItemManager.ItemCache
+    ) -> Bool {
+        let sectionItems = cache[expectedSection]
+        guard let itemIndex = sectionItems.firstIndex(where: { $0.tag == item.tag }) else {
+            return false
+        }
+        let target = destination.targetItem
+        if target.isControlItem {
+            return true
+        }
+        guard let targetIndex = sectionItems.firstIndex(where: { $0.tag == target.tag }) else {
+            return false
+        }
+        return switch destination {
+        case .leftOfItem: itemIndex + 1 == targetIndex
+        case .rightOfItem: itemIndex == targetIndex + 1
         }
     }
 

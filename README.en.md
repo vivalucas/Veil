@@ -1,6 +1,6 @@
 # Veil
 
-Veil is a macOS menu bar manager for hiding, showing, organizing, and customizing menu bar items.
+Veil is a focused macOS menu bar folding tool for hiding, showing, and organizing menu bar items.
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md)
 
@@ -14,20 +14,17 @@ Veil is a macOS menu bar manager for hiding, showing, organizing, and customizin
 
 ## Overview
 
-Veil keeps a crowded macOS menu bar manageable. It lets you choose which menu bar items stay visible, which ones stay hidden, and when hidden items should appear again.
+Veil keeps a crowded macOS menu bar manageable. It lets you choose which menu bar items stay visible, which ones stay hidden, and automatically folds lower-priority items when the menu bar runs out of space.
 
-Veil is designed for users who want a quieter menu bar without losing access to the tools that live there. It supports direct menu bar organization, profiles, hotkeys, and automation through URL schemes.
+Veil is designed for users who want a quieter menu bar without losing access to the tools that live there. The current interface focuses on four entry points: Folding, Layout, Permissions, and About.
 
 ## Features
 
 - Hide and show menu bar items.
+- Automatically fold overflowing items when space is tight.
 - Keep rarely used items in an always-hidden section.
-- Reveal hidden items by hover, click, scroll, swipe, or hotkey.
-- Use Veil Bar to display hidden items separately, including on MacBooks with a notch.
+- Reveal hidden items by hover, click, scroll, or swipe.
 - Rearrange menu bar items with drag and drop.
-- Save and restore menu bar layouts with profiles.
-- Search menu bar items.
-- Automate common actions with `veil://` URLs and hooks.
 - Check for and install updates in the app through Sparkle.
 
 ## Install
@@ -42,17 +39,13 @@ xattr -cr /Applications/Veil.app
 
 Then launch Veil again from `/Applications`.
 
-## Automation
+## Permissions
 
-Veil supports URL scheme automation through `veil://`. The detailed command reference is in [docs/URI_SCHEMES.md](docs/URI_SCHEMES.md).
+Veil only requires Accessibility permission at startup, which is needed to read and move menu bar items. Screen Recording is optional and is only used by features that need menu bar icon previews, such as Layout previews; basic folding still works without it.
 
-Examples:
+## Advanced Interface
 
-```sh
-open "veil://open-settings"
-open "veil://toggle-veilbar"
-open "veil://toggle?key=useIceBar"
-```
+Veil still keeps a compatibility `veil://` URL scheme. It is not part of the simplified primary UI; the command reference remains in [docs/URI_SCHEMES.md](docs/URI_SCHEMES.md).
 
 ## Troubleshooting
 

@@ -71,7 +71,7 @@ struct PermissionsView: View {
     private var permissionsStack: some View {
         VStack(spacing: 12) {
             explanationBox
-            ForEach(manager.allPermissions) { permission in
+            ForEach(manager.requiredPermissions) { permission in
                 permissionBox(permission)
             }
         }

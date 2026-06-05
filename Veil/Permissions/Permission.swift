@@ -158,7 +158,7 @@ final class ScreenRecordingPermission: Permission {
         super.init(
             title: String(localized: "Screen Recording"),
             details: [
-                String(localized: "Change the menu bar's appearance."),
+                String(localized: "Show icon previews in Layout."),
                 String(localized: "Display images of individual menu bar items."),
             ],
             isRequired: false,

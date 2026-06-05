@@ -175,9 +175,9 @@ struct MenuBarLayoutSettingsPane: View {
                 .foregroundStyle(.secondary)
 
             Button {
-                appState.navigationState.settingsNavigationIdentifier = .advanced
+                appState.navigationState.settingsNavigationIdentifier = .permissions
             } label: {
-                Text("Go to Advanced Settings")
+                Text("Go to Permissions")
             }
             .buttonStyle(.link)
         }

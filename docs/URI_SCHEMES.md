@@ -2,6 +2,8 @@
 
 Veil supports custom URL schemes for deep linking, enabling integration with automation tools like Raycast, Alfred, and custom scripts.
 
+> Note: URL schemes are retained as an advanced compatibility interface. The current primary UI is intentionally focused on Folding, Layout, Permissions, and About, so some commands below may target features that are no longer exposed in the main settings sidebar.
+
 ## Overview
 
 Veil registers the `veil://` URL scheme in `Info.plist` via `CFBundleURLTypes`. This allows external applications and scripts to trigger Veil actions programmatically.
@@ -15,7 +17,7 @@ Veil registers the `veil://` URL scheme in `Info.plist` via `CFBundleURLTypes`. 
 | `veil://toggle-hidden`            | Toggle Hidden Section | Shows/hides the hidden menu bar section  |
 | `veil://toggle-always-hidden`     | Toggle Always-Hidden  | Shows/hides the always-hidden section    |
 | `veil://search`                   | Open Search Panel     | Displays the menu bar item search panel  |
-| `veil://toggle-veilbar`           | Toggle Veil Bar       | Toggles the IceBar on the active display |
+| `veil://toggle-veilbar`           | Toggle Veil Bar       | Toggles the Veil Bar on the active display |
 | `veil://toggle-application-menus` | Toggle App Menus      | Shows/hides application menus            |
 | `veil://open-settings`            | Open Settings         | Opens the Veil settings window           |
 | `veil://authorize`                | Authorize App         | Triggers auth dialog to grant an app whitelist access to settings |
@@ -115,7 +117,7 @@ Veil supports programmatic settings manipulation via the `veil://` URL scheme wi
 
 ### Security Model
 
-1. **Feature Toggle**: Settings URI is disabled by default (enable in Settings → Automation)
+1. **Feature Toggle**: Settings URI is disabled by default. The toggle is retained in settings storage for compatibility, but it is not exposed in the simplified primary UI.
 2. **Whitelist**: Only approved apps can modify settings
 3. **First-Time Authorization**: New apps trigger a confirmation dialog with app name and permissions. Apps can proactively request authorization via `veil://authorize` without reading or writing settings
 4. **Silent Failures**: Unauthorized requests fail without user interruption
@@ -166,17 +168,17 @@ These settings affect specific displays based on context:
 | Key                      | Type | Scope | Description |
 | ------------------------ | ---- | ----- | ----------- |
 | `useIceBar`              | Bool | Active display only | Enable/disable Veil Bar on the display with the active menu bar |
-| `iceBarLocation`         | String | All displays with IceBar enabled | Veil Bar position: `dynamic`, `mousePointer`, `iceIcon`, `leftAligned`, or `rightAligned` |
-| `alwaysShowHiddenItems`  | Bool | All displays without IceBar | Show hidden items inline when IceBar is disabled |
-| `iceBarLayout`           | String | All displays with IceBar enabled | Veil Bar layout: `horizontal`, `vertical`, or `grid` |
-| `gridColumns`            | Int | All displays with IceBar enabled | Maximum items per row in grid layout (2–10) |
+| `iceBarLocation`         | String | All displays with Veil Bar enabled | Veil Bar position: `dynamic`, `mousePointer`, `iceIcon`, `leftAligned`, or `rightAligned` |
+| `alwaysShowHiddenItems`  | Bool | All displays without Veil Bar | Show hidden items inline when Veil Bar is disabled |
+| `iceBarLayout`           | String | All displays with Veil Bar enabled | Veil Bar layout: `horizontal`, `vertical`, or `grid` |
+| `gridColumns`            | Int | All displays with Veil Bar enabled | Maximum items per row in grid layout (2–10) |
 
 **Per-Display Behavior:**
 
 By default:
 - `useIceBar`: Only affects the display with the currently active menu bar (where your cursor is)
-- `iceBarLocation`: Updates all displays that currently have the IceBar enabled
-- `alwaysShowHiddenItems`: Updates all displays that do NOT have the IceBar enabled
+- `iceBarLocation`: Updates all displays that currently have the Veil Bar enabled
+- `alwaysShowHiddenItems`: Updates all displays that do NOT have the Veil Bar enabled
 
 With `display=<UUID>` parameter:
 - All per-display settings can target a specific display by its UUID
@@ -219,22 +221,22 @@ open "veil://toggle?key=autoRehide"
 # Toggle Veil Bar visibility (active display only)
 open "veil://toggle?key=useIceBar"
 
-# Set IceBar location (all displays with IceBar enabled)
+# Set Veil Bar location (all displays with Veil Bar enabled)
 open "veil://set?key=iceBarLocation&value=mousePointer"
 
-# Set IceBar aligned left (all displays with IceBar enabled)
+# Set Veil Bar aligned left (all displays with Veil Bar enabled)
 open "veil://set?key=iceBarLocation&value=leftAligned"
 
-# Set IceBar aligned right (all displays with IceBar enabled)
+# Set Veil Bar aligned right (all displays with Veil Bar enabled)
 open "veil://set?key=iceBarLocation&value=rightAligned"
 
-# Enable always-show-hidden-items (all displays without IceBar)
+# Enable always-show-hidden-items (all displays without Veil Bar)
 open "veil://set?key=alwaysShowHiddenItems&value=true"
 
-# Set Veil Bar layout to grid (all displays with IceBar enabled)
+# Set Veil Bar layout to grid (all displays with Veil Bar enabled)
 open "veil://set?key=iceBarLayout&value=grid"
 
-# Set grid columns to 5 (all displays with IceBar enabled)
+# Set grid columns to 5 (all displays with Veil Bar enabled)
 open "veil://set?key=gridColumns&value=5"
 
 # Set rehide interval to 10 seconds (clamped to range 1-300)
@@ -257,7 +259,7 @@ Use the optional `display` parameter to target a specific display by UUID:
 # Enable Veil Bar on specific display by UUID
 open "veil://set?key=useIceBar&value=true&display=37D8832A-2D66-02CA-B9F7-8F30A301B230"
 
-# Set IceBar location on specific display
+# Set Veil Bar location on specific display
 open "veil://set?key=iceBarLocation&value=iceIcon&display=ABC12345-..."
 
 # Toggle Veil Bar on specific display
@@ -487,12 +489,9 @@ open "veil://toggle?key=${1}"
 
 ### Whitelist Management
 
-Manage authorized apps in **Settings → Automation**:
+The settings whitelist is still used by the URL scheme authorization flow, but there is no primary settings sidebar entry for manual whitelist management in the simplified UI.
 
-- View all whitelisted applications with icons and names
-- Remove apps to revoke their access
-- Manually add bundle IDs for apps not yet authorized
-- Test with Veil itself (DEBUG builds only)
+Whitelist changes currently happen through the authorization dialog and persisted settings state. Manual whitelist editing should be treated as a developer/debug workflow unless a dedicated UI is restored.
 
 ### Error Handling
 

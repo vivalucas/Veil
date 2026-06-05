@@ -532,7 +532,7 @@ private struct IceBarContentView: View {
     /// Opens the permissions settings pane, hiding the current section first.
     private func openPermissionsSettings() {
         menuBarManager.section(withName: section)?.hide()
-        appState.navigationState.settingsNavigationIdentifier = .advanced
+        appState.navigationState.settingsNavigationIdentifier = .permissions
         appState.activate(withPolicy: .regular)
         appState.openWindow(.settings)
     }
