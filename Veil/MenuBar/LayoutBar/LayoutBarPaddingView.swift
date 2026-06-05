@@ -432,7 +432,7 @@ final class LayoutBarPaddingView: NSView {
             notchWidthConstraint?.constant = notchIndicatorWidth
             notchTrailingConstraint?.constant = -notchTrailingOffset
             minWidthConstraint?.constant = barMinWidth
-            containerLeadingInsetConstraint?.constant = 0
+            containerLeadingInsetConstraint?.isActive = false
             return
         }
 
@@ -473,7 +473,7 @@ final class LayoutBarPaddingView: NSView {
         notchTrailingConstraint = trailingConstraint
         containerLeadingAfterNotchConstraint = containerLeading
         minWidthConstraint = minWidth
-        containerLeadingInsetConstraint?.constant = 0
+        containerLeadingInsetConstraint?.isActive = false
     }
 
     private func tearDownNotchPresentation() {
@@ -486,6 +486,7 @@ final class LayoutBarPaddingView: NSView {
         containerLeadingAfterNotchConstraint = nil
         minWidthConstraint = nil
         containerLeadingInsetConstraint?.constant = -7.5
+        containerLeadingInsetConstraint?.isActive = true
         notchView?.removeFromSuperview()
         notchView = nil
     }

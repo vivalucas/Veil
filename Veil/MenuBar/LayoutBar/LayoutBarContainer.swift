@@ -105,6 +105,7 @@ final class LayoutBarContainer: NSView {
                 appState.itemManager.$newItemsPlacement,
                 appState.settings.advanced.$enableAlwaysHiddenSection
             )
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] cache, _, _ in
                 guard let self else {
                     return
@@ -116,6 +117,7 @@ final class LayoutBarContainer: NSView {
             // Observe average color changes to update badge appearance
             appState.menuBarManager.$averageColorInfo
                 .removeDuplicates()
+                .receive(on: DispatchQueue.main)
                 .sink { [weak self] colorInfo in
                     guard let self else {
                         return
@@ -130,6 +132,7 @@ final class LayoutBarContainer: NSView {
             // Observe screen parameter changes (moving between displays) to update badge
             NotificationCenter.default
                 .publisher(for: NSApplication.didChangeScreenParametersNotification)
+                .receive(on: DispatchQueue.main)
                 .sink { [weak self] _ in
                     guard let self else { return }
                     // Force update badge's color info and redraw when screen changes

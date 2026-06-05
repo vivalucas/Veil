@@ -68,6 +68,11 @@ extension LayoutBarArrangedView: NSDraggingSource {
     func draggingSession(_ session: NSDraggingSession, willBeginAt _: NSPoint) {
         if let container = superview as? LayoutBarContainer {
             container.canSetArrangedViews = false
+            if oldContainerInfo == nil,
+               let index = container.arrangedViews.firstIndex(of: self)
+            {
+                oldContainerInfo = (container, index)
+            }
         }
 
         session.animatesToStartingPositionsOnCancelOrFail = false

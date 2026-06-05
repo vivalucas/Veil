@@ -120,6 +120,7 @@ final class LayoutBarItemView: LayoutBarArrangedView {
 
             imageForTag
                 .removeDuplicates(by: MenuBarItemImageCache.CapturedImage.isVisuallyEqual)
+                .receive(on: DispatchQueue.main)
                 .sink { [weak self] image in
                     guard let self else {
                         return
