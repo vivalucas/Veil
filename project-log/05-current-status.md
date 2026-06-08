@@ -2,16 +2,16 @@
 
 > **最后更新**：2026-06-08
 > **最后更新人**：Codex
-> **最近开发日志**：`06-dev-log.md` 中的 2026-06-08（评审问题修复）
-> **当前可信度**：已通过 2026-06-08 macOS `xcodebuild test`、历史 Release build、导出产物 ad-hoc 重签名验证、DMG 打包/挂载校验、本地 appcast 校验、GitHub Release workflow、三语本地化 build、菜单本地化覆盖审计、最新 main CI 和发布前全面自查；本机 shell 未安装 `swiftlint`，独立 `swiftlint --strict` 未运行
+> **最近开发日志**：`06-dev-log.md` 中的 2026-06-08（1.1.6 发布）
+> **当前可信度**：已通过 2026-06-08 macOS `xcodebuild test`、1.1.6 GitHub Release workflow、最新 main CI、历史 Release build、导出产物 ad-hoc 重签名验证、DMG 打包/挂载校验、本地 appcast 校验、三语本地化 build、菜单本地化覆盖审计和发布前全面自查；本机 shell 未安装 `swiftlint`，独立 `swiftlint --strict` 未运行
 
 ## 当前版本
 
-**1.1.6 / build 116** — 当前主 App、VeilCtl 和 Sonar 项目版本已重新对齐，准备发布本轮评审问题修复版本。
+**1.1.6 / build 116** — 当前主 App、VeilCtl 和 Sonar 项目版本已重新对齐，GitHub Release `1.1.6` 已发布。
 
 ## 当前阶段
 
-发布链路收口阶段。当前 GitHub 仓库为 private，可以提交 `project-log/` 作为内部开发知识库。公开前需要处理 project-log 的可见性和历史记录。
+发布链路收口阶段。当前 GitHub 仓库为 private，可以提交 `project-log/` 作为内部开发知识库。`1.1.6` Release 已由 tag workflow 产出 `Veil-1.1.6.dmg`、`appcast.xml` 和 `Veil.md`。公开前需要处理 project-log 的可见性和历史记录。
 
 ## 已完成
 
@@ -47,7 +47,6 @@
 ### 中优先级（P2 安全问题）
 
 - 复核 GitHub Release 发布链路是否与 README 说明一致。
-- 确认下一次 release tag `1.1.6` 的版本化 DMG 名称、Sparkle appcast 和 README 下载说明一致。
 - 检查 `IceBar` 内部命名是否需要在后续阶段逐步改为 `VeilBar`。
 - 检查 `FREQUENT_ISSUES.md` 中引用 Ice issue 的内容是否仍要保留、改写或删除。
 
@@ -85,16 +84,14 @@
 
 ## 下一步
 
-1. 运行本轮修复后的本地验证。
-2. 推送 tag `1.1.6` 并等待 release workflow 产出新的 DMG 和 appcast。
-3. 仓库改 public 后，复测 GitHub latest appcast URL 和 App 内更新检查。
-4. 测试首次安装流程。
+1. 仓库改 public 后，复测 GitHub latest appcast URL 和 App 内更新检查。
+2. 测试首次安装流程。
 
 ## 任务交接
 
-**当前任务**：评审问题修复后发布前复核。
-**已完成**：主 App / VeilCtl / Sonar 版本重新对齐到 `1.1.6` / `116`；CI paths 覆盖 Xcode 工程、workflow/action、plist、VeilCtl、Sonar、README 和 docs；重隐 timed 滑块最小值改为 1 秒，并对旧配置运行时 clamp；HookRunner 输出改用临时文件承接并截断日志读取；private 阶段 `project-log/` 不再被 `.gitignore` 忽略。
-**未完成**：独立 `swiftlint --strict` 未运行（本机 shell 未安装 `swiftlint`）；等待下一次 release workflow 产出新 DMG 和 appcast；仓库改 public 后复测 latest appcast URL 和 App 内更新检查；首次安装链路仍待实机验证。
-**下一步建议**：运行 macOS `xcodebuild test` 和必要的 release build 验证；推送 tag `1.1.6` 后确认 release assets、Sparkle appcast 和 App 内更新检查。
+**当前任务**：1.1.6 发布后收尾。
+**已完成**：主 App / VeilCtl / Sonar 版本重新对齐到 `1.1.6` / `116`；CI paths 覆盖 Xcode 工程、workflow/action、plist、VeilCtl、Sonar、README 和 docs；重隐 timed 滑块最小值改为 1 秒，并对旧配置运行时 clamp；HookRunner 输出改用临时文件承接并截断日志读取；private 阶段 `project-log/` 不再被 `.gitignore` 忽略；tag `1.1.6` 已发布，GitHub Release assets 包含 `Veil-1.1.6.dmg`、`appcast.xml` 和 `Veil.md`。
+**未完成**：独立 `swiftlint --strict` 未运行（本机 shell 未安装 `swiftlint`）；仓库改 public 后复测 latest appcast URL 和 App 内更新检查；首次安装链路仍待实机验证。
+**下一步建议**：在仓库公开后复测 Sparkle latest appcast URL；用真实首次安装路径验证 Gatekeeper 提示和 README 的 `xattr -cr /Applications/Veil.app` 说明。
 **风险 / 阻塞**：当前仍是未公证分发；private 仓库下 GitHub release asset 的匿名 latest URL 返回 404，Sparkle 自动更新需要 public 发布通道。
 **相关文件**：`.github/workflows/release.yml`、`Veil/Resources/Info.plist`、`Veil/Main/AppDelegate.swift`、`Veil/Settings`、`Veil/Utilities/SettingsURIHandler.swift`、`project-log/07-deployment.md`、`project-log/10-planning-log.md`。

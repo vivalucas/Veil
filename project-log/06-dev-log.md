@@ -1,5 +1,34 @@
 # 开发日志
 
+## 2026-06-08（1.1.6 发布）
+
+**触发原因**：
+
+用户要求将已确认修复全部提交到 GitHub，推进版本号并发布新的 release。
+
+**修改内容**：
+1. `Veil.xcodeproj/project.pbxproj`、`VeilCtl/Resources/Info.plist`、`sonar-project.properties` — 将版本推进到 `1.1.6` / `116`。
+2. Git tag `1.1.6` — 发布本轮评审修复版本。
+3. `project-log/05-current-status.md`、`project-log/06-dev-log.md` — 记录 1.1.6 发布结果。
+
+**遇到的问题**：
+- 本地 `main` 的上一提交已被 tag `1.1.5` 使用，因此本轮发布不能复用 `1.1.5`。
+
+**解决方式**：
+- 使用下一个 patch 版本 `1.1.6` / build `116`，保留既有 release tag 历史。
+
+**验证方式**：
+- `xcodebuild test -project Veil.xcodeproj -scheme Veil -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -derivedDataPath /tmp/VeilDerivedData`
+- `gh run watch 27122711133 --repo vivalucas/Veil --exit-status`
+- `gh release view 1.1.6 --repo vivalucas/Veil`
+- `gh run view 27122700082 --repo vivalucas/Veil`
+
+**验证结果**：
+- 本地 `xcodebuild test` 通过；测试后已删除 `/tmp/VeilDerivedData`。
+- Release workflow `27122711133` 成功，GitHub Release `1.1.6` 已发布，assets 包含 `Veil-1.1.6.dmg`、`appcast.xml`、`Veil.md`。
+- main CI `27122700082` 成功。
+- `swiftlint --strict` 未运行：本机 shell 未安装 `swiftlint`，加入 `/opt/homebrew/bin` 后仍不可用。
+
 ## 2026-06-08（评审问题修复）
 
 **触发原因**：
