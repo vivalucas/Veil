@@ -12,7 +12,6 @@ DerivedData/
 .codex-home
 Sparkle
 VeilCtl/.build/
-project-log/
 
 # Claude Code
 .claude/

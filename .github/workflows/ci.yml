@@ -3,7 +3,16 @@ on:
   pull_request:
     paths:
       - ".github/workflows/ci.yml"
+      - ".github/workflows/*.yml"
+      - ".github/actions/**"
       - "Package.swift"
+      - "Veil.xcodeproj/**"
+      - "Veil/Resources/Info.plist"
+      - "MenuBarItemService/Resources/Info.plist"
+      - "VeilCtl/**"
+      - "sonar-project.properties"
+      - "README*.md"
+      - "docs/**"
       - "**/*.swift"
       - "**/*.xcstrings"
   push:
@@ -12,7 +21,16 @@ on:
       - development
     paths:
       - ".github/workflows/ci.yml"
+      - ".github/workflows/*.yml"
+      - ".github/actions/**"
       - "Package.swift"
+      - "Veil.xcodeproj/**"
+      - "Veil/Resources/Info.plist"
+      - "MenuBarItemService/Resources/Info.plist"
+      - "VeilCtl/**"
+      - "sonar-project.properties"
+      - "README*.md"
+      - "docs/**"
       - "**/*.swift"
       - "**/*.xcstrings"
   workflow_dispatch:

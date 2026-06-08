@@ -94,6 +94,19 @@ final class MenuBarSectionNameTests: XCTestCase {
         XCTAssertEqual(MenuBarSection.notchGap, 24)
     }
 
+    func testEffectiveRehideIntervalClampsZeroToMinimum() {
+        XCTAssertEqual(MenuBarSection.effectiveRehideInterval(0), 1)
+    }
+
+    func testEffectiveRehideIntervalClampsNonFiniteToMinimum() {
+        XCTAssertEqual(MenuBarSection.effectiveRehideInterval(.infinity), 1)
+        XCTAssertEqual(MenuBarSection.effectiveRehideInterval(.nan), 1)
+    }
+
+    func testEffectiveRehideIntervalPreservesValidInterval() {
+        XCTAssertEqual(MenuBarSection.effectiveRehideInterval(15), 15)
+    }
+
     func testNotchGapIsPositive() {
         XCTAssertGreaterThan(MenuBarSection.notchGap, 0)
     }

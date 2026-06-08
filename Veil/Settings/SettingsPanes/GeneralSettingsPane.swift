@@ -127,7 +127,7 @@ struct GeneralSettingsPane: View {
                 IceSlider(
                     rehideIntervalKey,
                     value: $settings.rehideInterval,
-                    in: 0 ... 30,
+                    in: 1 ... 30,
                     step: 1
                 )
             }

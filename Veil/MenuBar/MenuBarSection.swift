@@ -77,6 +77,18 @@ final class MenuBarSection {
     /// The gap that macOS leaves to the left and right of the notch (in points).
     static nonisolated let notchGap: CGFloat = 24
 
+    /// Minimum delay before auto-rehiding. Older settings and imported
+    /// profiles may still carry 0, but the runtime should never rehide
+    /// immediately after showing a section.
+    static nonisolated let minimumRehideInterval: TimeInterval = 1
+
+    static nonisolated func effectiveRehideInterval(_ interval: TimeInterval) -> TimeInterval {
+        guard interval.isFinite else {
+            return minimumRehideInterval
+        }
+        return max(minimumRehideInterval, interval)
+    }
+
     /// The preferred way to present the section on the menu bar.
     enum PresentationMode: Equatable {
         /// Show the items inline without modifying the application menus.
@@ -459,7 +471,7 @@ final class MenuBarSection {
             // Smart rehide strategy uses the rehide interval as a fallback
             // to the click-based rehide checks. Task.sleep replaces Timer so
             // cancellation is automatic when the task is reassigned or cancelled.
-            let interval = appState.settings.general.rehideInterval
+            let interval = Self.effectiveRehideInterval(appState.settings.general.rehideInterval)
             rehideTask = Task { [weak self, weak appState] in
                 try? await Task.sleep(for: .seconds(interval))
                 guard !Task.isCancelled, let self, let appState else { return }
@@ -499,7 +511,7 @@ final class MenuBarSection {
 
                 if !mouseInActiveArea {
                     if rehideTask == nil {
-                        let interval = appState.settings.general.rehideInterval
+                        let interval = Self.effectiveRehideInterval(appState.settings.general.rehideInterval)
                         rehideTask = Task { @MainActor [weak self, weak appState] in
                             try? await Task.sleep(for: .seconds(interval))
                             guard !Task.isCancelled, let self, let appState else { return }
@@ -542,7 +554,7 @@ final class MenuBarSection {
         }
 
         rehideTask?.cancel()
-        let interval = appState.settings.general.rehideInterval
+        let interval = Self.effectiveRehideInterval(appState.settings.general.rehideInterval)
         rehideTask = Task { [weak self, weak appState] in
             try? await Task.sleep(for: .seconds(interval))
             guard !Task.isCancelled, let self, let appState else { return }

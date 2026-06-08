@@ -54,6 +54,11 @@ enum HookRunner {
         let stderr: String
     }
 
+    private struct CapturedOutput {
+        let url: URL
+        let fileHandle: FileHandle
+    }
+
     /// Context passed into the hook as environment variables.
     struct Context {
         let phase: HookPhase
@@ -137,10 +142,17 @@ enum HookRunner {
         env["VEIL_PREVIOUS_PROFILE_NAME"] = context.previousProfileName ?? ""
         process.environment = env
 
-        let stdoutPipe = Pipe()
-        let stderrPipe = Pipe()
-        process.standardOutput = stdoutPipe
-        process.standardError = stderrPipe
+        let stdoutCapture = try makeCapturedOutputFile(prefix: "stdout")
+        let stderrCapture = try makeCapturedOutputFile(prefix: "stderr")
+        defer {
+            stdoutCapture.fileHandle.closeFile()
+            stderrCapture.fileHandle.closeFile()
+            try? FileManager.default.removeItem(at: stdoutCapture.url)
+            try? FileManager.default.removeItem(at: stderrCapture.url)
+        }
+
+        process.standardOutput = stdoutCapture.fileHandle
+        process.standardError = stderrCapture.fileHandle
 
         let clamped = max(1.0, min(hook.timeoutSeconds, 300.0))
 
@@ -181,8 +193,10 @@ enum HookRunner {
             throw CancellationError()
         }
 
-        let stdout = readAvailable(stdoutPipe)
-        let stderr = readAvailable(stderrPipe)
+        stdoutCapture.fileHandle.synchronizeFile()
+        stderrCapture.fileHandle.synchronizeFile()
+        let stdout = readCapturedOutput(from: stdoutCapture.url)
+        let stderr = readCapturedOutput(from: stderrCapture.url)
 
         if exitStatus != 0 {
             throw HookError.nonZeroExit(exitStatus)
@@ -190,10 +204,31 @@ enum HookRunner {
         return RunOutcome(exitStatus: exitStatus, stdout: stdout, stderr: stderr)
     }
 
-    private static func readAvailable(_ pipe: Pipe) -> String {
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+    private static func makeCapturedOutputFile(prefix: String) throws -> CapturedOutput {
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent("VeilHook-\(prefix)-\(UUID().uuidString).log")
+        FileManager.default.createFile(atPath: url.path, contents: nil)
+        return CapturedOutput(
+            url: url,
+            fileHandle: try FileHandle(forWritingTo: url)
+        )
+    }
+
+    private static func readCapturedOutput(from url: URL) -> String {
+        let maxBytes = 64 * 1024
+        guard let file = try? FileHandle(forReadingFrom: url) else { return "" }
+        defer { file.closeFile() }
+
+        let data = file.readData(ofLength: maxBytes + 1)
         guard !data.isEmpty else { return "" }
-        return String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let isTruncated = data.count > maxBytes
+        let visibleData = isTruncated ? data.prefix(maxBytes) : data[...]
+        var output = String(data: Data(visibleData), encoding: .utf8)?
+            .trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        if isTruncated {
+            output += "\n[output truncated]"
+        }
+        return output
     }
 
     /// Awaits whichever wins first: the process exiting, or the timeout
