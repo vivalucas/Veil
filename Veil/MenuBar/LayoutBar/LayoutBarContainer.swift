@@ -325,6 +325,7 @@ final class LayoutBarContainer: NSView {
             // updating normally relies on the presence of other arranged views,
             // but if the container is empty, it needs to be handled separately
             guard !arrangedViews.filter(\.isEnabled).isEmpty else {
+                shouldAnimateNextLayoutPass = false
                 arrangedViews.insert(sourceView, at: 0)
                 return .move
             }
@@ -361,10 +362,12 @@ final class LayoutBarContainer: NSView {
                 if destinationIndex > sourceIndex {
                     targetIndex += 1
                 }
+                shouldAnimateNextLayoutPass = false
                 arrangedViews.move(fromOffsets: [sourceIndex], toOffset: targetIndex)
             } else {
                 // source view is being dragged from another container,
                 // so just insert it
+                shouldAnimateNextLayoutPass = false
                 arrangedViews.insert(sourceView, at: destinationIndex)
             }
             return .move

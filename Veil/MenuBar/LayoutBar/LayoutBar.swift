@@ -25,7 +25,6 @@ struct LayoutBar: View {
     }
 
     @EnvironmentObject var appState: AppState
-    @ObservedObject var imageCache: MenuBarItemImageCache
 
     let section: MenuBarSection.Name
 
@@ -49,12 +48,6 @@ struct LayoutBar: View {
 
     @ViewBuilder
     private var mainContent: some View {
-        if imageCache.cacheFailed(for: section) {
-            // Avoid flicker during rapid cache refreshes; hold a blank placeholder instead of the error text.
-            Color.clear
-                .frame(height: 20)
-        } else {
-            Representable(appState: appState, section: section)
-        }
+        Representable(appState: appState, section: section)
     }
 }

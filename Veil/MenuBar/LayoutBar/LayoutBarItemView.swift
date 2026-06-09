@@ -40,12 +40,20 @@ final class LayoutBarItemView: LayoutBarArrangedView {
     private var cachedImage: MenuBarItemImageCache.CapturedImage? {
         didSet {
             let previousSize = preferredSize(for: oldValue)
-            let newSize = preferredSize(for: cachedImage)
-            setFrameSize(newSize)
-            if previousSize != newSize {
-                (superview as? LayoutBarContainer)?.itemPreferredSizeDidChange(self)
+            guard !isDraggingPlaceholder else {
+                needsDisplay = true
+                return
             }
-            needsDisplay = true
+            applyPreferredSize(previousSize: previousSize)
+        }
+    }
+
+    override var isDraggingPlaceholder: Bool {
+        didSet {
+            guard !isDraggingPlaceholder else {
+                return
+            }
+            applyPreferredSize(previousSize: bounds.size)
         }
     }
 
@@ -207,6 +215,15 @@ final class LayoutBarItemView: LayoutBarArrangedView {
 
     private func preferredSize(for image: MenuBarItemImageCache.CapturedImage?) -> CGSize {
         Self.preferredSize(for: item, image: image)
+    }
+
+    private func applyPreferredSize(previousSize: CGSize) {
+        let newSize = preferredSize(for: cachedImage)
+        setFrameSize(newSize)
+        if previousSize != newSize {
+            (superview as? LayoutBarContainer)?.itemPreferredSizeDidChange(self)
+        }
+        needsDisplay = true
     }
 
     private static func preferredSize(

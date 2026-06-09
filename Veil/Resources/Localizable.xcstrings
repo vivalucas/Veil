@@ -47,7 +47,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ 工具栏"
+            "value" : "%@ 栏"
           }
         }
       }
@@ -81,7 +81,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ 无法在自动隐藏菜单栏中排列项目。"
+            "value" : "%@ 无法在自动隐藏菜单栏中排列菜单栏项目。"
           }
         }
       }
@@ -155,7 +155,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ 无响应。在重启之前，无法移动该菜单项。在此问题解决之前，其他菜单栏项目的移动也可能受到影响。"
+            "value" : "%@ 无响应。重启之前无法移动该菜单栏项目。在此问题解决之前，其他菜单栏项目的移动也可能受到影响。"
           }
         }
       }
@@ -334,7 +334,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "您有新的更新可用"
+            "value" : "有新版本可用"
           }
         }
       }
@@ -430,13 +430,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "セカンダリコンテキストメニューの一番下に「%@を終了」項目を追加します。"
+            "value" : "セカンダリコンテキストメニューの一番下に「%@ を終了」項目を追加します。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在二级右键菜单底部添加退出 %@ 选项。"
+            "value" : "在二级上下文菜单底部添加“退出 %@”菜单项。"
           }
         }
       }
@@ -453,7 +453,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "手动添加应用程序"
+            "value" : "手动添加应用"
           }
         }
       }
@@ -521,13 +521,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "外部のアプリが Veil::// URLを通じて %@の設定を読み書きできるようにします。"
+            "value" : "外部アプリが veil:// URL を使って %@ の設定を読み書きできるようにします。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "允许外部应用程序通过 veil:// URL 读取并修改 %@ 设置。"
+            "value" : "允许外部应用通过 veil:// URL 读取并修改 %@ 设置。"
           }
         }
       }
@@ -561,7 +561,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "始终在显示器的菜单栏中显示隐藏的项目。"
+            "value" : "始终在此显示器上显示隐藏的菜单栏项目。"
           }
         }
       }
@@ -578,7 +578,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "使用热键时，始终将 %@ 栏显示在鼠标指针的位置。"
+            "value" : "使用热键显示时，始终在鼠标指针位置显示 %@ 栏。"
           }
         }
       }
@@ -657,13 +657,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "集中モード有効時に、指定した Veil メニューバープロファイルを適用します。"
+            "value" : "集中モードが有効になったときに、指定した Veil メニューバープロファイルを適用します。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用专注模式时切换到指定的 Veil 菜单栏配置。"
+            "value" : "专注模式启用时，应用指定的 Veil 菜单栏配置。"
           }
         }
       }
@@ -674,13 +674,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "「適用」をクリックすると、メニューバー項目を含むアプリが一時的に再起動され、新しい間隔が反映されます。この設定はアクティブなメニューバーディスプレイでのみ有効です。"
+            "value" : "「適用」をクリックすると、メニューバー項目を含むアプリが一時的に再起動され、新しい間隔が反映されます。この設定は、このディスプレイがアクティブなメニューバーのディスプレイのときに有効です。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "应用设置后将短暂重启带有菜单栏图标的 App，以使其采用新的间距。此设置仅在此显示器作为当前活跃的菜单栏显示器时生效。"
+            "value" : "应用后会短暂重启包含菜单栏项目的应用，使新间距生效。此设置会在该显示器成为当前菜单栏所在显示器时生效。"
           }
         }
       }
@@ -697,7 +697,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "根据目前的系统外观以应用不同的设置。"
+            "value" : "根据当前系统外观应用不同设置。"
           }
         }
       }
@@ -778,7 +778,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "已获批准访问设置的应用将显示在此处。"
+            "value" : "申请设置访问权限的应用在获准后会显示在此处。"
           }
         }
       }
@@ -795,7 +795,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "确定要删除配置 \"%@\" 吗？此操作无法撤销。"
+            "value" : "确定要删除配置“%@”吗？此操作无法撤销。"
           }
         }
       }
@@ -806,7 +806,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メニューバー項目を整理します。"
+            "value" : "メニューバー項目を並べ替えます。"
           }
         },
         "zh-Hans" : {
@@ -829,7 +829,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "方向箭头"
+            "value" : "箭头"
           }
         }
       }
@@ -1095,13 +1095,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "バンドルID（例：iordv.Droppy）"
+            "value" : "バンドル ID（例：iordv.Droppy）"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bundle ID（如：iordv.Droppy）"
+            "value" : "Bundle ID（例如 iordv.Droppy）"
           }
         }
       }
@@ -1231,13 +1231,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "システム設定 > メニューバー を確認して %@ を有効にしてください"
+            "value" : "「システム設定 > メニューバー」で %@ を有効にしてください"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "请在 系统设置 > 菜单栏 中启用 %@"
+            "value" : "请在“系统设置 > 菜单栏”中启用 %@"
           }
         }
       }
@@ -1475,7 +1475,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "检测到有冲突的菜单栏管理器"
+            "value" : "检测到冲突的菜单栏管理器"
           }
         }
       }
@@ -1543,7 +1543,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "拷贝"
+            "value" : "复制"
           }
         }
       }
@@ -1645,7 +1645,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "深色模式"
+            "value" : "深色外观"
           }
         }
       }
@@ -1849,7 +1849,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无需检查"
+            "value" : "不检查"
           }
         }
       }
@@ -1911,13 +1911,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ アイコンをダブルクリックして常に非表示セクションを開く"
+            "value" : "%@ アイコンをダブルクリックして「常に非表示」セクションを開く"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "双击 %@ 图标以打开始终隐藏区域。"
+            "value" : "双击 %@ 图标以打开永久隐藏区域"
           }
         }
       }
@@ -1928,13 +1928,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メニューバーの空いている領域をダブルクリックすると、常に非表示のメニューバー項目が表示されます。"
+            "value" : "メニューバーの空いている領域をダブルクリックすると、「常に非表示」セクションのメニューバー項目が表示されます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "双击菜单栏的空白区域，即可显示永久隐藏的菜单栏项目。"
+            "value" : "双击菜单栏空白区域，即可显示永久隐藏的菜单栏项目。"
           }
         }
       }
@@ -1945,13 +1945,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常に非表示の項目はダブルクリックで表示"
+            "value" : "ダブルクリックで「常に非表示」の項目を表示"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "双击显示始终隐藏的项目"
+            "value" : "双击显示永久隐藏项目"
           }
         }
       }
@@ -1962,13 +1962,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ドラッグしてメニューバー項目を異なるセクションに整理します。"
+            "value" : "ドラッグしてメニューバー項目を別のセクションへ移動できます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "拖动菜单栏项目将其整理到不同的区域。"
+            "value" : "拖动菜单栏项目，将其整理到不同区域。"
           }
         }
       }
@@ -1979,13 +1979,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "以前のバージョンのアプリのバグにより、%@ のメニューバーセクションのデータが破損し、リセットされました。"
+            "value" : "以前のバージョンの不具合により、%@ のメニューバーのセクションデータが破損したため、リセットされました。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "由于早期版本的漏洞，%@ 菜单栏部分数据已损坏，必须重置。"
+            "value" : "由于旧版本中的错误，%@ 的菜单栏区域数据已损坏，必须重置。"
           }
         }
       }
@@ -2138,7 +2138,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "开启菜单栏项目溢出"
+            "value" : "启用菜单栏项目溢出"
           }
         }
       }
@@ -2155,7 +2155,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用二级菜单"
+            "value" : "启用二级上下文菜单"
           }
         }
       }
@@ -2172,7 +2172,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用二级上下文菜单退出"
+            "value" : "启用二级上下文菜单退出项"
           }
         }
       }
@@ -2183,13 +2183,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "設定URIスキームを有効にする"
+            "value" : "設定 URI スキームを有効にする"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用控制 URI Scheme"
+            "value" : "启用设置 URI 方案"
           }
         }
       }
@@ -2206,7 +2206,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用 %@ 工具栏"
+            "value" : "启用 %@ 栏"
           }
         }
       }
@@ -2217,13 +2217,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常に非表示セクションを有効にする"
+            "value" : "「常に非表示」セクションを有効にする"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用始终隐藏区域"
+            "value" : "启用永久隐藏区域"
           }
         }
       }
@@ -2302,7 +2302,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "例: bash の事前フックで `defaults write com.bjango.istatmenus5 ActiveProfile -string \"$VEIL_PROFILE_NAME\"` を実行すると、iStat Menus を Veil と同期できます。"
+            "value" : "例：bash の事前フックで `defaults write com.bjango.istatmenus5 ActiveProfile -string \"$VEIL_PROFILE_NAME\"` を実行すると、iStat Menus を Veil と同期できます。"
           }
         },
         "zh-Hans" : {
@@ -2359,7 +2359,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无法编码导出配置文件。"
+            "value" : "无法为导出编码配置。"
           }
         }
       }
@@ -2376,7 +2376,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "更新 %lld 个配置文件失败。"
+            "value" : "无法更新 %lld 个配置。"
           }
         }
       }
@@ -2410,7 +2410,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "焦点"
+            "value" : "专注模式"
           }
         }
       }
@@ -2597,7 +2597,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "授权"
+            "value" : "授予权限"
           }
         }
       }
@@ -2642,13 +2642,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常に非表示セクションを隠す"
+            "value" : "「常に非表示」セクションを隠す"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "隐藏始终隐藏区域"
+            "value" : "隐藏永久隐藏区域"
           }
         }
       }
@@ -2676,13 +2676,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "非表示セクションを隠す"
+            "value" : "「非表示」セクションを隠す"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "隐藏已隐藏的区域"
+            "value" : "隐藏“隐藏”区域"
           }
         }
       }
@@ -2812,13 +2812,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "パネル内でアニメーションするメニューバーアイコンの更新頻度です。値が大きいほど滑らかになりますが、CPUの使用量が増えます。"
+            "value" : "パネル内でアニメーションするメニューバーアイコンの更新頻度です。値が大きいほど滑らかになりますが、CPU 使用率が上がります。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "面板中动画菜单栏图标的刷新频率。数值越大越流畅，但会增加CPU占用。"
+            "value" : "面板中动画菜单栏图标的刷新频率。数值越大越流畅，但会增加 CPU 占用。"
           }
         }
       }
@@ -2880,13 +2880,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "エフェクトが見えない場合、システム設定の %@ >「メニューバーの背景を表示」を無効にしてください"
+            "value" : "エフェクトが表示されない場合は、「システム設定」%@「メニューバー」で「メニューバーの背景を表示」をオフにしてください"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若效果未显示，请在“系统设置 %@ 菜单栏”中禁用“显示菜单栏背景”"
+            "value" : "如果效果未显示，请在“系统设置”%@“菜单栏”中关闭“显示菜单栏背景”"
           }
         }
       }
@@ -2903,13 +2903,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "許可された場合、このアプリは次のようなことができます:\n\n・現在の設定と構成を確認する\n・機能やオプションを有効/無能にする\n・%1$@ の動作を変更する\n・ディスプレイごとに設定をカスタマイズする\n\nこの権限は、%2$@ のオートメーション設定で削除されるまで有効です。"
+            "value" : "許可すると、このアプリは次の操作を行えるようになります:\n\n・現在の設定と構成を読み取る\n・機能やオプションをオン/オフする\n・時間の値（遅延、間隔、タイマー）を調整する\n・%1$@ バーの動作を変更する\n・ディスプレイごとの設定をカスタマイズする\n\nこの権限は、%2$@ のオートメーション設定で削除するまで有効です。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果授予权限，此应用将能够：\n\n• 读取当前设置和配置\n• 开启或关闭功能和选项\n• 调整时间值（延迟、间隔、计时器）\n• 更改 %1$@ Bar 的行为方式\n• 自定义每个显示器的设置\n\n此权限将保持有效，直到在 %2$@ 的“自动化”设置中将其移除。"
+            "value" : "授予权限后，此应用将能够：\n\n• 读取当前设置和配置\n• 开启或关闭功能和选项\n• 调整时间值（延迟、间隔、计时器）\n• 更改 %1$@ 栏的行为方式\n• 自定义每台显示器的设置\n\n此权限将保持有效，直到您在 %2$@ 的“自动化”设置中将其移除。"
           }
         }
       }
@@ -2920,13 +2920,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ホワイトリストに登録されていない場合は、アプリ名と操作内容を確認するダイアログが表示されます。"
+            "value" : "ホワイトリストに登録されていないアプリの場合、アプリ名と要求された操作を確認するダイアログが表示されます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "未在白名单中的应用将触发确认对话框，显示应用名称及其请求的权限。"
+            "value" : "如果应用不在白名单中，您会看到确认对话框，其中会显示应用名称及其请求执行的操作。"
           }
         }
       }
@@ -2937,13 +2937,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "承認すると、アプリは永久にホワイトリストに登録され、再度尋ねることなくいつでも設定を変更できます。"
+            "value" : "承認すると、そのアプリはホワイトリストに登録され、以後は確認なしでいつでも設定を変更できるようになります。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "一旦批准，该应用将被加入白名单，之后可在不再次提示的情况下修改设置。"
+            "value" : "批准后，该应用会被加入白名单，之后可随时修改设置，无需再次确认。"
           }
         }
       }
@@ -2960,7 +2960,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "导入失败。您可以手动设置。"
+            "value" : "导入失败。您可以手动配置设置。"
           }
         }
       }
@@ -3022,13 +3022,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アイテムは複数の列を持つグリッド状に並びます。"
+            "value" : "項目は複数列のグリッド状に並びます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "项目排列在多列的网格中。"
+            "value" : "项目会以多列网格排列。"
           }
         }
       }
@@ -3039,13 +3039,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アイテムは1列に横に並びます。"
+            "value" : "項目は横一列に並びます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "项目按单一的水平排列。"
+            "value" : "项目会排列为单行横排。"
           }
         }
       }
@@ -3056,13 +3056,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アイテムは1列に縦に並びます。"
+            "value" : "項目は縦一列に並びます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "项目在单列中垂直堆叠。"
+            "value" : "项目会以单列垂直堆叠。"
           }
         }
       }
@@ -3073,13 +3073,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メニューバーで ⌘ Command + ドラッグすることでも項目を整理できます。"
+            "value" : "メニューバーで ⌘ Command + ドラッグすることでも項目を並べ替えられます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "也可以通过按住 ⌘ Command 键并在菜单栏中拖动来排列项目。"
+            "value" : "也可以按住 ⌘ Command 键并在菜单栏中拖动来排列项目。"
           }
         }
       }
@@ -3096,7 +3096,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "保留搜索"
+            "value" : "保留搜索内容"
           }
         }
       }
@@ -3113,7 +3113,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "上次检查： %@"
+            "value" : "上次检查：%@"
           }
         }
       }
@@ -3158,13 +3158,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "レイアウトをリセットしました。項目は非表示セクションに移動されました。"
+            "value" : "レイアウトをリセットしました。項目は「非表示」セクションに移動されました。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "布局重置。 项目已移至已隐藏区域。"
+            "value" : "布局已重置。菜单栏项目已移至隐藏区域。"
           }
         }
       }
@@ -3334,7 +3334,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果需要，可以通过隐藏当前应用程序菜单来为菜单栏腾出更多空间。启用此设置后，macOS 会要求 %@ 在 Dock 栏中显示自身。"
+            "value" : "必要时隐藏当前应用菜单，为菜单栏腾出更多空间。启用此设置期间，macOS 要求 %@ 显示在 Dock 中。"
           }
         }
       }
@@ -3362,13 +3362,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "グリッドレイアウトにおける1行あたりの最大アイテム数。"
+            "value" : "グリッドレイアウトにおける1行あたりの最大項目数。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "网格布局中每行的最大条目数。"
+            "value" : "网格布局中每行的最大项目数。"
           }
         }
       }
@@ -3470,7 +3470,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "使用智能算法自动隐藏菜单栏项目。"
+            "value" : "菜单栏项目会通过智能算法重新隐藏。"
           }
         }
       }
@@ -3532,7 +3532,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メニューバープロフィール"
+            "value" : "メニューバープロファイル"
           }
         },
         "zh-Hans" : {
@@ -3549,7 +3549,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メニューバーセクション"
+            "value" : "メニューバーのセクション"
           }
         },
         "zh-Hans" : {
@@ -3617,13 +3617,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ノッチ付きディスプレイでノッチの横に収まらないメニューバーアイテムを、表示セクションから非表示セクションに移動します。ノッチの下に隠れてしまう場合でも、保存されたプロファイルのレイアウトをそのまま維持するには無効にしてください。"
+            "value" : "ノッチ付きディスプレイでノッチの横に収まらないメニューバー項目を、「表示」セクションから「非表示」セクションに移動します。ノッチの下に隠れてしまう場合でも、保存されたプロファイルのレイアウトをそのまま維持するにはオフにしてください。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "当菜单栏图标在带刘海的显示屏上无法容纳于刘海两侧时，将其从可见部分移动到隐藏部分。禁用此项将严格保持预设的配置文件布局，即使图标可能会被挤压到刘海下方。"
+            "value" : "当菜单栏项目在带刘海的显示器上无法放在刘海旁边时，将其从显示区域移入隐藏区域。关闭此项后，即使项目可能被挤到刘海下方，也会严格保留已保存的配置布局。"
           }
         }
       }
@@ -3634,13 +3634,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "「新着アイテム」バッジを移動して、新しく検出された項目の表示位置を選択できます。"
+            "value" : "「新規項目」バッジを移動して、新しく検出された項目の表示位置を選択できます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "拖动“新菜单栏项”标记，设置新检测到的菜单栏项显示位置。"
+            "value" : "拖动“新项目”标记，选择新检测到的项目出现的位置。"
           }
         }
       }
@@ -3668,13 +3668,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "新着アイテム"
+            "value" : "新規項目"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "新菜单栏项"
+            "value" : "新项目"
           }
         }
       }
@@ -3691,7 +3691,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "新建配置名称"
+            "value" : "新配置名称"
           }
         }
       }
@@ -3708,7 +3708,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "此区域没有项目"
+            "value" : "此区域没有菜单栏项目"
           }
         }
       }
@@ -3742,7 +3742,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "还没有保存的配置。请先在“配置管理”标签页创建一个配置，再为它添加专属钩子。"
+            "value" : "还没有保存的配置。请先在“配置管理”标签页创建一个，再为它添加专属钩子。"
           }
         }
       }
@@ -3759,7 +3759,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "还没有保存的配置。保存当前配置以创建配置。"
+            "value" : "还没有保存的配置。保存当前配置即可创建一个。"
           }
         }
       }
@@ -3963,7 +3963,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "macOS已隐藏了一个或多个区域分隔符"
+            "value" : "macOS 已隐藏一个或多个区域分隔符"
           }
         }
       }
@@ -4014,7 +4014,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "打开专注模式"
+            "value" : "打开专注模式设置"
           }
         }
       }
@@ -4048,7 +4048,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按配置的钩子"
+            "value" : "配置专属钩子"
           }
         }
       }
@@ -4127,7 +4127,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "プロフィール"
+            "value" : "プロファイル"
           }
         },
         "zh-Hans" : {
@@ -4337,7 +4337,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "反馈 Bug"
+            "value" : "报告问题"
           }
         }
       }
@@ -4456,7 +4456,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重置失败： %@"
+            "value" : "重置失败：%@"
           }
         }
       }
@@ -4552,13 +4552,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "区切りをリセットし、%@ アイコンを除くすべての移動可能な項目を非表示に移動します — 新規インストール直後の状態になります。"
+            "value" : "区切りをリセットし、%@ アイコンを除くすべての移動可能な項目を「非表示」に移動します。新規インストール直後と同じ状態になります。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重置分隔线，并将除 %@ 图标之外的所有可移动项目移至隐藏状态，跟原版本菜单栏一样。"
+            "value" : "重置分隔线，并将除 %@ 图标之外的所有可移动项目移至隐藏区域，恢复到全新安装后的状态。"
           }
         }
       }
@@ -4586,13 +4586,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "区切りを初期状態に戻し、%@ アイコンを除くすべての移動可能な項目を非表示にします。レイアウトの崩れや読み込みの不具合が発生した際に実行してください。"
+            "value" : "区切りを初期状態に戻し、%@ アイコンを除くすべての移動可能な項目を「非表示」にします。レイアウトの崩れや読み込みの不具合が発生した際に実行してください。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "恢复分隔线默认设置，并将除 %@ 图标外的所有可移动元素隐藏。如果布局显示异常或元素无法加载，请使用此选项。"
+            "value" : "恢复分隔线默认设置，并将除 %@ 图标外的所有可移动项目移至隐藏区域。如果布局显示异常或项目无法加载，请使用此选项。"
           }
         }
       }
@@ -4660,7 +4660,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在菜单栏空白处单击鼠标右键，即可显示 %@ 的精简版菜单。如果与其他应用程序发生冲突，请禁用此设置。"
+            "value" : "在菜单栏空白处单击鼠标右键，即可显示 %@ 的精简版菜单。如果与其他应用发生冲突，请禁用此设置。"
           }
         }
       }
@@ -4688,13 +4688,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "プロファイル切り替えの前後に shell または AppleScript ファイルを実行します。手動ボタン、ホットキー、ディスプレイ自動切り替え、集中モードフィルタのどの適用経路でもフックが実行されます。"
+            "value" : "プロファイル切り替えの前後にシェルまたは AppleScript ファイルを実行します。手動ボタン、ホットキー、ディスプレイ自動切り替え、集中モードフィルタのどの適用経路でもフックが実行されます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在切换配置前后运行 shell 或 AppleScript 文件。无论通过手动按钮、热键、显示器自动切换还是专注模式过滤器应用配置，钩子都会触发。"
+            "value" : "在配置切换前后运行 Shell 或 AppleScript 文件。无论通过手动按钮、热键、显示器自动切换还是专注模式过滤条件应用配置，钩子都会执行。"
           }
         }
       }
@@ -4756,7 +4756,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "画面収録は、Layout でメニューバー項目のプレビューを表示する場合にのみ必要です。折りたたみ機能はこの権限がなくても動作します。"
+            "value" : "画面収録は、レイアウトでメニューバー項目のプレビューを表示する場合にのみ必要です。折りたたみ機能はこの権限がなくても動作します。"
           }
         },
         "zh-Hans" : {
@@ -4779,7 +4779,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "需要屏幕录制权限才能显示提示。"
+            "value" : "需要屏幕录制权限才能显示提示框。"
           }
         }
       }
@@ -4898,7 +4898,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "区域分割线样式"
+            "value" : "区域分隔线样式"
           }
         }
       }
@@ -4943,7 +4943,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "設定URI は無効です。外部アプリは %@ の設定を読み書きできません。"
+            "value" : "設定 URI は無効です。外部アプリは %@ の設定を読み書きできません。"
           }
         },
         "zh-Hans" : {
@@ -5000,13 +5000,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ が自動的にアップデートを確認するようにしますか？%2$@ のメニューバーアイコン、または設定 %3$@「バージョン情報」からいつでも手動で確認できます。"
+            "value" : "%1$@ が自動的にアップデートを確認するようにしますか？%2$@ のメニューバーアイコン、または「設定」%3$@「バージョン情報」からいつでも手動で確認できます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "是否允许 %1$@ 自动检查更新？您随时可以通过 %2$@ 菜单栏图标或“设置 %3$@ 关于”手动检查。"
+            "value" : "是否允许 %1$@ 自动检查更新？您随时可以通过 %2$@ 菜单栏图标，或“设置”%3$@“关于”手动检查。"
           }
         }
       }
@@ -5023,7 +5023,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "展示 %@ 图标"
+            "value" : "显示 %@ 图标"
           }
         }
       }
@@ -5034,7 +5034,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Layout でアイコンのプレビューを表示します。"
+            "value" : "レイアウトでアイコンのプレビューを表示します。"
           }
         },
         "zh-Hans" : {
@@ -5057,7 +5057,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "将鼠标悬停在实际菜单栏的项目上时显示提示框。"
+            "value" : "将鼠标悬停在实际菜单栏项目上时显示提示框。"
           }
         }
       }
@@ -5074,7 +5074,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "使用 ⌘ Command + 拖动菜单栏项目时显示所有部分"
+            "value" : "按住 ⌘ Command 键拖动菜单栏项目时显示所有区域"
           }
         }
       }
@@ -5085,13 +5085,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常に非表示セクションを表示"
+            "value" : "「常に非表示」セクションを表示"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "显示始终隐藏的部分"
+            "value" : "显示永久隐藏区域"
           }
         }
       }
@@ -5125,7 +5125,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在该显示器的菜单栏下方，以独立菜单栏显示隐藏的项目。"
+            "value" : "在此显示器上，将隐藏的菜单栏项目显示在菜单栏下方的独立栏中。"
           }
         }
       }
@@ -5136,13 +5136,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "非表示セクションを表示"
+            "value" : "「非表示」セクションを表示"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "显示已隐藏的区域"
+            "value" : "显示“隐藏”区域"
           }
         }
       }
@@ -5227,7 +5227,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "悬停后显示"
+            "value" : "悬停显示延迟"
           }
         }
       }
@@ -5244,7 +5244,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "滚动滚轮时显示"
+            "value" : "滚动时显示"
           }
         }
       }
@@ -5255,13 +5255,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メニューバーに %@ アイコンを表示します。クリックで非表示項目を表示、ダブルクリックで常に非表示の項目を表示、右クリックで設定を開きます。"
+            "value" : "メニューバーに %@ アイコンを表示します。クリックで非表示項目を表示、ダブルクリックで「常に非表示」の項目を表示、右クリックで設定を開きます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在菜单栏显示 %@ 图标。单击显示隐藏项目，双击显示永久隐藏的项目，右键单击打开设置。"
+            "value" : "在菜单栏显示 %@ 图标。单击显示隐藏项目，双击显示永久隐藏项目，右键单击打开设置。"
           }
         }
       }
@@ -5391,7 +5391,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ストラテジー"
+            "value" : "方式"
           }
         },
         "zh-Hans" : {
@@ -5465,7 +5465,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "赞助 %@"
+            "value" : "支持 %@"
           }
         }
       }
@@ -5482,7 +5482,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "赞助 %@…"
+            "value" : "支持 %@…"
           }
         }
       }
@@ -5516,7 +5516,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ 栏与显示屏左边缘对齐。"
+            "value" : "%@ 栏与显示器左边缘对齐。"
           }
         }
       }
@@ -5533,7 +5533,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ 栏与显示屏右边缘对齐。"
+            "value" : "%@ 栏与显示器右边缘对齐。"
           }
         }
       }
@@ -5584,7 +5584,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ Bar 需要屏幕录制权限。"
+            "value" : "%@ 栏需要屏幕录制权限。"
           }
         }
       }
@@ -5601,7 +5601,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ Bar 的位置会根据情景而变化。"
+            "value" : "%@ 栏的位置会根据上下文变化。"
           }
         }
       }
@@ -5612,7 +5612,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ アイコンは常に表示セクション内に置く必要があります。"
+            "value" : "%@ アイコンは常に「表示」セクション内に置く必要があります。"
           }
         },
         "zh-Hans" : {
@@ -5652,7 +5652,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "鼠标悬停前等待的时间。"
+            "value" : "悬停后显示前的等待时间。"
           }
         }
       }
@@ -5765,7 +5765,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ヒント: メニューバーの空いている領域を右クリックしても、これらの設定を編集できます。"
+            "value" : "ヒント：メニューバーの空いている領域を右クリックしても、これらの設定を編集できます。"
           }
         },
         "zh-Hans" : {
@@ -5794,7 +5794,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若要通过专注模式切换配置，请在“系统设置 %2$@ 专注 %3$@ [模式] %4$@ 专注模式过滤器”中将 %1$@ 添加为专注模式过滤器。当专注模式停用时，显示配置将自动恢复。"
+            "value" : "若要通过专注模式切换配置，请在“系统设置 %2$@ 专注模式 %3$@ [模式] %4$@ 专注模式过滤条件”中将 %1$@ 添加为专注模式过滤条件。当专注模式停用时，显示器配置会自动恢复。"
           }
         }
       }
@@ -5822,13 +5822,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常に非表示セクションを切り替え"
+            "value" : "「常に非表示」セクションを切り替え"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "切换始终隐藏的区域"
+            "value" : "切换永久隐藏区域"
           }
         }
       }
@@ -5839,7 +5839,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "非表示セクションを切り替え"
+            "value" : "「非表示」セクションを切り替え"
           }
         },
         "zh-Hans" : {
@@ -6032,7 +6032,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "更新所有配置中的设置"
+            "value" : "更新所有配置的设置"
           }
         }
       }
@@ -6049,7 +6049,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "仅更新当前配置"
+            "value" : "仅更新设置"
           }
         }
       }
@@ -6128,13 +6128,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ノッチ付きスクリーンではインセット形状を使用"
+            "value" : "ノッチ付きディスプレイではインセット形状を使用"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在带刘海的屏幕上使用内嵌形状"
+            "value" : "在带刘海的显示器上使用内嵌形状"
           }
         }
       }
@@ -6151,7 +6151,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在刘海屏上使用 LCS 排序"
+            "value" : "在带刘海的显示器上使用 LCS 排序"
           }
         }
       }
@@ -6162,13 +6162,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Optionキーを押しながらクリックして、常に非表示セクションを開く"
+            "value" : "Option キーを押しながらクリックして「常に非表示」セクションを開く"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按住 Option 键点击以打开始终隐藏区域"
+            "value" : "按住 Option 键点按以打开永久隐藏区域"
           }
         }
       }
@@ -6185,7 +6185,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在刘海屏设备上，对配置排序时使用更快的 LCS（最长公共子序列）算法，而不是完整排序。LCS 可减少元素移动次数，但在分辨率较低的刘海屏设备上可能稳定性较差。"
+            "value" : "在带刘海的显示器上，对配置排序时使用更快的 LCS（最长公共子序列）算法，而不是完整排序。LCS 可减少项目移动次数，但在分辨率较低的带刘海显示器上可能稳定性较差。"
           }
         }
       }
@@ -6287,7 +6287,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "我们找到了 Ice（原版应用）的设置。"
+            "value" : "已找到 Ice（原版应用）的设置。"
           }
         }
       }
@@ -6321,7 +6321,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "白名单应用程序"
+            "value" : "白名单应用"
           }
         }
       }
@@ -6338,13 +6338,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ホワイトリストに登録されたアプリは、設定の読み取り、ブール値オプションの切り替え、数値の設定（タイマー、遅延）、列挙型設定（再非表示戦略、%1$@ バーの位置）の変更、およびディスプレイごとの設定の変更が可能です。これには、自動再非表示、クリック/ホバー/スクロール/ダブルクリックで表示、%2$@ バー、アプリケーションメニューの非表示、常時非表示セクションの有効化、ツールチップの表示、および診断ログが含まれます。"
+            "value" : "ホワイトリストに登録されたアプリは、設定の読み取り、ブール値オプションの切り替え、数値の設定（タイマー、遅延）、列挙型設定（再非表示戦略、%1$@ バーの位置）の変更、およびディスプレイごとの設定の変更が可能です。これには、自動再非表示、クリック/ホバー/スクロール/ダブルクリックで表示、%2$@ バー、アプリケーションメニューの非表示、「常に非表示」セクションの有効化、ツールチップの表示、および診断ログが含まれます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "白名单应用可以读取设置、切换布尔选项、设置数值（定时器、延迟）、更改枚举设置（重新隐藏策略、%1$@ 栏位置），并修改分显示器配置。这包括自动重新隐藏、通过点击/悬停/滚动/双击显示、%2$@ 栏、隐藏应用程序菜单、启用“始终隐藏”部分、显示工具提示以及诊断日志记录。"
+            "value" : "白名单应用可以读取设置、切换布尔选项、设置数值（计时器、延迟）、更改枚举设置（重新隐藏策略、%1$@ 栏位置），并修改每台显示器的配置。包括自动重新隐藏、点击/悬停/滚动/双击显示、%2$@ 栏、隐藏应用菜单、启用“永久隐藏”区域、显示提示框和诊断日志。"
           }
         }
       }
@@ -6361,7 +6361,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "您想导入现有配置吗？"
+            "value" : "是否导入现有配置？"
           }
         }
       }
@@ -6429,7 +6429,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "已断开显示器设置"
+            "value" : "已断开连接的显示器设置"
           }
         }
       }
@@ -6464,6 +6464,278 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "移除不再连接的显示器所保存的设置。"
+          }
+        }
+      }
+    },
+    "Adds a second hidden section for items you almost never need." : {
+      "comment" : "A description of the always-hidden section option.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ほとんど使わない項目用に、2つ目の「非表示」セクションを追加します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加第二个隐藏区域，用于放置几乎不用的项目。"
+          }
+        }
+      }
+    },
+    "Always Hidden" : {
+      "comment" : "The display name for the always-hidden menu bar section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常に非表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "永久隐藏"
+          }
+        }
+      }
+    },
+    "App" : {
+      "comment" : "A section title for app-level settings.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用"
+          }
+        }
+      }
+    },
+    "Automatically fold overflowing items" : {
+      "comment" : "A toggle that folds menu bar items that do not fit on the display.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "はみ出した項目を自動的に折りたたむ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动折叠溢出的项目"
+          }
+        }
+      }
+    },
+    "Folding" : {
+      "comment" : "A settings section title for options that fold menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "折りたたみ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "折叠"
+          }
+        }
+      }
+    },
+    "Grant" : {
+      "comment" : "A button that opens the system prompt for a permission.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "許可"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授权"
+          }
+        }
+      }
+    },
+    "Granted" : {
+      "comment" : "A status label shown when a permission has been granted.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "許可済み"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已授权"
+          }
+        }
+      }
+    },
+    "Go to Permissions" : {
+      "comment" : "A button that navigates to the permissions settings page.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "権限へ移動"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前往权限"
+          }
+        }
+      }
+    },
+    "Keep the %@ control icon in the menu bar so hidden items can be revealed quickly." : {
+      "comment" : "A description of the option that keeps the app control icon in the menu bar.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ の操作アイコンをメニューバーに残し、非表示項目をすばやく表示できるようにします。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将 %@ 控制图标保留在菜单栏中，便于快速显示隐藏项目。"
+          }
+        }
+      }
+    },
+    "Menu Bar Layout" : {
+      "comment" : "The title for the menu bar layout settings section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーレイアウト"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单栏布局"
+          }
+        }
+      }
+    },
+    "Optional" : {
+      "comment" : "A section title for optional permissions.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "任意"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可选"
+          }
+        }
+      }
+    },
+    "Required" : {
+      "comment" : "A section title for required permissions.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "必須"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "必需"
+          }
+        }
+      }
+    },
+    "Reveal" : {
+      "comment" : "A settings section title for options that reveal hidden menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示"
+          }
+        }
+      }
+    },
+    "Rehide" : {
+      "comment" : "A settings section title for options that hide menu bar items again.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再非表示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新隐藏"
+          }
+        }
+      }
+    },
+    "Use always-hidden section" : {
+      "comment" : "A toggle that enables the always-hidden menu bar section.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「常に非表示」セクションを使用"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用永久隐藏区域"
+          }
+        }
+      }
+    },
+    "When items do not fit on a notched display, move lower-priority visible items into Hidden instead of letting them sit under the notch." : {
+      "comment" : "A description of the option that automatically folds overflowing menu bar items.",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ノッチ付きディスプレイで項目が収まらない場合、低優先度の表示項目をノッチの下に置かず、「非表示」へ移動します。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当项目无法在带刘海的显示器上完整显示时，将低优先级的可见项目移入“隐藏”，避免它们被刘海遮挡。"
           }
         }
       }
