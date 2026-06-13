@@ -2567,7 +2567,7 @@ extension MenuBarItemManager {
         location: EventTap.Location,
         placement: CGEventTapPlacement,
         option: CGEventTapOptions,
-        handler: @escaping (EventTap, CGEvent) -> CGEvent?
+        handler: @MainActor @escaping (EventTap, CGEvent) -> CGEvent?
     ) -> EventTap {
         EventTap(
             label: label,
@@ -2584,7 +2584,7 @@ extension MenuBarItemManager {
         location: EventTap.Location,
         placement: CGEventTapPlacement,
         context: EventContinuationContext,
-        onMatch: @escaping (EventTap) -> Void
+        onMatch: @MainActor @escaping (EventTap) -> Void
     ) -> EventTap {
         makeEventTap(
             label: label,

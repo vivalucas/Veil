@@ -12,6 +12,7 @@ import SwiftUI
 struct GeneralSettingsPane: View {
     @EnvironmentObject var appState: AppState
     @ObservedObject var settings: GeneralSettings
+    @State private var isAdvancedExpanded = false
 
     private var rehideIntervalKey: LocalizedStringKey {
         let count = Int(settings.rehideInterval)
@@ -65,11 +66,20 @@ struct GeneralSettingsPane: View {
         Toggle("Show \(Constants.displayName) icon", isOn: $settings.showIceIcon)
             .annotation("Keep the \(Constants.displayName) control icon in the menu bar so hidden items can be revealed quickly.")
 
-        Toggle("Automatically fold overflowing items", isOn: overflowBinding)
-            .annotation("When items do not fit on a notched display, move lower-priority visible items into Hidden instead of letting them sit under the notch.")
+        DisclosureGroup(isExpanded: $isAdvancedExpanded) {
+            Group {
+                Toggle("Automatically fold overflowing items", isOn: overflowBinding)
+                    .annotation("When items do not fit on a notched display, move lower-priority visible items into Hidden instead of letting them sit under the notch.")
 
-        Toggle("Use always-hidden section", isOn: alwaysHiddenBinding)
-            .annotation("Adds a second hidden section for items you almost never need.")
+                Toggle("Use always-hidden section", isOn: alwaysHiddenBinding)
+                    .annotation("Adds a second hidden section for items you almost never need.")
+            }
+            .padding(.leading, 4)
+            .padding(.top, 4)
+        } label: {
+            Text("Advanced")
+                .foregroundColor(.secondary)
+        }
     }
 
     // MARK: Show Options

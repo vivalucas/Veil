@@ -17,7 +17,7 @@ private struct LocalEventMonitorModifier: ViewModifier {
         private let monitor: EventMonitor
         private var cancellable: AnyCancellable?
 
-        init(mask: NSEvent.EventTypeMask, action: @escaping (NSEvent) -> NSEvent?) {
+        init(mask: NSEvent.EventTypeMask, action: @MainActor @escaping (NSEvent) -> NSEvent?) {
             self.monitor = EventMonitor.local(for: mask, handler: action)
             self.cancellable = $isEnabled.receive(on: DispatchQueue.main).sink { [weak self] isEnabled in
                 guard let self else {
@@ -35,7 +35,7 @@ private struct LocalEventMonitorModifier: ViewModifier {
     @StateObject private var model: Model
     @Binding var isEnabled: Bool
 
-    init(mask: NSEvent.EventTypeMask, isEnabled: Binding<Bool>, action: @escaping (NSEvent) -> NSEvent?) {
+    init(mask: NSEvent.EventTypeMask, isEnabled: Binding<Bool>, action: @MainActor @escaping (NSEvent) -> NSEvent?) {
         self._model = StateObject(wrappedValue: Model(mask: mask, action: action))
         self._isEnabled = isEnabled
     }
@@ -57,7 +57,7 @@ extension View {
     ///     is enabled.
     ///   - action: An action to perform when the event monitor receives events
     ///     corresponding to `mask`.
-    func localEventMonitor(mask: NSEvent.EventTypeMask, isEnabled: Bool = true, action: @escaping (NSEvent) -> NSEvent?) -> some View {
+    func localEventMonitor(mask: NSEvent.EventTypeMask, isEnabled: Bool = true, action: @MainActor @escaping (NSEvent) -> NSEvent?) -> some View {
         modifier(LocalEventMonitorModifier(mask: mask, isEnabled: .constant(isEnabled), action: action))
     }
 }

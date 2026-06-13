@@ -73,12 +73,27 @@ final class EventTap: @unchecked Sendable {
     /// Shared logger for event taps.
     private static let diagLog = DiagLog(category: "EventTap")
 
+    private final class Context {
+        weak var tap: EventTap?
+        init(tap: EventTap) {
+            self.tap = tap
+        }
+    }
+
+    private struct UnsafeCGEventWrapper: @unchecked Sendable {
+        let event: CGEvent
+    }
+
     /// Shared callback for all event taps.
     private static let sharedCallback: CGEventTapCallBack = { _, type, event, refcon in
         guard let refcon else {
             return Unmanaged.passUnretained(event)
         }
-        let unretained: EventTap = Unmanaged.fromOpaque(refcon).takeUnretainedValue()
+        let context = Unmanaged<Context>.fromOpaque(refcon).takeUnretainedValue()
+        guard let unretained = context.tap else {
+            return Unmanaged.passUnretained(event)
+        }
+        let wrapper = UnsafeCGEventWrapper(event: event)
         return withExtendedLifetime(unretained) { tap in
             if type == .tapDisabledByUserInput || type == .tapDisabledByTimeout {
                 let reason = type == .tapDisabledByTimeout ? "timeout" : "user input"
@@ -86,20 +101,28 @@ final class EventTap: @unchecked Sendable {
                 tap.enable()
                 return nil
             }
-            guard tap.isEnabled else {
-                return Unmanaged.passUnretained(event)
+            let returnedWrapper = MainActor.assumeIsolated { () -> UnsafeCGEventWrapper? in
+                let event = wrapper.event
+                guard tap.isEnabled else {
+                    return UnsafeCGEventWrapper(event: event)
+                }
+                guard let eventFromCallback = tap.callback(tap, event) else {
+                    return nil as UnsafeCGEventWrapper?
+                }
+                return UnsafeCGEventWrapper(event: eventFromCallback)
             }
-            guard let eventFromCallback = tap.callback(tap, event) else {
-                return nil
+            if let ev = returnedWrapper?.event {
+                return Unmanaged.passUnretained(ev)
             }
-            return Unmanaged.passUnretained(eventFromCallback)
+            return nil
         }
     }
 
     private var machPort: CFMachPort?
     private var source: CFRunLoopSource?
+    private var contextPointer: UnsafeMutableRawPointer?
     private let runLoop: CFRunLoop
-    private let callback: (EventTap, CGEvent) -> CGEvent?
+    private let callback: @MainActor (EventTap, CGEvent) -> CGEvent?
 
     /// Stored creation parameters for tap recreation.
     private let creationTypes: [CGEventType]
@@ -154,7 +177,7 @@ final class EventTap: @unchecked Sendable {
         location: Location,
         placement: CGEventTapPlacement,
         option: CGEventTapOptions,
-        callback: @escaping (_ tap: EventTap, _ event: CGEvent) -> CGEvent?
+        callback: @MainActor @escaping (_ tap: EventTap, _ event: CGEvent) -> CGEvent?
     ) {
         self.label = label
         self.callback = callback
@@ -170,18 +193,21 @@ final class EventTap: @unchecked Sendable {
             return
         }
 
-        let retained = Unmanaged.passRetained(self)
+        let context = Context(tap: self)
+        let retainedContext = Unmanaged.passRetained(context)
+        let contextPtr = retainedContext.toOpaque()
+
         guard
             let machPort = EventTap.createMachPort(
                 mask: types.reduce(0) { $0 | (1 << $1.rawValue) },
                 location: location,
                 place: placement,
                 options: option,
-                userInfo: retained.toOpaque()
+                userInfo: contextPtr
             ),
             let source = CFMachPortCreateRunLoopSource(nil, machPort, 0)
         else {
-            retained.release()
+            retainedContext.release()
             EventTap.diagLog.error("Error creating event tap \"\(label)\"")
             return
         }
@@ -191,6 +217,7 @@ final class EventTap: @unchecked Sendable {
 
         self.machPort = machPort
         self.source = source
+        self.contextPointer = contextPtr
     }
 
     private var isInvalidated = false
@@ -225,7 +252,7 @@ final class EventTap: @unchecked Sendable {
         location: Location,
         placement: CGEventTapPlacement,
         option: CGEventTapOptions,
-        callback: @escaping (_ tap: EventTap, _ event: CGEvent) -> CGEvent?
+        callback: @MainActor @escaping (_ tap: EventTap, _ event: CGEvent) -> CGEvent?
     ) {
         self.init(
             label: label,
@@ -278,7 +305,10 @@ final class EventTap: @unchecked Sendable {
             CGEvent.tapEnable(tap: machPort, enable: false)
             CFMachPortInvalidate(machPort)
             self.machPort = nil
-            Unmanaged.passUnretained(self).release()
+        }
+        if let ptr = self.contextPointer {
+            Unmanaged<Context>.fromOpaque(ptr).release()
+            self.contextPointer = nil
         }
 
         guard Self.requestTapCreation() else {
@@ -286,18 +316,21 @@ final class EventTap: @unchecked Sendable {
             return false
         }
 
-        let retained = Unmanaged.passRetained(self)
+        let context = Context(tap: self)
+        let retainedContext = Unmanaged.passRetained(context)
+        let contextPtr = retainedContext.toOpaque()
+
         guard
             let newMachPort = EventTap.createMachPort(
                 mask: creationTypes.reduce(0) { $0 | (1 << $1.rawValue) },
                 location: creationLocation,
                 place: creationPlacement,
                 options: creationOption,
-                userInfo: retained.toOpaque()
+                userInfo: contextPtr
             ),
             let newSource = CFMachPortCreateRunLoopSource(nil, newMachPort, 0)
         else {
-            retained.release()
+            retainedContext.release()
             Self.diagLog.error("Failed to recreate event tap \"\(tapLabel)\"")
             return false
         }
@@ -305,6 +338,7 @@ final class EventTap: @unchecked Sendable {
         Self.registerTap(self)
         self.machPort = newMachPort
         self.source = newSource
+        self.contextPointer = contextPtr
         Self.diagLog.info("Successfully recreated event tap \"\(tapLabel)\"")
         return true
     }
@@ -324,7 +358,10 @@ final class EventTap: @unchecked Sendable {
             CGEvent.tapEnable(tap: machPort, enable: false)
             CFMachPortInvalidate(machPort)
             self.machPort = nil
-            Unmanaged.passUnretained(self).release()
+        }
+        if let ptr = self.contextPointer {
+            Unmanaged<Context>.fromOpaque(ptr).release()
+            self.contextPointer = nil
         }
     }
 

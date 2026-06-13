@@ -11,10 +11,14 @@ import Combine
 import os.lock
 
 struct EventMonitor {
+    private struct UnsafeNSEventWrapper: @unchecked Sendable {
+        let event: NSEvent
+    }
+
     private static let diagLog = DiagLog(category: "EventMonitor")
     private final class LocalMonitorState: @unchecked Sendable {
         private let mask: NSEvent.EventTypeMask
-        private let handler: (NSEvent) -> NSEvent?
+        private let handler: @MainActor (NSEvent) -> NSEvent?
         private var monitor: Any?
 
         /// Whether the monitor is currently installed.
@@ -24,7 +28,7 @@ struct EventMonitor {
 
         init(
             mask: NSEvent.EventTypeMask,
-            handler: @escaping (NSEvent) -> NSEvent?
+            handler: @MainActor @escaping (NSEvent) -> NSEvent?
         ) {
             self.mask = mask
             self.handler = handler
@@ -42,7 +46,14 @@ struct EventMonitor {
                 guard let self else {
                     return event
                 }
-                return handler(event)
+                let wrapper = UnsafeNSEventWrapper(event: event)
+                let returnedWrapper = MainActor.assumeIsolated { () -> UnsafeNSEventWrapper? in
+                    if let e = self.handler(wrapper.event) {
+                        return UnsafeNSEventWrapper(event: e)
+                    }
+                    return nil
+                }
+                return returnedWrapper?.event
             }
             if monitor == nil {
                 EventMonitor.diagLog.error("Failed to create local event monitor for mask \(self.mask.rawValue)")
@@ -64,7 +75,7 @@ struct EventMonitor {
 
     private final class GlobalMonitorState: @unchecked Sendable {
         private let mask: NSEvent.EventTypeMask
-        private let handler: (NSEvent) -> Void
+        private let handler: @MainActor (NSEvent) -> Void
         private var monitor: Any?
 
         /// Whether the monitor is currently installed.
@@ -74,7 +85,7 @@ struct EventMonitor {
 
         init(
             mask: NSEvent.EventTypeMask,
-            handler: @escaping (NSEvent) -> Void
+            handler: @MainActor @escaping (NSEvent) -> Void
         ) {
             self.mask = mask
             self.handler = handler
@@ -92,7 +103,10 @@ struct EventMonitor {
                 guard let self else {
                     return
                 }
-                handler(event)
+                let wrapper = UnsafeNSEventWrapper(event: event)
+                MainActor.assumeIsolated {
+                    self.handler(wrapper.event)
+                }
             }
             if monitor == nil {
                 EventMonitor.diagLog.error("Failed to create global event monitor for mask \(self.mask.rawValue)")
@@ -114,8 +128,8 @@ struct EventMonitor {
 
     private final class UniversalMonitorState: @unchecked Sendable {
         private let mask: NSEvent.EventTypeMask
-        private let localHandler: (NSEvent) -> NSEvent?
-        private let globalHandler: (NSEvent) -> Void
+        private let localHandler: @MainActor (NSEvent) -> NSEvent?
+        private let globalHandler: @MainActor (NSEvent) -> Void
         private var monitors: (local: Any, global: Any)?
 
         /// Whether both monitors are currently installed.
@@ -125,8 +139,8 @@ struct EventMonitor {
 
         init(
             mask: NSEvent.EventTypeMask,
-            localHandler: @escaping (NSEvent) -> NSEvent?,
-            globalHandler: @escaping (NSEvent) -> Void
+            localHandler: @MainActor @escaping (NSEvent) -> NSEvent?,
+            globalHandler: @MainActor @escaping (NSEvent) -> Void
         ) {
             self.mask = mask
             self.localHandler = localHandler
@@ -135,7 +149,7 @@ struct EventMonitor {
 
         init(
             mask: NSEvent.EventTypeMask,
-            handler: @escaping (NSEvent) -> NSEvent?
+            handler: @MainActor @escaping (NSEvent) -> NSEvent?
         ) {
             self.mask = mask
             self.localHandler = handler
@@ -155,7 +169,14 @@ struct EventMonitor {
                 guard let self else {
                     return event
                 }
-                return localHandler(event)
+                let wrapper = UnsafeNSEventWrapper(event: event)
+                let returnedWrapper = MainActor.assumeIsolated { () -> UnsafeNSEventWrapper? in
+                    if let e = self.localHandler(wrapper.event) {
+                        return UnsafeNSEventWrapper(event: e)
+                    }
+                    return nil
+                }
+                return returnedWrapper?.event
             }
 
             guard let local else {
@@ -167,7 +188,10 @@ struct EventMonitor {
                 guard let self else {
                     return
                 }
-                globalHandler(event)
+                let wrapper = UnsafeNSEventWrapper(event: event)
+                MainActor.assumeIsolated {
+                    self.globalHandler(wrapper.event)
+                }
             }
 
             guard let global else {
@@ -265,9 +289,9 @@ struct EventMonitor {
     private init(
         mask: NSEvent.EventTypeMask,
         scope: Scope,
-        passiveHandler: @escaping (NSEvent) -> Void
+        passiveHandler: @MainActor @escaping (NSEvent) -> Void
     ) {
-        lazy var activeHandler: (NSEvent) -> NSEvent? = { event in
+        lazy var activeHandler: @MainActor (NSEvent) -> NSEvent? = { event in
             passiveHandler(event)
             return event
         }
@@ -332,7 +356,7 @@ struct EventMonitor {
 extension EventMonitor {
     static func local(
         for mask: NSEvent.EventTypeMask,
-        handler: @escaping (NSEvent) -> NSEvent?
+        handler: @MainActor @escaping (NSEvent) -> NSEvent?
     ) -> EventMonitor {
         let state = LocalMonitorState(mask: mask, handler: handler)
         return EventMonitor(state: .local(state))
@@ -340,7 +364,7 @@ extension EventMonitor {
 
     static func global(
         for mask: NSEvent.EventTypeMask,
-        handler: @escaping (NSEvent) -> Void
+        handler: @MainActor @escaping (NSEvent) -> Void
     ) -> EventMonitor {
         let state = GlobalMonitorState(mask: mask, handler: handler)
         return EventMonitor(state: .global(state))
@@ -348,8 +372,8 @@ extension EventMonitor {
 
     static func universal(
         for mask: NSEvent.EventTypeMask,
-        localHandler: @escaping (NSEvent) -> NSEvent?,
-        globalHandler: @escaping (NSEvent) -> Void
+        localHandler: @MainActor @escaping (NSEvent) -> NSEvent?,
+        globalHandler: @MainActor @escaping (NSEvent) -> Void
     ) -> EventMonitor {
         let state = UniversalMonitorState(
             mask: mask,
@@ -361,7 +385,7 @@ extension EventMonitor {
 
     static func universal(
         for mask: NSEvent.EventTypeMask,
-        handler: @escaping (NSEvent) -> NSEvent?
+        handler: @MainActor @escaping (NSEvent) -> NSEvent?
     ) -> EventMonitor {
         let state = UniversalMonitorState(mask: mask, handler: handler)
         return EventMonitor(state: .universal(state))
@@ -370,7 +394,7 @@ extension EventMonitor {
     static func passive(
         for mask: NSEvent.EventTypeMask,
         scope: Scope,
-        handler: @escaping (NSEvent) -> Void
+        handler: @MainActor @escaping (NSEvent) -> Void
     ) -> EventMonitor {
         EventMonitor(mask: mask, scope: scope, passiveHandler: handler)
     }
@@ -380,7 +404,7 @@ extension EventMonitor {
     @discardableResult
     static func startLocal(
         for mask: NSEvent.EventTypeMask,
-        handler: @escaping (NSEvent) -> NSEvent?
+        handler: @MainActor @escaping (NSEvent) -> NSEvent?
     ) -> EventMonitor {
         let monitor = local(for: mask, handler: handler)
         monitor.start()
@@ -390,7 +414,7 @@ extension EventMonitor {
     @discardableResult
     static func startGlobal(
         for mask: NSEvent.EventTypeMask,
-        handler: @escaping (NSEvent) -> Void
+        handler: @MainActor @escaping (NSEvent) -> Void
     ) -> EventMonitor {
         let monitor = global(for: mask, handler: handler)
         monitor.start()
@@ -400,8 +424,8 @@ extension EventMonitor {
     @discardableResult
     static func startUniversal(
         for mask: NSEvent.EventTypeMask,
-        localHandler: @escaping (NSEvent) -> NSEvent?,
-        globalHandler: @escaping (NSEvent) -> Void
+        localHandler: @MainActor @escaping (NSEvent) -> NSEvent?,
+        globalHandler: @MainActor @escaping (NSEvent) -> Void
     ) -> EventMonitor {
         let monitor = universal(for: mask, localHandler: localHandler, globalHandler: globalHandler)
         monitor.start()
@@ -411,7 +435,7 @@ extension EventMonitor {
     @discardableResult
     static func startUniversal(
         for mask: NSEvent.EventTypeMask,
-        handler: @escaping (NSEvent) -> NSEvent?
+        handler: @MainActor @escaping (NSEvent) -> NSEvent?
     ) -> EventMonitor {
         let monitor = universal(for: mask, handler: handler)
         monitor.start()
@@ -422,7 +446,7 @@ extension EventMonitor {
     static func startPassive(
         for mask: NSEvent.EventTypeMask,
         scope: Scope,
-        handler: @escaping (NSEvent) -> Void
+        handler: @MainActor @escaping (NSEvent) -> Void
     ) -> EventMonitor {
         let monitor = passive(for: mask, scope: scope, handler: handler)
         monitor.start()
@@ -460,7 +484,7 @@ extension EventMonitor {
 
 extension EventMonitor.EventPublisher {
     private final class EventSubscription<S: Subscriber>: Subscription where S.Input == Output, S.Failure == Failure {
-        private final class SubscriberBox {
+        private final class SubscriberBox: @unchecked Sendable {
             private let subscriber: S
 
             init(subscriber: S) {

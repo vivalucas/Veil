@@ -357,7 +357,7 @@ private struct IceBarContentView: View {
     @ObservedObject var colorManager: IceBarColorManager
     @ObservedObject var itemManager: MenuBarItemManager
     @ObservedObject var imageCache: MenuBarItemImageCache
-    @ObservedObject var menuBarManager: MenuBarManager
+    let menuBarManager: MenuBarManager
     @State private var frame = CGRect.zero
     @State private var scrollIndicatorsFlashTrigger = 0
     @State private var cacheGracePeriodActive = true
@@ -682,6 +682,7 @@ private struct IceBarContentView: View {
                         let rows = stride(from: 0, to: items.count, by: gridColumns).map { start in
                             Array(items[start ..< Swift.min(start + gridColumns, items.count)])
                         }
+                        let currentColumnWidths = columnWidths
                         ForEach(Array(rows.enumerated()), id: \.offset) { rowIndex, rowItems in
                             HStack(spacing: itemSpacing) {
                                 ForEach(Array(rowItems.enumerated()), id: \.element.windowID) { colIndex, item in
@@ -699,7 +700,7 @@ private struct IceBarContentView: View {
                                     )
                                     if rows.count > 1 {
                                         itemView
-                                            .frame(width: columnWidths[colIndex], alignment: .center)
+                                            .frame(width: currentColumnWidths[colIndex], alignment: .center)
                                     } else {
                                         itemView
                                     }
@@ -709,7 +710,7 @@ private struct IceBarContentView: View {
                                 if rows.count > 1, rowIndex == rows.count - 1, rowItems.count < gridColumns {
                                     ForEach(rowItems.count ..< gridColumns, id: \.self) { colIndex in
                                         Color.clear
-                                            .frame(width: columnWidths[colIndex], height: contentHeight)
+                                            .frame(width: currentColumnWidths[colIndex], height: contentHeight)
                                     }
                                 }
                             }
@@ -732,8 +733,8 @@ private struct IceBarItemView: View {
     private static let diagLog = DiagLog(category: "IceBar.ItemView")
 
     @ObservedObject var imageCache: MenuBarItemImageCache
-    @ObservedObject var itemManager: MenuBarItemManager
-    @ObservedObject var menuBarManager: MenuBarManager
+    let itemManager: MenuBarItemManager
+    let menuBarManager: MenuBarManager
 
     @State private var isHovered = false
 

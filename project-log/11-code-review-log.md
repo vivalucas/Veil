@@ -1,7 +1,7 @@
 # 代码评审记录
 
 > 更新频率：中
-> 最近更新：2026-06-04
+> 最近更新：2026-06-13
 
 ## 评审流程
 
@@ -22,6 +22,33 @@
 
 **结论**：
 ```
+
+## 2026-06-13（全项目深入审查：性能、并发与内存安全）
+
+**范围**：
+
+- 底层事件拦截与并发安全性（EventTap, HIDEventManager）
+- UI 渲染性能（IceBarContentView）
+- 高级设置项与首次启动 UX
+
+**发现的问题**：
+
+| 严重级别 | 文件 | 问题 | 建议 |
+|----------|------|------|------|
+| P0 | `Veil/Events/EventTap.swift` | 创建 Mach Port 时使用了 `Unmanaged.passRetained(self)`，在 `recreate` 和 `invalidate` 中使用了 `Unmanaged.passUnretained(self).release()`。如果未显式调用 `invalidate` 将导致永久内存泄漏；若在 `deinit` 中触发 `invalidate`，会导致 Double Free 崩溃。 | 重新梳理保留与释放逻辑。使用 `passRetained` 配合明确的生命周期管理，或使用 `passUnretained` 配合类本身的生命周期管理。 |
+| P1 | `Veil/Events/HIDEventManager.swift` | `CGEventTap` 的回调函数在 C 环境下非隔离执行，但在回调内部直接读取了 `@MainActor` 属性（如 `isEnabled`, `appState`, `isShowOnClickGuardActive`），会导致数据竞争（Data Race）。 | 对被跨隔离域读取的属性使用 `OSAllocatedUnfairLock` 保护，或标记为 `nonisolated(unsafe)` 并在注释中说明线程安全前提。 |
+| P3 | `Veil/MenuBar/IceBar/IceBar.swift` | `IceBarContentView` 中观察了 5 个全局 `@ObservedObject`，导致其中任何不相关的 `@Published` 属性变化都会触发菜单栏的整体重绘，产生高频冗余渲染。 | 拆分观察对象，将其缩小至更细粒度的局部状态，或提取为子视图传递具体的值。 |
+| P4 | `Veil/Settings/SettingsPanes/GeneralSettingsPane.swift` | `enableMenuBarItemOverflow` 等进阶属性直接暴露在常规界面中，缺乏 "高级设置" 专属区域收纳，导致功能层级不清晰。 | 在界面底部增加 "Advanced" 折叠区域 (DisclosureGroup) 集中收纳此类选项。 |
+
+**验证缺口**：
+
+- 修复 `EventTap` 内存管理后，需确认长时间运行的内存占用是否平稳，以及连续开关多次隐藏功能是否引发奔溃。
+- `HIDEventManager` 的并发修改需要使用 Thread Sanitizer 验证是否还有数据竞争。
+- `IceBarContentView` 重构后需确认增删或移动图标时的 UI 刷新是否依旧灵敏。
+
+**结论**：
+
+本次深入审查发现了潜在的致命内存错误（P0）和多线程并发安全漏洞（P1），均位于影响应用稳定性的基础事件层。建议立即修复 `EventTap` 和 `HIDEventManager` 的安全隐患，并逐步进行 UI 性能重构。
 
 ## 2026-06-08（全项目评审与修复确认）
 
